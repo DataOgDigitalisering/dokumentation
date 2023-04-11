@@ -166,7 +166,7 @@ switch (window.location.href) {
   default:
     side = "Ingen...";
 }
-document.getElementById("demo").innerHTML = side + " - indhold" + window.location.href;
+document.getElementById("demo").innerHTML = side + " - indhold" + window.location.href + "{{ '/' | relative_url }}";
 </script>
 <br>
 
