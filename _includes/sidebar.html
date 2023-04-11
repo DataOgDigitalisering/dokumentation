@@ -142,7 +142,7 @@
 
 <script>
 let side;
-switch (window.location.href) {
+switch (window.location.pathname) {
   case "{{ '/' | relative_url }}":
     side = "Forside";
     break;  
@@ -166,7 +166,7 @@ switch (window.location.href) {
   default:
     side = "Ingen...";
 }
-document.getElementById("demo").innerHTML = side + " - indhold" + window.location.href + "{{ '/' | relative_url }}";
+document.getElementById("demo").innerHTML = side + " - indhold" + window.location.pathname + "{{ '/' | relative_url }}";
 </script>
 <br>
 
