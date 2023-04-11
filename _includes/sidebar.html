@@ -142,29 +142,31 @@
 
 <script>
 let day;
-switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
+switch (window.location.href) {
+  case {{ '/' | relative_url }}:
+    side = "Forside";
+    break;  
+  case {{ '/HRStrategiskDashboard_personalesammensætning' | relative_url }}:
+    side = "Personalesammensætning";
     break;
   case 2:
-    day = "Tuesday";
+    side = "Tuesday";
     break;
   case 3:
-    day = "Wednesday";
+    side = "Wednesday";
     break;
   case 4:
-    day = "Thursday";
+    side = "Thursday";
     break;
   case 5:
-    day = "Friday";
+    side = "Friday";
     break;
   case  6:
-    day = "Saturday";
+    side = "Saturday";
+  default:
+    side = "Ingen...";
 }
-document.getElementById("demo").innerHTML = "Today is " + day + window.location.href;
+document.getElementById("demo").innerHTML = side + " - indhold";
 </script>
 <br>
 
