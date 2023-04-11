@@ -138,9 +138,8 @@
 
 <br>
 <b> Indholdsfortegnelse </b>
-<script>
-window.location.href;
-</script>
+<p id="demo"></p>
+
 <script>
 let day;
 switch (new Date().getDay()) {
@@ -165,7 +164,7 @@ switch (new Date().getDay()) {
   case  6:
     day = "Saturday";
 }
-document.getElementById("demo").innerHTML = "Today is " + day;
+document.getElementById("demo").innerHTML = "Today is " + day + window.location.href;
 </script>
 <br>
 
