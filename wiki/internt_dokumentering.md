@@ -15,8 +15,10 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
 
 # Hvor og hvornår dokumenterer vi?
 Vi dokumenterer flere steder
+
 - Power BI-filer
   - Dashboards og de tilhørende infobokse skal give et overblik over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden.
+
 - Koden (DAX, SQL, Python mm.)
   - I koden indsætter man korte kommentarer som beskriver hvad bestemte linjer eller dele af koden gør. Beskriv som udgangspunkt hvad koden gør (f.eks. "Tæl antal ansatte") , ikke hvordan den gør det (dette beskriver koden allerede). Ved særligt komplekse udtryk kan en mere beskrivende tekst dog være nødvendig. De mere tekniske forklaringer skal så vidt muligt inkluderes i kommentarer i koden og ikke i dokumentation på hjemmesiden eller andre steder. Kommentarer i koden giver et bedre overblik og gør det lettere at genbruge dele af koden på et senere tidspunkt. Man kommenterer normalt koden samitidigt med at man skriver den.
   
