@@ -5,7 +5,7 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
 
 # Formål med dokumentation
 - Primære formål:
-  - Virke som opslagsværk der giver overblik og indsigt i vores dashboards, kuber og databaser. Dokumentationen skal kunne bruges i vores daglige arbejde og til bevsvarelser af postkassehenvendelser.
+  - Give overblik og indsigt i vores dashboards, kuber og databaser. Dokumentationen skal kunne bruges i vores daglige arbejde og til bevsvarelser af postkassehenvendelser.
   - Gøre os opmærksomme på fejl og uhensigtsmæssigheder i opbygningen af vores dashboards, kuber og databaser.
   - Dokumentere tankegangen bag vigtige og komplekse beslutninger, så ræsonnement ikke bliver glemt eller går tabt.
   - Give os en konsistent måde at dokumentere og arbejde med dashboards, kuber og databaser.
