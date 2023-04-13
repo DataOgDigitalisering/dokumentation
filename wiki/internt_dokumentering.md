@@ -1,13 +1,18 @@
+# Dokumentering
+
+For at dokumentaitonen kan vedligeholdes og bruges i vores daglige arbejde kræver det at den har veldefineret struktur og et klart formål. De følgende afsnit beskriver dokumentationens formål og struktur. Dette skal ses som en guide til hvordan man dokumenterer sit arbejde.
+
+
 # Formål med dokumentation
 - Primære formål:
-  - Skal hjælpe os i det daglige arbejde – virke som opslagsværk som giver overblik og indsigt i kuben.
-  - Skal kunne hjælpe os med at blive opmærksomme på fejl/uhensigtsmæssigheder og få en mere konsistent måde at gøre tingene på.
-  - Skal kunne dokumentere tankegangen bag vigtige/komplekse beslutninger – så ræsonnement ikke bliver glemt/går tabt.
-  - Skal hjælpe nye/gamle til at komme ind i kuben/temaer/emner samt bygge nye.
+  - Virke som opslagsværk der giver overblik og indsigt i vores dashboards, kuber og databaser. Dokumentationen skal kunne bruges i vores daglige arbejde og til bevsvarelser af postkassehenvendelser.
+  - Gøre os opmærksomme på fejl og uhensigtsmæssigheder i opbygningen af vores dashboards, kuber og databaser.
+  - Dokumentere tankegangen bag vigtige og komplekse beslutninger, så ræsonnement ikke bliver glemt eller går tabt.
+  - Give os en konsistent måde at dokumentere og arbejde med dashboards, kuber og databaser.
+  
 - Sekundære formål:
-  - Skal kunne hjælpe andre udefra med at bruge og forstå kuben.
-  - Bruges som vejledninger til brugerne
-
+  - Hjælpe andre i Region Hovedstaden med at forstå opbygningen af vores kuber og dashboards.
+  
 # Hvor dokumenterer vi vores arbejde og værktøjer vi bruger til det
 
 Vi dokumenterer flere steder:
