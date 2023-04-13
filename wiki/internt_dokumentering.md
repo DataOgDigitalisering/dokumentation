@@ -3,7 +3,7 @@
 For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal den have veldefineret struktur og et klart formål. Denne side beskriver dokumentationens formål og struktur. Dette skal ses som en guide til hvordan man dokumenterer dashboards, kuber og databaser.
 
 
-# Formål med dokumentation
+# Formål med dokumentation og GitHub
 - Primære formål:
   - Give overblik og indsigt i vores dashboards, kuber og databaser. Dokumentationen skal kunne bruges i vores daglige arbejde og til bevsvarelser af postkassehenvendelser.
   - Gøre os opmærksomme på fejl og uhensigtsmæssigheder i opbygningen af vores dashboards, kuber og databaser.
