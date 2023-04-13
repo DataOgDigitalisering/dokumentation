@@ -1,6 +1,6 @@
 # Dokumentering
 
-For at dokumentaitonen kan vedligeholdes og bruges i vores daglige arbejde kræver det at den har veldefineret struktur og et klart formål. De følgende afsnit beskriver dokumentationens formål og struktur. Dette skal ses som en guide til hvordan man dokumenterer sit arbejde.
+For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal den have veldefineret struktur og et klart formål. De følgende afsnit beskriver dokumentationens formål og struktur. Dette skal ses som en guide til hvordan man dokumenterer dashboards, kuber og databaser.
 
 
 # Formål med dokumentation
