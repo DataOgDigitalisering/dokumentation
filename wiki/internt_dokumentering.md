@@ -26,13 +26,19 @@ I koden indsætter man **korte kommentarer** som beskriver hvad bestemte linjer 
 ## Tablar model (descriptions)
 Alle measures, tabeller og kolonner skal have **en kort beskrivelse**. Denne "description" kan tilføjes i Tabluar Editor og bliver en del af den semantiske model. Dette betyder at man kan se beskrivelserne når man f.eks. arbejder i PowerBI. Beskrivelserne bliver også automatisk tilgængelige på vores wiki-side hvor de er med til at give et overblik over kuben. Beskrivelsen skal som udgangspunkt **ikke være mere end 100 tegn, og den skal slutte med "*[værdi a, værdi b, ...]*"** som angiver et par eksempler på de værdier kolonnen eller measuret returnerer. **Man skriver normalt descriptions ind samtidigt med at man definerer measures, tabeller og kolonner i kuben**.
 
-## Data og Rapportering - diskussionsforum og Issues
-Her kan man skrive spørgsmål eller ændringsforslag ind. Dette sikrer dels at ændringsforslag ikke bliver glemt eller går tabt, samt at det ræsonnement som ligger til grund for beslutninger vedr. dashboards, kuben og databasen bliver gemt. Ofte giver det god mening at konvertere et ændringsforslag til et Issue, da dette bringer flere funktionalister med sig. Bl.a. er det muligt at kommentere issues og knytte Pull requests op på et Issue. På denne måde får man hele historikken med, og kan let se det ræsonnement som ligger til grund for ændringer i kuben, views og wiki-siden. OBS: vær opmærksom på at Issues der oprettes i offentlige repositories som f.eks. "dokumentation" vil være offentligt tilgængelige.
+## Diskussionsforum og Issues
+Her kan man skrive **spørgsmål eller ændringsforslag** ind. Dette sikrer dels at ændringsforslag ikke bliver glemt eller går tabt, samt at det ræsonnement som ligger til grund for beslutninger vedr. dashboards, kuben og databasen bliver gemt. Ofte giver det god mening at **konvertere et ændringsforslag til et Issue**, da dette bringer flere funktionalister med sig. Bl.a. er det muligt at kommentere på Issues og knytte "Pull requests" op på et Issue. På denne måde får man hele historikken med, og kan let se det ræsonnement som ligger til grund for ændringer i kuben, views og wiki-siden. OBS: vær opmærksom på at **Issues der oprettes i offentlige repositories som f.eks. "dokumentation" vil være offentligt tilgængelige**.
+
+## Versionsstyring
+Alle ændringer i CHRU_HRKube i udvikling og produktion skal ske gennem GitHub. Dette er med til at sikre vi har et sikkert og stabilt miljø hvor flere kan arbejde samtidigt. Alle views som har skema-navnet "*chru_cube*" og dermed ligger til grund for CHRU_HRKube'en skal også versionsstyres via. GitHub. Man kan læse mere om dette under TODO VERSIONSSTYRING. **Versionsstyringen kan ske sideløbende med at man skriver sin kode, eller når man er klar til at impleneterer sine ændringer i vores fælles kuber**.
+
+## Wiki-siden
+Wiki-siden samler alt vores dokumentaiton og giver et overblik over vores miljøer og arbejdsgange. Alle ændrigner i vores dashboards, kuber og datamodel kræver at man opdaterer wiki-siden så den ikke bliver uddateret. Wiki-siden består af flere dele
+- Besrkivesle af alle faner og figurer i HR Strategisk Dashboard og HR Lederdashboard. Her er information om hvad figurerne viser samt hvilke definitioner og antagelser de bygger på.
+
 
 
 - Hjemmeside (Dashboards, kuber, views) - overblik Øvesler - afsnit med hvordan man bygger/bruger vores værktøjer/miljø
-- Diskussionforum
-- Versionsstyring og issues
 
   
 # Hvor dokumenterer vi vores arbejde og værktøjer vi bruger til det
