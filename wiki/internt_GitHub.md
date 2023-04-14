@@ -27,7 +27,7 @@ For at kunne samarbejde med andre og have backup af projekter er det dog vigtigt
 
 ### Eksisterende projekt
 Hvis du skal arbejde på et eksisterende projekt, der ligger på github kan du ”clone” denne ned på din computer lokalt, arbejde på den, og derefter ”pushe” den op på ”skyen” igen, hvor ændringerne bliver flettet ind. 
-Næste gang du arbejder projektet kan du så lave et ”pull” i stedet for ”clone”, for at hente ændringer som andre har lavet på projektet. 
+Næste gang du arbejder på projektet kan du så lave et ”pull” i stedet for ”clone”, for at hente ændringer som andre har lavet på projektet. 
 
 ### Mere læsning
 
