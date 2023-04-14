@@ -34,16 +34,16 @@ Alle ændringer i CHRU_HRKube i udvikling og produktion skal ske gennem GitHub. 
 
 ## Wiki-siden
 Wiki-siden samler alt vores dokumentaiton og giver et overblik over vores miljøer og arbejdsgange. Alle ændrigner i vores dashboards, kuber og datamodel kræver at man opdaterer wiki-siden så den ikke bliver uddateret. Wiki-siden består af flere dele
-- Besrkivesle af alle faner og figurer i HR Strategisk Dashboard og HR Lederdashboard. Her er information om hvad figurerne viser samt hvilke definitioner og antagelser de bygger på.
+- Besrkivele af alle **faner og figurer** i HR Strategisk Dashboard og HR Lederdashboard. Her er information om hvad figurerne viser samt hvilke definitioner og antagelser de bygger på. Alle measures som figuren bygger på og hele filterkonteksten er også beskrevet her. Dette kan bruges til at forstå hvordan figuren er bygget op og til besvarelse af postkassehenvendelser. **Denne dokumentation laves sideløbende med at man udvikler dashboardet, eller ummidelbart efter dashboardet er færdigudviklet**.
+- Beskrivelse af **"*CHRU_HRKube*" i produktion**. Dette giver et overblik over alle measures, tabeller, relationer i kuben. **Denne dokumentation skrives sideløbende med at man arbejder i kuben, eller udmmidelbart efter man har færdigudviklet det givne temae**.
+- Beskrivelse af **views på i produktion** med skema-navn "*chru_cube*". **Denne dokumentation skrives sideløbende med at man arbejder i kuben, eller udmmidelbart efter man har færdigudviklet det givne temae**.
+- Beskrivelse af tabeller og vores database. Dette giver en indsigt i hvordan tabeller er defineret og hvordan vores miljø er bygget op. **Denne dokumentation skrives sideløbende med at man tilføjer nye tabeller eller laver andre ændringer på vores database i produktion**.
+- Beskrivelse af vores arbejdsprocesser og brug af værktøjer. Dette gælder dels brug at GitHub, wiki-siden, dokumentering og versionsstyring, men også hvordan man udvikler og arbejder med dashboards, kuber, views og tabeller. Dette er med til at sikre vi har en konsitstent måde at arbejde på i alt fra navngivning af kolonner til opsætning af bogmærker i Power BI.
 
-
-
-- Hjemmeside (Dashboards, kuber, views) - overblik Øvesler - afsnit med hvordan man bygger/bruger vores værktøjer/miljø
 
   
 # Hvor dokumenterer vi vores arbejde og værktøjer vi bruger til det
 
-- Dokumentationen på GitHub skal give overblik over tabeller og measures og deres relationer. 
 - Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige overvejelser/antagelser/definitioner man skal være opmærksom på når man bruger kuben og trækker tal.
 
 Værktøjer og overvejelser:
