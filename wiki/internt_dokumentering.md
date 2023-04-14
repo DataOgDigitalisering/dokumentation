@@ -14,23 +14,30 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
 - Sekundære formål:
   - Hjælpe andre i Region Hovedstaden med at **forstå opbygningen** af vores kuber og dashboards.
 
-# Hvor og hvornår dokumenterer vi?
-Vi dokumenterer flere steder
+# Hvor, hvordan og hvornår dokumenterer vi?
+Vi dokumenterer vores arbejde følgende steder
 
 - Power BI-filer
   - Dashboards og de tilhørende infobokse skal **give et overblik** over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden. **Når man bygger dashboardet op kommer alt dette naturligt med**.
 
 - Kode-filer (DAX, SQL, Python osv.)
   - I koden indsætter man **korte kommentarer** som beskriver hvad bestemte linjer eller dele af koden gør. Beskriv som udgangspunkt **hvad koden gør** (f.eks. "Tæl antal ansatte") , ikke hvordan den gør det (dette beskriver koden ofte fint selv). Ved særligt komplekse udtryk kan en mere beskrivende tekst dog være nødvendig. De mere tekniske forklaringer skal så vidt muligt inkluderes i kommentarer i koden, og ikke på hjemmesiden eller andre steder. Kommentarer i koden giver et bedre overblik og gør det lettere at genbruge dele af koden på et senere tidspunkt. **Man kommenterer normalt koden samitidigt med at man skriver den.**
-  
+
+- Tablar model (descriptions)
+  - Alle measures, tabeller og kolonner skal have en kort beskrivelse. Denne "description" kan tilføjes i Tabluar Editor og bliver en del af den semantiske model. Dette betyder at man kan se beskrivelserne når man f.eks. arbejder i PowerBI. Beskrivelserne bliver også automatisk tilgængelige på vores wiki-side hvor de er med til at give et overblik over kuben. Beskrivelsen skal som udgangspunkt ikke være mere end 100 tegn, og den skal slutte med *"[værdi a, værdi b, ...]"* som angiver et par eksempler på de værdier kolonnen eller measuret returnerer.
+
+
+
+
+- Hjemmeside (Dashboards, kuber, views) - overblik Øvesler - afsnit med hvordan man bygger/bruger vores værktøjer/miljø
+- Diskussionforum
+- Versionsstyring og issues
+
   
 # Hvor dokumenterer vi vores arbejde og værktøjer vi bruger til det
 
-Vi dokumenterer flere steder:
-- Dashboards og infobokse giver overblik over hvad der vises/hvilke measures/filtre som virker på de enkelte figurer. Bliver et stort arbejde at dokumentere og vedligeholde dette i GitHub, men skal dokumenteres på en eller anden måde.
-- Koden/kommentarer i measures beskriver hvordan koden er bygget op, hvilke funktioner man bruger, hvilke filtre man bruger. Det bliver hurtigt uoverskueligt at tage dette med ind i dokumentationen i GitHub, både ift. at læse det og vedligeholde det.
-- Dokumentationen på GitHub skal give overblik over tabeller og measures og deres relationer. Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige overvejelser/antagelser/definitioner man skal være opmærksom på når man bruger kuben og trækker tal.
-- Øvelser som kan hjælpe med og sikre at man forstår hvordan measures og tabeller bruges inden for givent tema/emne.
+- Dokumentationen på GitHub skal give overblik over tabeller og measures og deres relationer. 
+- Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige overvejelser/antagelser/definitioner man skal være opmærksom på når man bruger kuben og trækker tal.
 
 Værktøjer og overvejelser:
 - Vigtigt med afsnit om hvordan man bygger nye temaer op, så vi navngiver konsistent osv.
