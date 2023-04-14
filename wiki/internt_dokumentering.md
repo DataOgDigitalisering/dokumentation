@@ -17,16 +17,17 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
 # Hvor, hvordan og hvornår dokumenterer vi?
 Vi dokumenterer vores arbejde følgende steder
 
-- Power BI-filer
-  - Dashboards og de tilhørende infobokse skal **give et overblik** over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden. **Når man bygger dashboardet op kommer alt dette naturligt med**.
+## Power BI-filer
+Dashboards og de tilhørende infobokse skal **give et overblik** over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden. **Når man bygger dashboardet op kommer alt dette naturligt med**.
 
-- Kode-filer (DAX, SQL, Python osv.)
-  - I koden indsætter man **korte kommentarer** som beskriver hvad bestemte linjer eller dele af koden gør. Beskriv som udgangspunkt **hvad koden gør** (f.eks. "Tæl antal ansatte") , ikke hvordan den gør det (dette beskriver koden ofte fint selv). Ved særligt komplekse udtryk kan en mere beskrivende tekst dog være nødvendig. De mere tekniske forklaringer skal så vidt muligt inkluderes i kommentarer i koden, og ikke på hjemmesiden eller andre steder. Kommentarer i koden giver et bedre overblik og gør det lettere at genbruge dele af koden på et senere tidspunkt. **Man kommenterer normalt koden samitidigt med at man skriver den.**
+## Kode-filer (DAX, SQL, Python osv.)
+I koden indsætter man **korte kommentarer** som beskriver hvad bestemte linjer eller dele af koden gør. Beskriv som udgangspunkt **hvad koden gør** (f.eks. "Tæl antal ansatte") , ikke hvordan den gør det (dette beskriver koden ofte fint selv). Ved særligt komplekse udtryk kan en mere beskrivende tekst dog være nødvendig. De mere tekniske forklaringer skal så vidt muligt inkluderes i kommentarer i koden, og ikke på hjemmesiden eller andre steder. Kommentarer i koden giver et bedre overblik og gør det lettere at genbruge dele af koden på et senere tidspunkt. **Man kommenterer normalt koden samitidigt med at man skriver den.**
 
-- Tablar model (descriptions)
-  - Alle measures, tabeller og kolonner skal have en kort beskrivelse. Denne "description" kan tilføjes i Tabluar Editor og bliver en del af den semantiske model. Dette betyder at man kan se beskrivelserne når man f.eks. arbejder i PowerBI. Beskrivelserne bliver også automatisk tilgængelige på vores wiki-side hvor de er med til at give et overblik over kuben. Beskrivelsen skal som udgangspunkt ikke være mere end 100 tegn, og den skal slutte med *"[værdi a, værdi b, ...]"* som angiver et par eksempler på de værdier kolonnen eller measuret returnerer.
+## Tablar model (descriptions)
+Alle measures, tabeller og kolonner skal have **en kort beskrivelse**. Denne "description" kan tilføjes i Tabluar Editor og bliver en del af den semantiske model. Dette betyder at man kan se beskrivelserne når man f.eks. arbejder i PowerBI. Beskrivelserne bliver også automatisk tilgængelige på vores wiki-side hvor de er med til at give et overblik over kuben. Beskrivelsen skal som udgangspunkt **ikke være mere end 100 tegn, og den skal slutte med "*[værdi a, værdi b, ...]*"** som angiver et par eksempler på de værdier kolonnen eller measuret returnerer. **Man skriver normalt descriptions ind samtidigt med at man definerer measures, tabeller og kolonner i kuben**.
 
-
+## Data og Rapportering - diskussionsforum og Issues
+Her kan man skrive spørgsmål eller ændringsforslag ind. Dette sikrer dels at ændringsforlsag ikke bliver glemt eller går tabt, samt at det reæssonement som ligger til grund for beslutninger vedr. dashboards, kuben og databsen bliver gemt. Ofte giver det god mening at konvereter et ændringsforslag til et Issue, da dette bringer flere funktionalitter med sig. Bl.a. er det muligt at kommentere issues og knytte Pull requests op på et Issue. På denne måde får man hele historiekken med, og kan let se det ræsonement som ligger til grund for ændringer i kuben, views og wiki-siden. OBS: vær opmærksom på at Issues der oprettes i offentlige repositories som f.eks. "dokumentation" vil være offentligt tilgængelige.
 
 
 - Hjemmeside (Dashboards, kuber, views) - overblik Øvesler - afsnit med hvordan man bygger/bruger vores værktøjer/miljø
