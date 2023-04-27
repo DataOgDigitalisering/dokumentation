@@ -1,4 +1,4 @@
-# Postkassen
+# Postkassen - Under udvikling
 
 Denne side indeholder information om vores analysepostkasse og dashboardpostkasse. Det beskrives dels hvordan sager administreres og arkiveres, men også hvordan man lettest trækker tal og data ud af vores kube og database.
 
