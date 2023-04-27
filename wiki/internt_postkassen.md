@@ -2,7 +2,7 @@
 
 Denne side indeholder information om vores analysepostkasse og dashboardpostkasse. Der omhandler dels hvordan sager administreres og arkiveres, men også vejledninger til hvordan man lettest trækker tal og data ud af vores kube og database.
 
-## Guide til postkassen
+# Guide til postkassen
 Dette er en guide til hvordan postkassen administeres og hvordan sager arkivers og behandles.
 
 <!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
@@ -11,7 +11,7 @@ Dette er en guide til hvordan postkassen administeres og hvordan sager arkivers 
 </center>
 
 
-## Guide til dataudtræk
+# Guide til dataudtræk
 Dette er en guide til hvordan man kan trækker tal fra dashboards, kuber og databaser når man besvarer postkassehenvendelser.
 
 <!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
@@ -20,7 +20,7 @@ Dette er en guide til hvordan man kan trækker tal fra dashboards, kuber og data
 </center>
 
 
-## Standardsvar
+# Standardsvar
 Dette dokument indeholder standardsvar som man kan tage udgangspunkt i når man besvarer henvendelser.
 
 <!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
