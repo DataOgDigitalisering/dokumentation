@@ -3,7 +3,7 @@
 Denne side indeholder information om vores analysepostkasse og dashboardpostkasse. Det beskrives dels hvordan sager administreres og arkiveres, men også hvordan man lettest trækker tal og data ud af vores kube og database.
 
 # Guide til postkassen
-Dette er en guide til hvordan postkassen administeres og hvordan sager arkivers og behandles.
+Dette er en guide til hvordan postkassen administreres og hvordan sager arkivers og behandles.
 
 <!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
 <center>
