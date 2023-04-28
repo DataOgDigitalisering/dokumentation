@@ -95,3 +95,22 @@ Om konventioner for navngivning af tabeller og measures.
 - Prioriter. Hvad kan vi leve med?
   - performance vs æstetik
   - slette ubrugte tabeller/kolonner vs ændre æ ø å 
+
+
+
+
+# Gamle noter som gemmes til senere
+- Overvej hvor/hvad vi kan trække ift. versionsstyring/vedligeholdelse:
+- SSMS: 
+  - Database: view-definitioner, oversigt over tabeller og views, hvor de bruges osv.
+  - Kuben: billede af model og relationer – Nicolai viste dette
+- Tabular Editor
+  - Hvordan tabeller og measures bygger på hinanden – Nicolai viste Excel-dok
+- Power BI
+  - Hvor measures bruges, hvilke der ikke bruges osv. – Nicolai nævnte kort at dette (måske…) var en mulighed
+
+
+
+- Vigtigt med afsnit om hvordan man bygger nye temaer op, så vi navngiver konsistent osv.
+- Vigtigt at have et sted hvor man beskriver hvordan man filtrerer på stilling og DimOrganisation (til folk som skal bygge nye dashboards f.eks.)
+
