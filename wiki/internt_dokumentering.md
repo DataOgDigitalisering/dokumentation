@@ -63,9 +63,6 @@ Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige 
   - Oversigt over hvor measures indgår/relaterer til hinanden.
   - Dette skal suppleres af et repository i GitHub med hele kuben og alle measures som man kan linke til. Det skal måske også suppelers med ExcelFil over hvordan measures bygger på hinanden/hvor de bruges i dashboards/hvilke der ikke bruges i dashboards.
 
-
-## Views - skabelon
-
 ## Tabeller - skabelon
 - Tabeller
   - Beskrivelse af selve tabellen (ikke mere end 100 tegn).
@@ -77,10 +74,7 @@ Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige 
   - Billede af datamodel og liste over relationer.
   - Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
 
-
-## Gamle noter som gemmes til senere
-
-
+# Gamle noter som gemmes til senere
 - Overvej hvor/hvad vi kan trække ift. versionsstyring/vedligeholdelse:
 - SSMS: 
   - Database: view-definitioner, oversigt over tabeller og views, hvor de bruges osv.
