@@ -1,6 +1,6 @@
 # Dokumentering
 
-For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal den have veldefineret struktur og et klart formål. Denne side beskriver dokumentationens formål og struktur. Dette skal ses som en guide til hvordan man dokumenterer dashboards, kuber og databaser.
+For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal den have en veldefineret struktur og et klart formål. Denne side beskriver dokumentationens formål og struktur. Dette skal ses som en guide til hvordan man dokumenterer dashboards, kuber og databaser.
 
 
 # Formål med dokumentation og GitHub
@@ -12,21 +12,21 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
   - Give os en **konsistent** måde at dokumentere og arbejde med dashboards, kuber og databaser.
   
 - Sekundære formål:
-  - Hjælpe andre i Region Hovedstaden med at **forstå opbygningen** af vores kuber og dashboards.
+  - Hjælpe **andre i Region Hovedstaden** med at forstå opbygningen af vores kuber og dashboards.
 
 # Hvor, hvordan og hvornår dokumenterer vi?
-Alle ændringer som laves i dashboards, *CHRU_HRKube*, views og tabeller som kuben bygger på skal dokumenteres. Dette gælder både når man tilføjer nye temaer og når man ændrer på allerede eksisterende. Vi dokumenterer vores arbejde følgende steder.
+Alle ændringer som laves i dashboards, *CHRU_HRKube*, views samt de tabeller som kuben bygger på skal dokumenteres. Dette gælder både når man tilføjer nye temaer og når man ændrer på allerede eksisterende. Vi dokumenterer vores arbejde følgende steder.
 ## Power BI-filer
 Dashboards og de tilhørende infobokse skal **give et overblik** over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden. **Når man bygger dashboardet kommer alt dette naturligt med**.
 
 ## Kode-filer (DAX, SQL, Python osv.)
-I koden indsætter man **korte kommentarer** som beskriver hvad bestemte linjer eller dele af koden gør. Beskriv som udgangspunkt **hvad koden gør** (f.eks. "Tæl antal ansatte") , ikke hvordan den gør det (dette beskriver koden ofte fint selv). Ved særligt komplekse udtryk kan en mere beskrivende tekst dog være nødvendig. De mere tekniske forklaringer skal så vidt muligt inkluderes i kommentarer i koden, og ikke på hjemmesiden eller andre steder. Kommentarer i koden giver et bedre overblik og gør det lettere at genbruge dele af koden på et senere tidspunkt. **Man kommenterer normalt koden samtidigt med at man skriver den.**
+I koden indsætter man **korte kommentarer** som beskriver hvad bestemte linjer eller dele af koden gør. Beskriv som udgangspunkt **hvad koden gør** (f.eks. "Tæl antal ansatte") , ikke hvordan den gør det (dette beskriver koden ofte fint selv). Ved særligt komplekse udtryk kan en mere beskrivende tekst dog være nødvendig. De mere tekniske forklaringer skal så vidt muligt inkluderes som kommentarer i koden, og ikke på wiki-siden eller andre steder. Kommentarer i koden giver et bedre overblik og gør det lettere at genbruge dele af koden på et senere tidspunkt. **Man kommenterer normalt koden samtidigt med at man skriver den.**
 
 ## Tabular model (descriptions)
-Alle measures, tabeller og kolonner skal have **en kort beskrivelse**. Denne "description" kan tilføjes i Tabluar Editor og bliver en del af den semantiske model. Dette betyder at man kan se beskrivelserne når man f.eks. arbejder i PowerBI. Beskrivelserne bliver også automatisk tilgængelige på vores wiki-side hvor de er med til at give et overblik over kuben. Beskrivelsen skal som udgangspunkt **ikke være mere end 100 tegn, og den skal slutte med "*[værdi a, værdi b, ...]*"** som angiver et par eksempler på de værdier kolonnen eller measuret returnerer. **Man skriver normalt descriptions ind samtidigt med at man definerer measures, tabeller og kolonner i kuben**.
+Alle measures, tabeller og kolonner skal have **en kort beskrivelse**. Denne "description" kan tilføjes i Tabluar Editor og bliver en del af den semantiske model. Dette betyder at man kan se beskrivelserne når man f.eks. arbejder i PowerBI. Beskrivelserne bliver også automatisk tilgængelige på vores wiki-side, hvor de er med til at give et overblik over kuben. Beskrivelsen skal som udgangspunkt **ikke være mere end 100 tegn, og den skal slutte med "*[værdi a, værdi b, ...]*"** som angiver et par eksempler på de værdier kolonnen eller measuret returnerer. **Man skriver normalt descriptions ind samtidigt med at man definerer measures, tabeller og kolonner i kuben**.
 
 ## Diskussionsforum og Issues
-Her kan man skrive **spørgsmål eller ændringsforslag** ind. Dette sikrer dels at ændringsforslag ikke bliver glemt eller går tabt, samt at det ræsonnement som ligger til grund for beslutninger vedr. dashboards, kuben og databasen bliver gemt. Ofte giver det god mening at **konvertere et ændringsforslag til et Issue**, da dette bringer flere funktionalister med sig. Bl.a. er det muligt at kommentere på Issues og knytte "Pull requests" op på et Issue. På denne måde får man hele historikken med, og kan let se det ræsonnement som ligger til grund for ændringer i kuben, views og wiki-siden. OBS: vær opmærksom på at **Issues der oprettes i offentlige repositories som f.eks. "dokumentation" vil være offentligt tilgængelige**.
+Her kan man skrive **spørgsmål eller ændringsforslag** ind. Dette sikrer dels at ændringsforslag ikke bliver glemt eller går tabt, samt at det ræsonnement som ligger til grund for beslutninger vedr. dashboards, kuben og databasen bliver gemt. Ofte giver det god mening at **konvertere et ændringsforslag til et Issue**, da dette bringer flere funktionaliteter med sig. Bl.a. er det muligt at kommentere på Issues og knytte "Pull requests" op på et Issue. På denne måde får man hele historikken med, og kan let se det ræsonnement som ligger til grund for ændringer i kuben, views og wiki-siden. OBS: vær opmærksom på at **Issues der oprettes i offentlige repositories som f.eks. "dokumentation" vil være offentligt tilgængelige**.
 
 ## Versionsstyring
 Alle **ændringer i CHRU_HRKube** i udvikling og produktion skal ske gennem GitHub. Dette er med til at sikre vi har et sikkert og stabilt miljø hvor flere kan arbejde samtidigt. Alle **views som har skema-navnet "*chru_cube*"** og dermed ligger til grund for vores *CHRU_HRKube* skal også versionsstyres via. GitHub. Man kan læse mere om dette under TODO VERSIONSSTYRING. **Versionsstyringen kan ske sideløbende med at man skriver sin kode, eller når man er klar til at implementere sine ændringer i vores fælles kuber**.
