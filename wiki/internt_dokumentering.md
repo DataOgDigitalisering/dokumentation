@@ -70,14 +70,4 @@ Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige 
   - Billede af datamodel og liste over relationer.
   - Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
 
-# Gamle noter som gemmes til senere
-- Overvej hvor/hvad vi kan trække ift. versionsstyring/vedligeholdelse:
-- SSMS: 
-  - Database: view-definitioner, oversigt over tabeller og views, hvor de bruges osv.
-  - Kuben: billede af model og relationer – Nicolai viste dette
-- Tabular Editor
-  - Hvordan tabeller og measures bygger på hinanden – Nicolai viste Excel-dok
-- Power BI
-  - Hvor measures bruges, hvilke der ikke bruges osv. – Nicolai nævnte kort at dette (måske…) var en mulighed
-
 
