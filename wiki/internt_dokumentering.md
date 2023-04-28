@@ -38,27 +38,35 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 - Beskrivelse af **views på i produktion** med skema-navn "*chru_cube*". **Denne dokumentation skrives sideløbende med at man arbejder i kuben, eller umiddelbart efter man har færdigudviklet det givne tema**.
 - Beskrivelse af tabeller og vores database. Dette giver en indsigt i hvordan tabeller er defineret og hvordan vores miljø er bygget op. **Denne dokumentation skrives sideløbende med at man tilføjer nye tabeller eller laver andre ændringer på vores database i produktion**.
 - Beskrivelse af vores **arbejdsprocesser og de værktøjer** som vi bruger. Dette gælder dels brug at GitHub, wiki-siden, dokumentering og versionsstyring, men også hvordan man udvikler og arbejder med dashboards, kuber, views og tabeller. Dette er med til at sikre vi har en konsistent måde at arbejde på i alt fra navngivning af kolonner til opsætning af bogmærker i Power BI. **Denne dokumentation skrives løbende**.
-  
-# Hvor dokumenterer vi vores arbejde og værktøjer vi bruger til det
 
-- Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige overvejelser/antagelser/definitioner man skal være opmærksom på når man bruger kuben og trækker tal.
+# Skabeloner til dokumentation
+Følgende skabeloner angiver hvordan dokumentationen af measures og tabeller er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden.
+## Dashboards - skabelon
 
-Værktøjer og overvejelser:
-- Vigtigt med afsnit om hvordan man bygger nye temaer op, så vi navngiver konsistent osv.
-- Vigtigt at have et sted hvor man beskriver hvordan man filtrerer på stilling og DimOrganisation (til folk som skal bygge nye dashboards f.eks.)
-- Vigtigt at dokumentationen giver en klar forståelse af de grundlæggende definitioner vi arbejder med som f.eks. fratrædelse, ansatte, tiltrædelse osv.
-- Overvej hvor/hvad vi kan trække ift. versionsstyring/vedligeholdelse:
-- SSMS: 
-  - Database: view-definitioner, oversigt over tabeller og views, hvor de bruges osv.
-  - Kuben: billede af model og relationer – Nicolai viste dette
-- Tabular Editor
-  - Alle tabeller, kolonner, beskrivelser
-  - Hvordan tabeller og measures bygger på hinanden – Nicolai viste Excel-dok
-- Power BI
-  - Hvor measures bruges, hvilke der ikke bruges osv. – Nicolai nævnte kort at dette (måske…) var en mulighed
-- Overvej at bruge GitHub som platform/dialogområde ift. valg truffet i kuben og diskussioner, så vi ikke overser/glemmer noget og har gemt tankerne/dialogen et sted.
+- Dashboards
+  - Forbehold
+    - Dels tror jeg ikke at jeg vil komme til at bruge det i dagligdagen, kun når jeg skal sætte mig ind i et tema fra bunden. Ellers tager det for lang tid at finde de svar man søger.
+    - Vedligeholdelse bliver et stort arbejde hvis det kommer med. 
+- Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
+- FAQ ved siden af?
 
-# Strukturen på dokumentation
+
+
+## Measures - skabelon
+Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige overvejelser/antagelser/definitioner man skal være opmærksom på når man bruger kuben og trækker tal.
+- Measures
+  - Liste over alle measures indenfor temaet – ligesom for tabellerne
+  - Measurenavn, returnType, Beskrivelse af measure (ikke mere end 100 tegn) med eksempel på returnValue.
+  - Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres.
+  - Beskrivelse/Resume af hvert measure:
+  - Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle corner-cases osv.
+  - Oversigt over hvor measures indgår/relaterer til hinanden.
+  - Dette skal suppleres af et repository i GitHub med hele kuben og alle measures som man kan linke til. Det skal måske også suppelers med ExcelFil over hvordan measures bygger på hinanden/hvor de bruges i dashboards/hvilke der ikke bruges i dashboards.
+
+
+## Views - skabelon
+
+## Tabeller - skabelon
 - Tabeller
   - Beskrivelse af selve tabellen (ikke mere end 100 tegn).
   - Liste over alle kolonner (minder om SD’s dokumentation):
@@ -69,20 +77,17 @@ Værktøjer og overvejelser:
   - Billede af datamodel og liste over relationer.
   - Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
 
-- Measures
-  - Liste over alle measures indenfor temaet – ligesom for tabellerne
-  - Measurenavn, returnType, Beskrivelse af measure (ikke mere end 100 tegn) med eksempel på returnValue.
-  - Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres.
-  - Beskrivelse/Resume af hvert measure:
-  - Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle corner-cases osv.
-  - Oversigt over hvor measures indgår/relaterer til hinanden.
-  - Dette skal suppleres af et repository i GitHub med hele kuben og alle measures som man kan linke til. Det skal måske også suppelers med ExcelFil over hvordan measures bygger på hinanden/hvor de bruges i dashboards/hvilke der ikke bruges i dashboards.
 
-- Dashboards
-  - Forbehold
-    - Dels tror jeg ikke at jeg vil komme til at bruge det i dagligdagen, kun når jeg skal sætte mig ind i et tema fra bunden. Ellers tager det for lang tid at finde de svar man søger.
-    - Vedligeholdelse bliver et stort arbejde hvis det kommer med. 
-- Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
-- FAQ ved siden af?
+## Gamle noter som gemmes til senere
+
+
+- Overvej hvor/hvad vi kan trække ift. versionsstyring/vedligeholdelse:
+- SSMS: 
+  - Database: view-definitioner, oversigt over tabeller og views, hvor de bruges osv.
+  - Kuben: billede af model og relationer – Nicolai viste dette
+- Tabular Editor
+  - Hvordan tabeller og measures bygger på hinanden – Nicolai viste Excel-dok
+- Power BI
+  - Hvor measures bruges, hvilke der ikke bruges osv. – Nicolai nævnte kort at dette (måske…) var en mulighed
 
 
