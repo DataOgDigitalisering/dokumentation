@@ -44,12 +44,8 @@ Følgende skabeloner angiver hvordan dokumentationen af measures og tabeller er 
 ## Dashboards - skabelon
 
 - Dashboards
-  - Forbehold
-    - Dels tror jeg ikke at jeg vil komme til at bruge det i dagligdagen, kun når jeg skal sætte mig ind i et tema fra bunden. Ellers tager det for lang tid at finde de svar man søger.
-    - Vedligeholdelse bliver et stort arbejde hvis det kommer med. 
 - Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
 - FAQ ved siden af?
-
 
 
 ## Measures - skabelon
