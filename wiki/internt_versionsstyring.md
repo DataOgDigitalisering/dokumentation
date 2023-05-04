@@ -11,7 +11,7 @@ For at kunne arbejde med GitHub på ens computer skal man gøre følgende:
 
 Du er nu klar til at lave ændringer på kuben lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [https://docs.github.com/en/desktop](https://docs.github.com/en/desktop).
 
-## Sæt lokal kube og branch op.
+## Sæt en lokal kube og branch op.
 Man må ikke lave ændringer direkte i produktion eller udvikling. Hvis man ønsker at ændre noget skal det ske ved at man laver ændringerne i en privat kube, og herefter "pusher" og "merger" det med udvikling og produktion via. GutHub.
 For at lave ændringer i en lokal kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "ProjektVersionsstyring".
@@ -20,7 +20,20 @@ For at lave ændringer i en lokal kube skal man gøre følgende:
 - Nu skulle der gerne stå "Current Branch: "ProjektVersionsstyring" i toppen.
 - Ved at højreklikke på "Current Repository" kan du let finde den mappe hvor repositoriet er.
 
-## Deploy 
+## Deploy datamodel fra Git til ens kube
 Du kan nu deploye den tabulare model til din private kube, lave ændringer på den og gemme dem på din nye branch. Dette gøres på følgende måde:
-- 
+- Åben Tabular Editor og importer din tabulære model ved at bruge "Open from folder", og vælg den folder som din branch lægger i. Det er vigtigt at du har valgt den rigtige branch inde i GitHubDesktop. Ellers vil du komme til at importere en forkert branch til TabularEditor.
+- Du kan nu deploye modellen til din private kube, og herefter processere den i "Server Management Studio".
 
+## Gem ændringer over på ens branch i Git
+Når du har arbejdet på din model og lavet ændringer i Tabular Editor kan du gemme dem på din branch, dette gøres på følgende måde:
+- Åben GitHubDesktop og vælg den branch som du arbejder på.
+- Åben mappen hvor branchen er og slet alt indhold i mappen så den er tom. Hvis du kan se en .git fil skal du IKKE slette den.
+- I tabular Editor åbner du den model som du gerne vil gemme over fra din egen kube.
+- Herefter kan du gemme den ved brug af "Save To Folder" og vælge den mappe som din branch er i.
+- I GitHubDesktop kan du nu se alle de ændringer du har lavet
+- Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nedrest i venstre hjørne og klikke "Commit to ..."
+Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabular Editor's egen dokumentation [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
+
+## Få ændringerne op til GitHub
+Nu er vi klar til at få ændringer op til GitHub hvor alle kan tilgå dem.
