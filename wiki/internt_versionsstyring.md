@@ -37,3 +37,23 @@ Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabu
 
 ## Få ændringerne op til GitHub
 Nu er vi klar til at få ændringer op til GitHub hvor alle kan tilgå dem.
+- I GitHubDesktop vælger "CHRU_HRKube" under "Current Repository".
+- Hefter kan du klikke på "Publish Branch". Dine ændringer er nu blevet skubbet op til GitHub.
+- Under (https://github.com/DataOgDigitalisering/CHRU_HRKube)[https://github.com/DataOgDigitalisering/CHRU_HRKube] vil du nu kunne se den nye branch samt alle de ændringer man har lavet. Du kan lave ændringer lokalt og "pushe" dem op løbende.
+
+## Få ændringerne over på udvikling og produktion
+For at få ændringer over i udvikling skal ens egen branch "merges" med udvikling. Dette gøres ved at lave en pull-request:
+- Klik på "Pull-request" i toppen og vælg "New Pull Request".
+- Sæt den til at merge din egen branch med "Udvikling".
+- I beskrivelsen af din pull-reqeust skal du koble den til et Issue. Dette gøres ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på.
+- Hefter vil den stå under "pull-request". En af gatekeeperne vil herefter se ændringerne igennem og "aproove" den.
+- Når dette er gjort vil ændringer kommer over på branchen "Udvikling". Og man kan så deploye dem til vores udviklings-kube ved brug af Tabular Editor og GitHubDesktop.
+- Når man først har klonet repositoriet ned på ens egen computer kan man bare benytte knappen "Fetch origin" for at opdatere ens lokale repository, så det tilsvarer det som ligger på GitHub.
+
+##Rydde på efter sig
+Når man har lavet alle ændringer, og det er kommet over på udvikling skal man gøre følgende:
+- Slette sin branch i GitHub og evt. i GitHubDesktop.
+- Omdøbe sin kube til "CHRU_LedigKube1" eller noget lignende.
+
+Ændringerne vil komme over i produktion næste gang man flytter kopiere kuben fra udvikling over i produktion.
+
