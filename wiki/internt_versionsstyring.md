@@ -1,4 +1,4 @@
-# Versionsstyring af kuben
+# Versionsstyring af kuben - UNDER UDVIKLING
 Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder på kuben og implementerer vores ændringer.
 
 ## Koble ens computer til GitHub
