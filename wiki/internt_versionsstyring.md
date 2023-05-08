@@ -5,7 +5,7 @@ Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejde
 Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Den letteste måde at arbejde med GitHub er at kopiere denne folder ned på ens egen computer, lave ændringerne, og herefter sende ændringerne op til GitHub igen.
 For at kunne arbejde med GitHub, lokalt på ens computer skal man gøre følgende:
 - Download *GitHubDesktop 2.9.8.0*, eller en nyere version, fra softwareshoppen. 
-
+<center><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="95%" width="95%" style="vertical-align:middle"/></center>
 - Start "GitHubDesktop" på din computer.
 - Klik på "options" og log ind med din GitHub-konto.
 - Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge den folder du gerne vil kopiere ned på din computer. Vælg "CHRU_HRKube" under "DataOgDigitalisering". OBS: Det er en god idé at gemme mappen på skrivebordet f.eks. og ikke på et af de online drev. Ellers kan det tage en del tid at gemme kuben over når vi benytter funktionen "SaveToFolder" senere.
