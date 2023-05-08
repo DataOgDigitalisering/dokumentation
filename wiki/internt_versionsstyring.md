@@ -21,7 +21,7 @@ For at lave ændringer i en lokal kube skal man gøre følgende:
 <details>
    <summary><b>Se gennemgang</b></summary>
    <center><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="20%" width="20%" style="vertical-align:middle"/></center>
-<\details>
+</details>
 <br>
 - Gå ind i GitHub Desktop og vælg repositoriet "CHRU_HRKube" og klik "newBranch".
 - Kald den det samme som din private kube hedder og sig at den skal bygge på "udvikling".
