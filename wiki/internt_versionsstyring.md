@@ -18,8 +18,10 @@ Du er nu klar til at lave ændringer på kuben lokalt på din computer. Alle dis
 Man må ikke lave ændringer direkte i produktion eller udvikling. Hvis man ønsker at ændre noget skal det ske ved at man laver ændringerne i en privat kube, og herefter "pusher" og "merger" det med udvikling og produktion via. GutHub.
 For at lave ændringer i en lokal kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "ProjektVersionsstyring".
+<details>
    <summary><b>Se gennemgang</b></summary>
    <center><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="20%" width="20%" style="vertical-align:middle"/></center>
+<\details>
 <br>
 - Gå ind i GitHub Desktop og vælg repositoriet "CHRU_HRKube" og klik "newBranch".
 - Kald den det samme som din private kube hedder og sig at den skal bygge på "udvikling".
