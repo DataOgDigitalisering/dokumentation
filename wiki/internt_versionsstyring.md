@@ -9,9 +9,8 @@ For at kunne arbejde med GitHub, lokalt på ens computer skal man gøre følgend
 - Start "GitHubDesktop" på din computer.
 - Klik på "options" og log ind med din GitHub-konto.
 <br><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="15%" width="15%" style="vertical-align:middle"/>
-
 - Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge den folder du gerne vil kopiere ned på din computer. Vælg "CHRU_HRKube" under "DataOgDigitalisering". OBS: Det er en god idé at gemme mappen på skrivebordet f.eks. og ikke på et af de online drev. Ellers kan det tage en del tid at gemme kuben over når vi benytter funktionen "SaveToFolder" senere.
-<center><img src="Images/BillederInterVersionsstyring/3GitHubCloneRepo.png" height="10%" width="10%" style="vertical-align:middle"/></center>
+<br><img src="Images/BillederInterVersionsstyring/3GitHubCloneRepo.png" height="15%" width="15%" style="vertical-align:middle"/>
 
 Du er nu klar til at lave ændringer på kuben lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [https://docs.github.com/en/desktop](https://docs.github.com/en/desktop).
 
@@ -19,11 +18,8 @@ Du er nu klar til at lave ændringer på kuben lokalt på din computer. Alle dis
 Man må ikke lave ændringer direkte i produktion eller udvikling. Hvis man ønsker at ændre noget skal det ske ved at man laver ændringerne i en privat kube, og herefter "pusher" og "merger" det med udvikling og produktion via. GutHub.
 For at lave ændringer i en lokal kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "ProjektVersionsstyring".
-<details>
-   <summary><b>Se gennemgang</b></summary>
-   <center><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="20%" width="20%" style="vertical-align:middle"/></center>
-</details>
-<br>
+<br><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="15%" width="15%" style="vertical-align:middle"/>
+
 - Gå ind i GitHub Desktop og vælg repositoriet "CHRU_HRKube" og klik "newBranch".
 - Kald den det samme som din private kube hedder og sig at den skal bygge på "udvikling".
 - Nu skulle der gerne stå "Current Branch: "ProjektVersionsstyring" i toppen.
