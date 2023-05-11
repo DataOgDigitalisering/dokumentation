@@ -1,5 +1,5 @@
 # Versionsstyring af kuben - UNDER UDVIKLING
-Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub.
+Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub. Alle ændringer som laves på *CHRU_HRKube* i udvikling og produktion skal ske gennem GitHub. Man må kun ændre direkte i *CHRU_HRKube* hvis der er akutte ændringer som ikke kan vente.
 
 ## Koble ens computer til GitHub
 Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Den letteste måde at arbejde med GitHub er at kopiere denne folder ned på ens egen computer, lave ændringerne, og herefter sende ændringerne op til GitHub igen.
