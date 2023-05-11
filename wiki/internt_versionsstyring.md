@@ -89,7 +89,6 @@ Når man har lavet alle ændringer, og det er kommet over på udvikling skal man
 <br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="120" style="vertical-align:middle"/>
 
 ## Praktisk information om opdatering af kuben
-- Gatekeeper tager hver uge og ser pull-requests igennem. 
-- De tilføjes og der skrives en lille tekst ned om hvad der er ændret. 
+- Gatekeeper tager hver uge og ser pull-requests igennem, og skriver ændringerne ned. 
 - Dette deles på onsdagsmødet så alle er up-to-date med de ændrnger som er foretaget i Kuben. 
 - Vi opdaterer produktion løbende efter ændringerne er blevet testet i udvikling.
