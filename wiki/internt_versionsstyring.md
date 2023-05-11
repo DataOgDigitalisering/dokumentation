@@ -1,4 +1,4 @@
-# Versionsstyring af kuben - UNDER UDVIKLING
+# Versionsstyring af kuben
 Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub. **Alle ændringer som laves på *CHRU_HRKube* i udvikling og produktion skal ske gennem GitHub**. Vi laver kun ændringer direkte i *CHRU_HRKube* hvis det er akutte ting som ikke kan vente. Følgende figur illustrerer arbejdsprocessen med GitHub. De forskellige skridt er beskrevet mere detaljeret nedenfor.
 <center><br><img src="Images/BillederInterVersionsstyring/modelVersionsstyring.PNG" height="300" style="vertical-align:middle"/></center>
 
@@ -90,5 +90,8 @@ Når man har lavet alle ændringer, og det er kommet over på udvikling skal man
 
 ## Praktisk information om opdatering af kuben
 - Gatekeeper ser hver uge alle pull-requests igennem og skriver ændringerne ned. 
-- Dette deles på onsdagsmødet så alle er up-to-date med de ændringer som er foretaget i Kuben. 
+- Dette deles på onsdagsmødet så alle er up-to-date med de ændringer som er foretaget i *CHRU_HRKube*. 
 - Vi opdaterer produktion umiddelbart efter ændringerne er blevet testet i udvikling. Ved større ændringer hvor der tilføjes tabeller el. lign. kan det tage længere tid at få over i produktion.
+
+# Versionsstyring af views IKKE LAVET
+
