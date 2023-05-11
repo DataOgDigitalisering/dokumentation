@@ -33,13 +33,13 @@ For at lave ændringer i en separat kube skal man gøre følgende:
 <br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="200" style="vertical-align:middle"/>
 
 
-## Deploy datamodel fra Git til kuben
-Du kan nu deploye den tabulare model til din private kube, lave ændringer på den og gemme dem på din nye branch. Dette gøres på følgende måde:
-- Åben Tabular Editor og importer din tabulære model ved at bruge "Open from folder", og vælg den folder som din branch lægger i. Det er vigtigt at du har valgt den rigtige branch inde i GitHubDesktop. Ellers vil du komme til at importere en forkert branch til TabularEditor.
+## Deploy tabluar model fra GitHub til kuben
+Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. Herefter kan du lave ændringer og gemme dem på din nye branch. Dette gøres på følgende måde:
+- Åben Tabular Editor og importer din tabulare model ved at bruge "Open from folder". Vælg den folder som dit respository ligger i. Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*. Ellers vil du komme til at importere en tabular model fra en forkert branch til *TabularEditor*.
 <br><img src="Images/BillederInterVersionsstyring/7TabularEditorÅbenFromFolder.png" height="200" style="vertical-align:middle"/>
 <br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="300" style="vertical-align:middle"/>
 
-- Du kan nu deploye modellen til din private kube, og herefter processere den i "Server Management Studio".
+- Du kan nu deploye modellen til din egen kube. Du kan herefter processere den i "Server Management Studio". OBS: Når du deployer modellen skal du fravælge *Data Source* eller *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.
 
 ## Gem dine ændringer i Git
 Når du har arbejdet på din model og lavet ændringer i Tabular Editor kan du gemme dem på din branch, dette gøres på følgende måde:
