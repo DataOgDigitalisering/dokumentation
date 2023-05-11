@@ -5,21 +5,21 @@ Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejde
 
 
 ## Koble sin computer til GitHub
-Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Den letteste måde at arbejde med GitHub er at kopiere denne folder ned på ens egen computer, lave ændringerne, og herefter sende ændringerne op til GitHub igen.
+Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Den letteste måde at arbejde med GitHub er at kopiere dette repository ned på ens egen computer, lave ændringerne lokalt, og herefter sende ændringerne op til GitHub igen.
 For at kunne arbejde med GitHub, lokalt på ens computer skal man gøre følgende:
 - Download *GitHubDesktop 2.9.8.0*, eller en nyere version, fra softwareshoppen. 
 <br><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="130" style="vertical-align:middle"/>
 - Start "GitHubDesktop" på din computer.
 - Klik på "options" og log ind med din GitHub-konto.
 <br><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="160" style="vertical-align:middle"/>
-- Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge den folder du gerne vil kopiere ned på din computer. Vælg "CHRU_HRKube" under "DataOgDigitalisering". OBS: Det er en god idé at gemme mappen på skrivebordet f.eks. og ikke på et af de online drev. Ellers kan det tage en del tid at gemme kuben over når vi benytter funktionen "SaveToFolder" senere.
+- Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge det repository som du gerne vil kopiere ned på din computer. Vælg "CHRU_HRKube" under "DataOgDigitalisering". OBS: Det er en god idé at gemme mappen på skrivebordet og ikke på et af de online drev. Ellers kan det tage en del tid at gemme kuben over, når vi benytter funktionen "*SaveToFolder*" senere.
 <br><img src="Images/BillederInterVersionsstyring/3GitHubCloneRepo.png" height="150" style="vertical-align:middle"/>
 
-Du er nu klar til at lave ændringer på kuben lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [https://docs.github.com/en/desktop](https://docs.github.com/en/desktop).
+Du er nu klar til at arbejde med GitHub lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [*https://docs.github.com/en/desktop*](https://docs.github.com/en/desktop).
 
-## Sæt lokal kube og branch op
-Man må ikke lave ændringer direkte i produktion eller udvikling. Hvis man ønsker at ændre noget skal det ske ved at man laver ændringerne i en privat kube, og herefter "pusher" og "merger" det med udvikling og produktion via. GutHub.
-For at lave ændringer i en lokal kube skal man gøre følgende:
+## Sæt en lokal kube og branch op
+Man må ikke lave ændringer direkte i *CHRU_HRKube* på produktion eller udvikling. Hvis man ønsker at ændre noget, skal det ske ved at man laver ændringerne i en separat kube, og herefter *merger* det med vores *CHRU_HRKube* via. GitHub.
+For at lave ændringer i en separat kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "ProjektVersionsstyring".
 
 - Gå ind i GitHub Desktop og vælg repositoriet "CHRU_HRKube" og klik "newBranch".
