@@ -46,7 +46,7 @@ Når du har arbejdet på din model og lavet ændringer i Tabular Editor kan du g
 
 - I Tabular Editor åbner du den model som du gerne vil gemme over fra din egen kube.
 - Herefter kan du gemme den ved brug af "Save To Folder" og vælge den mappe som din branch er i.
-<br><img src="Images/BillederInterVersionsstyring/10TabularEditorSaveToFolder.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/10TabularEditorSaveToFolder.png" height="200" style="vertical-align:middle"/>
 
 - I GitHubDesktop kan du nu se alle de ændringer du har lavet
 <br><img src="Images/BillederInterVersionsstyring/11GitHubVisÆndringer.png" height="200" style="vertical-align:middle"/>
@@ -58,7 +58,7 @@ Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabu
 Nu er vi klar til at få ændringer op til GitHub hvor alle kan tilgå dem.
 - I GitHubDesktop vælger "CHRU_HRKube" under "Current Repository".
 - Herefter kan du klikke på "Publish Branch". Dine ændringer er nu blevet skubbet op til GitHub.
-<br><img src="Images/BillederInterVersionsstyring/12GitHubPublishBranch.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/12GitHubPublishBranch.png" height="80" style="vertical-align:middle"/>
 
 - Under (https://github.com/DataOgDigitalisering/CHRU_HRKube)[https://github.com/DataOgDigitalisering/CHRU_HRKube] vil du nu kunne se den nye branch samt alle de ændringer man har lavet. Du kan lave ændringer lokalt og "pushe" dem op løbende.
 <br><img src="Images/BillederInterVersionsstyring/13GitHubAlleBrnaches.png" height="200" style="vertical-align:middle"/>
@@ -66,16 +66,16 @@ Nu er vi klar til at få ændringer op til GitHub hvor alle kan tilgå dem.
 ## Få ændringerne over på udvikling og produktion
 For at få ændringer over i udvikling skal ens egen branch "merges" med udvikling. Dette gøres ved at lave en pull-request:
 - Klik på "Pull-request" i toppen og vælg "New Pull Request".
-<br><img src="Images/BillederInterVersionsstyring/14GitHubNewPullRequest.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/14GitHubNewPullRequest.png" height="200" style="vertical-align:middle"/>
 
 - Sæt den til at merge din egen branch med "Udvikling".
-<br><img src="Images/BillederInterVersionsstyring/15GitHubPullRequestBranches.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/15GitHubPullRequestBranches.png" height="120" style="vertical-align:middle"/>
 
 - I beskrivelsen af din pull-reqeust skal du koble den til et Issue. Dette gøres ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på.
 - Hefter vil den stå under "pull-request". En af gatekeeperne vil herefter se ændringerne igennem og "approve" den.
 - Når dette er gjort vil ændringer kommer over på branchen "Udvikling". Og man kan så deploye dem til vores udviklings-kube ved brug af Tabular Editor og GitHubDesktop.
 - Når man først har klonet repositoriet ned på ens egen computer kan man bare benytte knappen "Fetch origin" for at opdatere ens lokale repository, så det svarer til det som ligger på GitHub.
-<br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="80" style="vertical-align:middle"/>
 
 
 ##Rydde op efter sig
