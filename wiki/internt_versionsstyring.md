@@ -5,7 +5,7 @@ Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejde
 Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Den letteste måde at arbejde med GitHub er at kopiere denne folder ned på ens egen computer, lave ændringerne, og herefter sende ændringerne op til GitHub igen.
 For at kunne arbejde med GitHub, lokalt på ens computer skal man gøre følgende:
 - Download *GitHubDesktop 2.9.8.0*, eller en nyere version, fra softwareshoppen. 
-<br><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="15%" width="15%" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="20%" width="20%" style="vertical-align:middle"/>
 - Start "GitHubDesktop" på din computer.
 - Klik på "options" og log ind med din GitHub-konto.
 <br><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="20%" width="20%" style="vertical-align:middle"/>
@@ -20,14 +20,14 @@ For at lave ændringer i en lokal kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "ProjektVersionsstyring".
 
 - Gå ind i GitHub Desktop og vælg repositoriet "CHRU_HRKube" og klik "newBranch".
-<br><img src="Images/BillederInterVersionsstyring/4GitHubNewBranch.png" height="15%" width="15%" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/4GitHubNewBranch.png" height="20%" width="20%" style="vertical-align:middle"/>
 
 - Kald den det samme som din private kube hedder og sig at den skal bygge på "udvikling".
-<br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="15%" width="15%" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="20%" width="20%" style="vertical-align:middle"/>
 
 - Nu skulle der gerne stå "Current Branch: "ProjektVersionsstyring" i toppen.
 - Ved at højreklikke på "Current Repository" kan du let finde den mappe hvor repositoriet er.
-<br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="15%" width="15%" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="20%" width="20%" style="vertical-align:middle"/>
 
 
 ## Deploy datamodel fra Git til ens kube
