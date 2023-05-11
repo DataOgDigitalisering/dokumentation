@@ -47,44 +47,44 @@ Når du har arbejdet på din model og lavet ændringer i Tabular Editor kan du g
 - Åben mappen hvor branchen er og slet alt indhold i mappen så den er tom. Hvis du kan se en .git fil skal du IKKE slette den.
 <br><img src="Images/BillederInterVersionsstyring/9GitHubSletAltIMappe.png" height="250" style="vertical-align:middle"/>
 
-- I Tabular Editor åbner du den model som du gerne vil gemme over fra din egen kube.
-- Herefter kan du gemme den ved brug af "Save To Folder" og vælge den mappe som din branch er i.
+- I Tabular Editor åbner kobler på du på din egen kube.
+- Herefter kan du gemme din tabulare model ved brug af "*Save To Folder*" og vælge den mappe som din branch er i.
 <br><img src="Images/BillederInterVersionsstyring/10TabularEditorSaveToFolder.png" height="190" style="vertical-align:middle"/>
 
 - I GitHubDesktop kan du nu se alle de ændringer du har lavet
 <br><img src="Images/BillederInterVersionsstyring/11GitHubVisÆndringer.png" height="300" style="vertical-align:middle"/>
 
 - Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nederst i venstre hjørne og klikke "Commit to ..."
-Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabular Editor's egen dokumentation [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
+Nu er ændringerne gemt på din branch. Meget af dette er også beskrevet i Tabular Editor's egen dokumentation [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
 
 ## Få ændringerne op til GitHub
-Nu er vi klar til at få ændringer op til GitHub hvor alle kan tilgå dem.
-- I GitHubDesktop vælger "CHRU_HRKube" under "Current Repository".
-- Herefter kan du klikke på "Publish Branch". Dine ændringer er nu blevet skubbet op til GitHub.
+Nu er du klar til at få ændringer op til GitHub hvor alle i teamet kan tilgå dem.
+- I *GitHubDesktop* vælger du "CHRU_HRKube" under "Current Repository".
+- Herefter kan du klikke på "Publish Branch". Dine ændringer og branch er nu blevet skubbet op til GitHub.
 <br><img src="Images/BillederInterVersionsstyring/12GitHubPublishBranch.png" height="60" style="vertical-align:middle"/>
 
-- Under (https://github.com/DataOgDigitalisering/CHRU_HRKube)[https://github.com/DataOgDigitalisering/CHRU_HRKube] vil du nu kunne se den nye branch samt alle de ændringer man har lavet. Du kan lave ændringer lokalt og "pushe" dem op løbende.
+- Under (*https://github.com/DataOgDigitalisering/CHRU_HRKube*)[https://github.com/DataOgDigitalisering/CHRU_HRKube] vil du nu kunne se den nye branch samt alle de ændringer du har lavet. Du kan lave ændringer lokalt på din computer og "pushe" dem op løbende.
 <br><img src="Images/BillederInterVersionsstyring/13GitHubAlleBrnaches.png" height="250" style="vertical-align:middle"/>
 
 ## Få ændringerne over på udvikling og produktion
-For at få ændringer over i udvikling skal ens egen branch "merges" med udvikling. Dette gøres ved at lave en pull-request:
-- Klik på "Pull-request" i toppen og vælg "New Pull Request".
+For at få ændringer over i udvikling skal ens egen branch *merges* med udvikling. Dette gøres ved at lave en *pull-request*:
+- Klik på "*Pull-request*" i toppen og vælg "*New Pull Request*".
 <br><img src="Images/BillederInterVersionsstyring/14GitHubNewPullRequest.png" height="200" style="vertical-align:middle"/>
 
-- Sæt den til at merge din egen branch med "Udvikling".
+- Sæt den til at merge din egen branch med "*Udvikling*".
 <br><img src="Images/BillederInterVersionsstyring/15GitHubPullRequestBranches.png" height="120" style="vertical-align:middle"/>
 
-- I beskrivelsen af din pull-reqeust skal du koble den til et Issue. Dette gøres ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på.
-- Hefter vil den stå under "pull-request". En af gatekeeperne vil herefter se ændringerne igennem og "approve" den.
-- Når dette er gjort vil ændringer kommer over på branchen "Udvikling". Og man kan så deploye dem til vores udviklings-kube ved brug af Tabular Editor og GitHubDesktop.
-- Når man først har klonet repositoriet ned på ens egen computer kan man bare benytte knappen "Fetch origin" for at opdatere ens lokale repository, så det svarer til det som ligger på GitHub.
-<br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="120" style="vertical-align:middle"/>
-
+- Du skal koble din *Pull-request* til et *Issue*. Dette gøres f.eks. ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på. Hvis der ikke er oprettet et Issue skal dette først gøres. SE TODO.
+- Du kan nu se din nye "pull-request" under "pull-request". En af gatekeeperne vil herefter se ændringerne igennem og "approve" dem.
+- Når dette er gjort vil ændringer kommer over på branchen "Udvikling". Og man kan så deploye dem til *CHRU_HRKube* i udvikling ved brug af Tabular Editor og GitHubDesktop.
 
 ##Rydde op efter sig
 Når man har lavet alle ændringer, og det er kommet over på udvikling skal man gøre følgende:
 - Slette sin branch i GitHub og evt. i GitHubDesktop.
 - Omdøbe sin kube til "CHRU_LedigKube1" eller noget lignende.
 
-Ændringerne vil komme over i produktion næste gang man flytter kopiere kuben fra udvikling over i produktion.
+- Når man først har klonet repositoriet ned på ens egen computer kan man bare benytte knappen "Fetch origin" for at opdatere sit lokale repository, så det er up to date med de ændringer som laves af andre i GitHub.
+<br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="120" style="vertical-align:middle"/>
+
+For at få ændringerne over i Produktion merger vi udvikling og produktion i GitHub. Herefter kan man deploye ænndringerne over til *CHRU_HRKube* i produktion ved brug af Tabular Editor og GitHubDesktop.
 
