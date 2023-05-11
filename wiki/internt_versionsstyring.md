@@ -1,5 +1,5 @@
 # Versionsstyring af kuben - UNDER UDVIKLING
-Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub. **Alle ændringer som laves på *CHRU_HRKube* i udvikling og produktion skal ske gennem GitHub**. Vi laver kun ændringer direkte i *CHRU_HRKube* hvis det er akutte ting som ikke kan vente. Følgende figur illusterer arbejdsprocessen med GitHub. De forskellige skridt er beskrevet mere detaljeret nedenfor.
+Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub. **Alle ændringer som laves på *CHRU_HRKube* i udvikling og produktion skal ske gennem GitHub**. Vi laver kun ændringer direkte i *CHRU_HRKube* hvis det er akutte ting som ikke kan vente. Følgende figur illustrerer arbejdsprocessen med GitHub. De forskellige skridt er beskrevet mere detaljeret nedenfor.
 <center><br><img src="Images/BillederInterVersionsstyring/modelVersionsstyring.PNG" height="300" style="vertical-align:middle"/></center>
 
 
@@ -15,10 +15,10 @@ For at kunne arbejde med GitHub lokalt på ens computer skal man gøre følgende
 - Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge det repository som du gerne vil kopiere ned på din computer. Vælg "*CHRU_HRKube*" under "*DataOgDigitalisering*". **Det er en god idé at gemme mappen på skrivebordet og ikke på et af de online drev**. Ellers kan det tage en del tid at gemme kuben, når vi senere benytter funktionen "*SaveToFolder*".
 <br><img src="Images/BillederInterVersionsstyring/3GitHubCloneRepo.png" height="150" style="vertical-align:middle"/>
 
-Du er nu klar til at arbejde med GitHub lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [*https://docs.github.com/en/desktop*](https://docs.github.com/en/desktop).
+Du er nu klar til at arbejde med GitHub lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentation som du kan finde her [*https://docs.github.com/en/desktop*](https://docs.github.com/en/desktop).
 
 ## Sæt en lokal kube og branch op
-Vi laver som udgangspunkt ikke ændringer direkte i *CHRU_HRKube* på produktion eller udvikling. Hvis man ønsker at ændre noget, skal det ske ved at man laver ændringerne i en separat kube og herefter *merger* det med vores *CHRU_HRKube* via. GitHub.
+Vi laver som udgangspunkt ikke ændringer direkte i *CHRU_HRKube* på produktion eller udvikling. Hvis man ønsker at ændre noget, skal det ske ved at man laver ændringerne i en separat kube og herefter *merger* den med vores *CHRU_HRKube* via. GitHub.
 For at lave ændringer i en separat kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "*ProjektVersionsstyring*".
 
@@ -55,8 +55,8 @@ Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du
 - I GitHubDesktop kan du nu se alle de ændringer som du har lavet
 <br><img src="Images/BillederInterVersionsstyring/11GitHubVisÆndringer.png" height="300" style="vertical-align:middle"/>
 
-- Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nederst i venstre hjørne og klikke "*Commit to ...*"
-Nu er ændringerne gemt på din branch. Meget af dette er også beskrevet i Tabular Editor's egen dokumentation som kan ses her [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
+- Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nederst i venstre hjørne og klikke "*Commit to ...*".
+Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabular Editor's egen dokumentation som kan ses her [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
 
 ## Få ændringerne op til GitHub
 Nu er du klar til at få ændringer op til GitHub, hvor alle i teamet kan tilgå dem!
@@ -75,20 +75,20 @@ For at få ændringer over i udvikling skal din egen branch *merges* med udvikli
 - Sæt den til at merge din egen branch med "*Udvikling*".
 <br><img src="Images/BillederInterVersionsstyring/15GitHubPullRequestBranches.png" height="120" style="vertical-align:middle"/>
 
-- Du skal koble din *Pull-request* til et *Issue*. Dette gøres f.eks. ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på. Hvis der ikke er oprettet et Issue skal dette først gøres. SE TODO.
+- **Man skal som udgangspunkt altid koble en *Pull-request* til et *Issue*.** Dette gøres f.eks. ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på. Hvis der ikke er oprettet et Issue skal dette først gøres. SE TODO.
 - Du har nu lavet en ny *pull-request*. En gatekeeper vil herefter se ændringerne igennem og *approve* dem.
 - Når dette er gjort vil ændringer kommer over på branchen "*Udvikling*". Og man kan herefter deploye dem til *CHRU_HRKube* i udvikling ved brug af *TabularEditor* og *GitHubDesktop*.
-- For at få ændringerne over i Produktion, merger vi udvikling og produktion i GitHub. Herefter kan man deploye ændringerne til *CHRU_HRKube* i produktion ved brug af *TabularEditor* og *GitHubDesktop*.
+- For at få ændringerne over i produktion, merger vi *udvikling* og *produktion* i GitHub. Herefter kan man deploye ændringerne til *CHRU_HRKube* i produktion ved brug af *TabularEditor* og *GitHubDesktop*.
 
 ## Rydde op efter sig
 Når man har lavet alle ændringer, og det er kommet over på udvikling skal man gøre følgende:
 - Slette sin branch i *GitHub* og evt. i *GitHubDesktop*.
 - Omdøbe sin kube til "*CHRU_LedigKube1*" eller noget lignende.
 
-- Når man først har klonet repository'et ned på ens egen computer, kan man bare benytte knappen "*Fetch origin*" til at opdatere sit lokale repository, så det er up to date med de ændringer som laves af andre i GitHub.
+- Når man først har klonet repository'et ned på ens egen computer, kan man bare benytte knappen "*Fetch origin*" til at opdatere sit lokale repository, så det er up-to-date med de ændringer som laves af andre i GitHub.
 <br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="120" style="vertical-align:middle"/>
 
 ## Praktisk information om opdatering af kuben
-- Gatekeeper tager hver uge og ser pull-requests igennem, og skriver ændringerne ned. 
+- Gatekeeper ser hver uge alle pull-requests igennem og skriver ændringerne ned. 
 - Dette deles på onsdagsmødet så alle er up-to-date med de ændringer som er foretaget i Kuben. 
-- Vi opdaterer produktion løbende efter ændringerne er blevet testet i udvikling.
+- Vi opdaterer produktion umiddelbart efter ændringerne er blevet testet i udvikling. Ved større ændringer hvor der tilføjes tabeller el. lign. kan det tage længere tid at få over i produktion.
