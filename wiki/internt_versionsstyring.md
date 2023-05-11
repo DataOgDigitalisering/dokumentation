@@ -1,5 +1,5 @@
 # Versionsstyring af kuben - UNDER UDVIKLING
-Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub. **Alle ændringer som laves på *CHRU_HRKube* i udvikling og produktion skal ske gennem GitHub**. Man må kun ændre direkte i *CHRU_HRKube* hvis der er akutte ændringer som ikke kan vente. Følgende figur illusterer arbejdsprocessen med GitHub. De forskellige skridt er beskrevet mere detaljeret nedenfor.
+Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejder parallelt på kuben og implementerer vores ændringer via. GitHub. **Alle ændringer som laves på *CHRU_HRKube* i udvikling og produktion skal ske gennem GitHub**. Vi laver kun ændringer direkte i *CHRU_HRKube* hvis det er akutte ting som ikke kan vente. Følgende figur illusterer arbejdsprocessen med GitHub. De forskellige skridt er beskrevet mere detaljeret nedenfor.
 <center><br><img src="Images/BillederInterVersionsstyring/modelVersionsstyring.PNG" height="300" style="vertical-align:middle"/></center>
 
 
@@ -29,7 +29,7 @@ For at lave ændringer i en separat kube skal man gøre følgende:
 <br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="250" style="vertical-align:middle"/>
 
 - Nu skulle der gerne stå "*Current Branch: ProjektVersionsstyring*" i toppen.
-- Ved at højreklikke på "*Current Repository*" kan du let finde den mappe hvor repositoriet ligger.
+- Ved at højreklikke på "*Current Repository*" kan du let finde den mappe hvor repository'et ligger.
 <br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="200" style="vertical-align:middle"/>
 
 
@@ -40,7 +40,7 @@ Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. H
 - Vælg den mappe som dit respository ligger i. **Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*.** Ellers vil du komme til at importere en tabular model fra en forkert branch.
 <br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="300" style="vertical-align:middle"/>
 
-- Du kan nu deploye modellen til din egen kube. **Når du deployer modellen skal du fravælge *Data Source* eller *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.** Du kan herefter processere den i "*Server Management Studio*".
+- Du kan nu deploye modellen til din egen kube. **Når du deployer modellen skal du fravælge *Data Source* og *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.** Du kan herefter processere den i "*Server Management Studio*".
 
 ## Gem dine ændringer i Git
 Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du gemme dem på din branch, dette gøres på følgende måde:
@@ -48,7 +48,7 @@ Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du
 - Åben mappen hvor branchen er og slet alt indhold i mappen så den er tom. Hvis du kan se en .git fil skal du IKKE slette den.
 <br><img src="Images/BillederInterVersionsstyring/9GitHubSletAltIMappe.png" height="250" style="vertical-align:middle"/>
 
-- I Tabular Editor åbner kobler på du på din egen kube.
+- I Tabular Editor åbner du din egen kube.
 - Herefter kan du gemme din tabulare model ved brug af "*Save To Folder*" og vælge den mappe som dit repository ligger i.
 <br><img src="Images/BillederInterVersionsstyring/10TabularEditorSaveToFolder.png" height="190" style="vertical-align:middle"/>
 
@@ -56,7 +56,7 @@ Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du
 <br><img src="Images/BillederInterVersionsstyring/11GitHubVisÆndringer.png" height="300" style="vertical-align:middle"/>
 
 - Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nederst i venstre hjørne og klikke "*Commit to ...*"
-Nu er ændringerne gemt på din branch. Meget af dette er også beskrevet i Tabular Editor's egen dokumentation [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
+Nu er ændringerne gemt på din branch. Meget af dette er også beskrevet i Tabular Editor's egen dokumentation som kan ses her [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
 
 ## Få ændringerne op til GitHub
 Nu er du klar til at få ændringer op til GitHub, hvor alle i teamet kan tilgå dem!
@@ -64,7 +64,7 @@ Nu er du klar til at få ændringer op til GitHub, hvor alle i teamet kan tilgå
 - Herefter kan du klikke på "*Publish Branch*". Dine ændringer og branch er nu blevet skubbet op til GitHub.
 <br><img src="Images/BillederInterVersionsstyring/12GitHubPublishBranch.png" height="60" style="vertical-align:middle"/>
 
-- Under (*https://github.com/DataOgDigitalisering/CHRU_HRKube*)[https://github.com/DataOgDigitalisering/CHRU_HRKube] vil du nu kunne se den nye branch samt alle de ændringer du har lavet. Du kan nu lave flere ændringer lokalt på din computer og "pushe" dem op løbende.
+- Under [*https://github.com/DataOgDigitalisering/CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube) vil du nu kunne se den nye branch samt alle de ændringer du har lavet. Du kan nu lave flere ændringer lokalt på din computer og "pushe" dem op løbende.
 <br><img src="Images/BillederInterVersionsstyring/13GitHubAlleBrnaches.png" height="250" style="vertical-align:middle"/>
 
 ## Få ændringerne over på udvikling og produktion
@@ -78,6 +78,7 @@ For at få ændringer over i udvikling skal din egen branch *merges* med udvikli
 - Du skal koble din *Pull-request* til et *Issue*. Dette gøres f.eks. ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på. Hvis der ikke er oprettet et Issue skal dette først gøres. SE TODO.
 - Du har nu lavet en ny *pull-request*. En gatekeeper vil herefter se ændringerne igennem og *approve* dem.
 - Når dette er gjort vil ændringer kommer over på branchen "*Udvikling*". Og man kan herefter deploye dem til *CHRU_HRKube* i udvikling ved brug af *TabularEditor* og *GitHubDesktop*.
+- For at få ændringerne over i Produktion, merger vi udvikling og produktion i GitHub. Herefter kan man deploye ændringerne til *CHRU_HRKube* i produktion ved brug af *TabularEditor* og *GitHubDesktop*.
 
 ## Rydde op efter sig
 Når man har lavet alle ændringer, og det er kommet over på udvikling skal man gøre følgende:
@@ -87,7 +88,8 @@ Når man har lavet alle ændringer, og det er kommet over på udvikling skal man
 - Når man først har klonet repository'et ned på ens egen computer, kan man bare benytte knappen "*Fetch origin*" til at opdatere sit lokale repository, så det er up to date med de ændringer som laves af andre i GitHub.
 <br><img src="Images/BillederInterVersionsstyring/16GitHubFetch.png" height="120" style="vertical-align:middle"/>
 
-For at få ændringerne over i Produktion, merger vi udvikling og produktion i GitHub. Herefter kan man deploye ænndringerne over til *CHRU_HRKube* i produktion ved brug af *TabularEditor* og *GitHubDesktop*.
-
 ## Praktisk information om opdatering af kuben
-Gatekeeper tager hver uge og ser pull-requests igennem. De tilføjes og der skrives en lille tekst ned om hvad der er ændret. Dette deles på onsdagsmødet så alle er up-to-date med de ændrnger som er foretaget i Kuben. Vi opdaterer produktion når der er samlet lidt sammen. Her skal CØK måske også være med... SKRIV DETTE IND I ET WORD DOK!!!!
+- Gatekeeper tager hver uge og ser pull-requests igennem. 
+- De tilføjes og der skrives en lille tekst ned om hvad der er ændret. 
+- Dette deles på onsdagsmødet så alle er up-to-date med de ændrnger som er foretaget i Kuben. 
+- Vi opdaterer produktion løbende efter ændringerne er blevet testet i udvikling.
