@@ -33,7 +33,7 @@ For at lave ændringer i en separat kube skal man gøre følgende:
 <br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="200" style="vertical-align:middle"/>
 
 
-## Deploy tabluar model fra GitHub til kuben
+## Deploy tabular model fra GitHub til kuben
 Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. Herefter kan du lave ændringer og gemme dem på din nye branch. Dette gøres på følgende måde:
 - Åben *Tabular Editor* og importer din tabulare model ved at bruge "*Open from folder*".
 <br><img src="Images/BillederInterVersionsstyring/7TabularEditorÅbenFromFolder.png" height="200" style="vertical-align:middle"/>
