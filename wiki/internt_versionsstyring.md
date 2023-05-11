@@ -89,3 +89,5 @@ Når man har lavet alle ændringer, og det er kommet over på udvikling skal man
 
 For at få ændringerne over i Produktion, merger vi udvikling og produktion i GitHub. Herefter kan man deploye ænndringerne over til *CHRU_HRKube* i produktion ved brug af *TabularEditor* og *GitHubDesktop*.
 
+## Praktisk information om opdatering af kuben
+Gatekeeper tager hver uge og ser pull-requests igennem. De tilføjes og der skrives en lille tekst ned om hvad der er ændret. Dette deles på onsdagsmødet så alle er up-to-date med de ændrnger som er foretaget i Kuben. Vi opdaterer produktion når der er samlet lidt sammen. Her skal CØK måske også være med... SKRIV DETTE IND I ET WORD DOK!!!!
