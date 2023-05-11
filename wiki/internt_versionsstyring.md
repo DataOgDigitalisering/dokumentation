@@ -18,28 +18,29 @@ For at kunne arbejde med GitHub lokalt på ens computer skal man gøre følgende
 Du er nu klar til at arbejde med GitHub lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [*https://docs.github.com/en/desktop*](https://docs.github.com/en/desktop).
 
 ## Sæt en lokal kube og branch op
-Man må ikke lave ændringer direkte i *CHRU_HRKube* på produktion eller udvikling. Hvis man ønsker at ændre noget, skal det ske ved at man laver ændringerne i en separat kube, og herefter *merger* det med vores *CHRU_HRKube* via. GitHub.
+Vi laver som udgangspunkt ikke ændringer direkte i *CHRU_HRKube* på produktion eller udvikling. Hvis man ønsker at ændre noget, skal det ske ved at man laver ændringerne i en separat kube og herefter *merger* det med vores *CHRU_HRKube* via. GitHub.
 For at lave ændringer i en separat kube skal man gøre følgende:
-- På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "ProjektVersionsstyring".
+- På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "*ProjektVersionsstyring*".
 
-- Gå ind i *GitHubDesktop* og vælg repository'et *CHRU_HRKube* og klik "*newBranch*".
+- Gå ind i *GitHubDesktop* og vælg repository'et "*CHRU_HRKube*" og klik "*New Branch*".
 <br><img src="Images/BillederInterVersionsstyring/4GitHubNewBranch.png" height="150" style="vertical-align:middle"/>
 
-- Kald den det samme som det din private kube hedder og sig at den skal være "based on Udvikling".
+- Kald den det samme som det din private kube hedder, og sig at den skal være "*based on Udvikling*".
 <br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="250" style="vertical-align:middle"/>
 
-- Nu skulle der gerne stå "Current Branch: *ProjektVersionsstyring*" i toppen.
+- Nu skulle der gerne stå "*Current Branch: ProjektVersionsstyring*" i toppen.
 - Ved at højreklikke på "*Current Repository*" kan du let finde den mappe hvor repositoriet ligger.
 <br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="200" style="vertical-align:middle"/>
 
 
 ## Deploy tabluar model fra GitHub til kuben
 Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. Herefter kan du lave ændringer og gemme dem på din nye branch. Dette gøres på følgende måde:
-- Åben Tabular Editor og importer din tabulare model ved at bruge "Open from folder". Vælg den folder som dit respository ligger i. Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*. Ellers vil du komme til at importere en tabular model fra en forkert branch til *TabularEditor*.
+- Åben *Tabular Editor* og importer din tabulare model ved at bruge "*Open from folder*".
 <br><img src="Images/BillederInterVersionsstyring/7TabularEditorÅbenFromFolder.png" height="200" style="vertical-align:middle"/>
+- Vælg den mappe som dit respository ligger i. **Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*.** Ellers vil du komme til at importere en tabular model fra en forkert branch.
 <br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="300" style="vertical-align:middle"/>
 
-- Du kan nu deploye modellen til din egen kube. Du kan herefter processere den i "Server Management Studio". OBS: Når du deployer modellen skal du fravælge *Data Source* eller *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.
+- Du kan nu deploye modellen til din egen kube. **Når du deployer modellen skal du fravælge *Data Source* eller *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.** Du kan herefter processere den i "*Server Management Studio*".
 
 ## Gem dine ændringer i Git
 Når du har arbejdet på din model og lavet ændringer i Tabular Editor kan du gemme dem på din branch, dette gøres på følgende måde:
