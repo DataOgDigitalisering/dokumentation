@@ -90,5 +90,5 @@ Når man har lavet alle ændringer, og det er kommet over på udvikling skal man
 
 ## Praktisk information om opdatering af kuben
 - Gatekeeper tager hver uge og ser pull-requests igennem, og skriver ændringerne ned. 
-- Dette deles på onsdagsmødet så alle er up-to-date med de ændrnger som er foretaget i Kuben. 
+- Dette deles på de lange onsdagsmøder så alle er up-to-date med de ændringer som er foretaget i Kuben. 
 - Vi opdaterer produktion løbende efter ændringerne er blevet testet i udvikling.
