@@ -23,18 +23,18 @@ For at lave ændringer i en lokal kube skal man gøre følgende:
 <br><img src="Images/BillederInterVersionsstyring/4GitHubNewBranch.png" height="150" style="vertical-align:middle"/>
 
 - Kald den det samme som din private kube hedder og sig at den skal bygge på "udvikling".
-<br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="200" style="vertical-align:middle"/>
 
 - Nu skulle der gerne stå "Current Branch: "ProjektVersionsstyring" i toppen.
 - Ved at højreklikke på "Current Repository" kan du let finde den mappe hvor repositoriet er.
-<br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/6GitHubShowInExplorer.png" height="200" style="vertical-align:middle"/>
 
 
 ## Deploy datamodel fra Git til ens kube
 Du kan nu deploye den tabulare model til din private kube, lave ændringer på den og gemme dem på din nye branch. Dette gøres på følgende måde:
 - Åben Tabular Editor og importer din tabulære model ved at bruge "Open from folder", og vælg den folder som din branch lægger i. Det er vigtigt at du har valgt den rigtige branch inde i GitHubDesktop. Ellers vil du komme til at importere en forkert branch til TabularEditor.
-<br><img src="Images/BillederInterVersionsstyring/7TabularEditorÅbenFromFolder.png height="150" style="vertical-align:middle"/>
-<br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/7TabularEditorÅbenFromFolder.png" height="200" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="200" style="vertical-align:middle"/>
 
 - Du kan nu deploye modellen til din private kube, og herefter processere den i "Server Management Studio".
 
@@ -42,14 +42,14 @@ Du kan nu deploye den tabulare model til din private kube, lave ændringer på d
 Når du har arbejdet på din model og lavet ændringer i Tabular Editor kan du gemme dem på din branch, dette gøres på følgende måde:
 - Åben GitHubDesktop og vælg den branch som du arbejder på.
 - Åben mappen hvor branchen er og slet alt indhold i mappen så den er tom. Hvis du kan se en .git fil skal du IKKE slette den.
-<br><img src="Images/BillederInterVersionsstyring/9GitHubSletAltIMappe.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/9GitHubSletAltIMappe.png" height="200" style="vertical-align:middle"/>
 
 - I Tabular Editor åbner du den model som du gerne vil gemme over fra din egen kube.
 - Herefter kan du gemme den ved brug af "Save To Folder" og vælge den mappe som din branch er i.
 <br><img src="Images/BillederInterVersionsstyring/10TabularEditorSaveToFolder.png" height="150" style="vertical-align:middle"/>
 
 - I GitHubDesktop kan du nu se alle de ændringer du har lavet
-<br><img src="Images/BillederInterVersionsstyring/11GitHubVisÆndringer.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/11GitHubVisÆndringer.png" height="200" style="vertical-align:middle"/>
 
 - Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nederst i venstre hjørne og klikke "Commit to ..."
 Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabular Editor's egen dokumentation [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
@@ -61,7 +61,7 @@ Nu er vi klar til at få ændringer op til GitHub hvor alle kan tilgå dem.
 <br><img src="Images/BillederInterVersionsstyring/12GitHubPublishBranch.png" height="150" style="vertical-align:middle"/>
 
 - Under (https://github.com/DataOgDigitalisering/CHRU_HRKube)[https://github.com/DataOgDigitalisering/CHRU_HRKube] vil du nu kunne se den nye branch samt alle de ændringer man har lavet. Du kan lave ændringer lokalt og "pushe" dem op løbende.
-<br><img src="Images/BillederInterVersionsstyring/13GitHubAlleBrnaches.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterVersionsstyring/13GitHubAlleBrnaches.png" height="200" style="vertical-align:middle"/>
 
 ## Få ændringerne over på udvikling og produktion
 For at få ændringer over i udvikling skal ens egen branch "merges" med udvikling. Dette gøres ved at lave en pull-request:
