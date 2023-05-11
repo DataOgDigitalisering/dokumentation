@@ -93,5 +93,5 @@ Når man har lavet alle ændringer, og det er kommet over på udvikling skal man
 - Dette deles på onsdagsmødet så alle er up-to-date med de ændringer som er foretaget i *CHRU_HRKube*. 
 - Vi opdaterer produktion umiddelbart efter ændringerne er blevet testet i udvikling. Ved større ændringer hvor der tilføjes tabeller el. lign. kan det tage længere tid at få over i produktion.
 
-# Versionsstyring af views IKKE LAVET
+# Versionsstyring af views TODO
 
