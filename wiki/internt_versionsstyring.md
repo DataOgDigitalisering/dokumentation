@@ -79,7 +79,7 @@ For at få ændringer over i udvikling skal din egen branch *merges* med udvikli
 - Du har nu lavet en ny *pull-request*. En gatekeeper vil herefter se ændringerne igennem og *approve* dem.
 - Når dette er gjort vil ændringer kommer over på branchen "*Udvikling*". Og man kan herefter deploye dem til *CHRU_HRKube* i udvikling ved brug af *TabularEditor* og *GitHubDesktop*.
 
-##Rydde op efter sig
+## Rydde op efter sig
 Når man har lavet alle ændringer, og det er kommet over på udvikling skal man gøre følgende:
 - Slette sin branch i *GitHub* og evt. i *GitHubDesktop*.
 - Omdøbe sin kube til "*CHRU_LedigKube1*" eller noget lignende.
