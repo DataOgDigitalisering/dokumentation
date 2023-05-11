@@ -5,7 +5,7 @@ Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejde
 
 
 ## Koble sin computer til GitHub
-Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Den letteste måde at arbejde med GitHub er at kopiere dette repository ned på ens egen computer, lave ændringerne lokalt, og herefter sende ændringerne op til GitHub igen.
+Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). For at kunne versionsstyre med GitHub, skal man kopiere dette repository ned på ens egen computer, lave ændringerne lokalt, og herefter sende ændringerne op til GitHub igen.
 For at kunne arbejde med GitHub, lokalt på ens computer skal man gøre følgende:
 - Download *GitHubDesktop 2.9.8.0*, eller en nyere version, fra softwareshoppen. 
 <br><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="130" style="vertical-align:middle"/>
