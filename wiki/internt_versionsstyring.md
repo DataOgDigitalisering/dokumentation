@@ -6,13 +6,13 @@ Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejde
 
 ## Koble sin computer til GitHub
 Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Når man vil versionsstyre med GitHub, skal man kopiere dette repository ned på ens egen computer, lave ændringerne lokalt, og herefter sende ændringerne op til GitHub igen.
-For at kunne arbejde med GitHub, lokalt på ens computer skal man gøre følgende:
-- Download *GitHubDesktop 2.9.8.0*, eller en nyere version, fra softwareshoppen. 
+For at kunne arbejde med GitHub lokalt på ens computer skal man gøre følgende:
+- Download *GitHubDesktop 2.9.8.0*, eller en nyere version fra softwareshoppen. 
 <br><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="130" style="vertical-align:middle"/>
-- Start "GitHubDesktop" på din computer.
-- Klik på "options" og log ind med din GitHub-konto.
+- Start *GitHubDesktop* på din computer.
+- Klik på "*options*" og log ind med din GitHub-konto.
 <br><img src="Images/BillederInterVersionsstyring/2GitHubForbindTilKonto.png" height="160" style="vertical-align:middle"/>
-- Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge det repository som du gerne vil kopiere ned på din computer. Vælg "CHRU_HRKube" under "DataOgDigitalisering". OBS: Det er en god idé at gemme mappen på skrivebordet og ikke på et af de online drev. Ellers kan det tage en del tid at gemme kuben over, når vi benytter funktionen "*SaveToFolder*" senere.
+- Klik på feltet øverst i højre hjørne, klik på "*add*" og klik "*clone repository...*". Du kan nu vælge det repository som du gerne vil kopiere ned på din computer. Vælg "*CHRU_HRKube*" under "*DataOgDigitalisering*". **Det er en god idé at gemme mappen på skrivebordet og ikke på et af de online drev**. Ellers kan det tage en del tid at gemme kuben, når vi senere benytter funktionen "*SaveToFolder*".
 <br><img src="Images/BillederInterVersionsstyring/3GitHubCloneRepo.png" height="150" style="vertical-align:middle"/>
 
 Du er nu klar til at arbejde med GitHub lokalt på din computer. Alle disse skridt er også beskrevet i GitHub's egen dokumentaiton som du kan finde her [*https://docs.github.com/en/desktop*](https://docs.github.com/en/desktop).
