@@ -7,7 +7,7 @@ Vi benytter GitHub til versionsstyring. Dette er en guide til hvordan vi arbejde
 ## Koble sin computer til GitHub
 Versionsstyring af kuben sker i repository'et [*CHRU_HRKube*](https://github.com/DataOgDigitalisering/CHRU_HRKube). Når man vil versionsstyre med GitHub, skal man kopiere dette repository ned på ens egen computer, lave ændringerne lokalt, og herefter sende ændringerne op til GitHub igen.
 For at kunne arbejde med GitHub lokalt på ens computer skal man gøre følgende:
-- Download *GitHubDesktop 2.9.8.0*, eller en nyere version fra softwareshoppen. 
+- Download *GitHubDesktop 2.9.8.0* eller en nyere version fra softwareshoppen. 
 <br><img src="Images/BillederInterVersionsstyring/1GitHubSoftwareshop.PNG" height="130" style="vertical-align:middle"/>
 - Start *GitHubDesktop* på din computer.
 - Klik på "*options*" og log ind med din GitHub-konto.
@@ -45,7 +45,7 @@ Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. H
 ## Gem dine ændringer i Git
 Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du gemme dem på din branch, dette gøres på følgende måde:
 - Åben *GitHubDesktop* og vælg den branch som du arbejder på.
-- Åben mappen hvor branchen er og slet alt indhold i mappen så den er tom. Hvis du kan se en .git fil skal du IKKE slette den.
+- Åben mappen som dit respository ligger i og slet alt indhold i mappen så den er tom. Hvis du kan se en .git fil skal du IKKE slette den.
 <br><img src="Images/BillederInterVersionsstyring/9GitHubSletAltIMappe.png" height="250" style="vertical-align:middle"/>
 
 - I Tabular Editor åbner du din egen kube.
