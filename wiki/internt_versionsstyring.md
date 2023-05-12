@@ -75,13 +75,13 @@ For at få ændringer over i udvikling skal din egen branch *merges* med udvikli
 - Sæt den til at merge din egen branch med "*Udvikling*".
 <br><img src="Images/BillederInterVersionsstyring/15GitHubPullRequestBranches.png" height="120" style="vertical-align:middle"/>
 
-- **Man skal som udgangspunkt altid koble en *Pull-request* til et *Issue*.** Dette gøres f.eks. ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på. Hvis der ikke er oprettet et Issue skal dette først gøres. SE TODO.
+- **Man skal som udgangspunkt altid koble en *Pull-request* til et *Issue*.** Dette gøres f.eks. ved at skrive #23 hvis det er Issue nr. 23 som man arbejder på. Hvis der ikke er oprettet et Issue skal dette først gøres. SE TODO for mere om dette.
 - Du har nu lavet en ny *pull-request*. En gatekeeper vil herefter se ændringerne igennem og *approve* dem.
 - Når dette er gjort vil ændringer kommer over på branchen "*Udvikling*". Og man kan herefter deploye dem til *CHRU_HRKube* i udvikling ved brug af *TabularEditor* og *GitHubDesktop*.
 - For at få ændringerne over i produktion, merger vi *udvikling* og *produktion* i GitHub. Herefter kan man deploye ændringerne til *CHRU_HRKube* i produktion ved brug af *TabularEditor* og *GitHubDesktop*.
 
 ## Rydde op efter sig
-Når man har lavet alle ændringer, og det er kommet over på udvikling skal man gøre følgende:
+Når man har lavet alle ændringer og de er kommet over på udvikling skal man gøre følgende:
 - Slette sin branch i *GitHub* og evt. i *GitHubDesktop*.
 - Omdøbe sin kube til "*CHRU_LedigKube1*" eller noget lignende.
 
