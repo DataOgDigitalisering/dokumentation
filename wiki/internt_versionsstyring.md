@@ -22,10 +22,10 @@ Vi laver som udgangspunkt ikke ændringer direkte i *CHRU_HRKube* på produktion
 For at lave ændringer i en separat kube skal man gøre følgende:
 - På vores analysis server i udvikling har vi nogle ekstra kuber. Her kan man få sin egen kube og omdøbe den til noget som giver mening f.eks. "*ProjektVersionsstyring*".
 
-- Gå ind i *GitHubDesktop* og vælg repository'et "*CHRU_HRKube*" og klik "*New Branch*".
+- Gå ind i *GitHubDesktop* og vælg repository'et "*CHRU_HRKube*" og branchen *Udvikling* og klik "*New Branch*".
 <br><img src="Images/BillederInterVersionsstyring/4GitHubNewBranch.png" height="150" style="vertical-align:middle"/>
 
-- Kald den det samme som det din private kube hedder, og sig at den skal være "*based on Udvikling*".
+- Kald den det samme som det din private kube hedder, og sig at den skal være "*based on Udvikling*". Hvis du ikke ser muligheden *Udvikling* er det fordi du ikke "står" på branchen *Udvikling*.
 <br><img src="Images/BillederInterVersionsstyring/5GitHubNewBranchCreate.png" height="250" style="vertical-align:middle"/>
 
 - Nu skulle der gerne stå "*Current Branch: ProjektVersionsstyring*" i toppen.
