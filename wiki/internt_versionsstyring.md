@@ -58,7 +58,7 @@ Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du
 - Hvis du er tilfreds med ændringerne kan du skrive en lille tekst nederst i venstre hjørne og klikke "*Commit to ...*".
 Nu er ændringerne gemt på din branch. Noget af dette er også beskrevet i Tabular Editor's egen dokumentation som kan ses her [https://docs.tabulareditor.com/onboarding/parallel-development.html](https://docs.tabulareditor.com/onboarding/parallel-development.html).
 
-Du kan løbende gemme dine ændringer over i Git ved at gentage skridtene beskrevet ovenfor.
+Du kan løbende gemme dine ændringer over i Git ved at gentage disse skridt.
 
 ## Få ændringerne op til GitHub
 Nu er du klar til at få ændringer op til GitHub, hvor alle i teamet kan tilgå dem!
