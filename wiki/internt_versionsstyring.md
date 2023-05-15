@@ -37,7 +37,7 @@ For at lave ændringer i en separat kube skal man gøre følgende:
 Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. Herefter kan du lave ændringer og gemme dem på din nye branch. Dette gøres på følgende måde:
 - Åben *Tabular Editor* og importer din tabulare model ved at bruge "*Open from folder*".
 <br><img src="Images/BillederInterVersionsstyring/7TabularEditorÅbenFromFolder.png" height="200" style="vertical-align:middle"/>
-- Vælg den mappe som dit respository ligger i. **Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*.** Ellers vil du komme til at importere en tabular model fra en forkert branch. Mappen skal indeholde de fire mapper *dataSources*, *dataSources*, *roles* og *tables*. 
+- Vælg den mappe som dit respository ligger i. **Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*.** Ellers vil du komme til at importere en tabular model fra en forkert branch. Mappen skal indeholde de fire mapper *dataSources*, *relationships*, *roles* og *tables*. 
 <br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="300" style="vertical-align:middle"/>
 
 - Du kan nu deploye modellen til din egen kube. **Når du deployer modellen skal du fravælge *Data Source* og *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.** Du kan herefter processere den i "*Server Management Studio*".
