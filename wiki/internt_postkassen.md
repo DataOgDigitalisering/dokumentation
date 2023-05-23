@@ -7,8 +7,9 @@ Dette er en guide til hvordan postkassen administreres og hvordan sager arkivers
 
 <!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={41aa7c52-4b89-47fc-90a4-d1a5adde47e3}&amp;wdPrint=0&wdToolbar=FALSE" height="1120" width="800" frameborder="0" seamless="yes"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={41aa7c52-4b89-47fc-90a4-d1a5adde47e3}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="1120" width="800" frameborder="0" seamless="yes"></iframe>
 </center>
+
 
 # Guide til dataudtræk
 Dette er en guide til hvordan man kan trækker tal fra dashboards, kuber og databaser når man besvarer postkassehenvendelser.
