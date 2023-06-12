@@ -40,7 +40,7 @@ Du kan nu deploye den tabulare model fra *CHRU_HRKube* over til din egen kube. H
 - Vælg den mappe som dit respository ligger i. **Det er vigtigt at du har valgt den rigtige branch inde i *GitHubDesktop*.** Ellers vil du komme til at importere en tabular model fra en forkert branch. Mappen skal indeholde de fire mapper *dataSources*, *relationships*, *roles* og *tables*. 
 <br><img src="Images/BillederInterVersionsstyring/8TabularEditorVælgMappe.png" height="300" style="vertical-align:middle"/>
 
-- Du kan nu deploye modellen til din egen kube. **Når du deployer modellen skal du fravælge *Data Source* og *Roles*, da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.** Du kan herefter processere den i "*Server Management Studio*".
+- Du kan nu deploye modellen til din egen kube. **Når du deployer modellen skal du fravælge *Data Source* og *Roles* (husk også at fravælge *Deploy Role Memebers*), da de kan variere fra kube til kube, og vi ikke ønsker at ændre dem.** Du kan herefter processere den i "*Server Management Studio*".
 
 ## Gem dine ændringer i Git
 Når du har arbejdet på din model og lavet ændringer i *Tabular Editor* kan du gemme dem på din branch, dette gøres på følgende måde:
