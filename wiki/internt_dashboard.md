@@ -1,5 +1,5 @@
 # Introduktion
-Denne side beskriver de ting som man skal være opmærksom på når man bygger og arbejder med dashboards. Siden omhandler alt fra navngivning af bogmærker til og best practice når man laver filteringer. Også mere avancerede ting som automatisk drill down på visualiseringer er beskrevet.
+Denne side beskriver de ting som man skal være opmærksom på når man bygger og arbejder med dashboards. Siden omhandler alt fra navngivning af bogmærker til best practice når man tiløjer filtre. Også mere avancerede ting som automatisk drill down på visualiseringer er beskrevet.
 
 #
 
