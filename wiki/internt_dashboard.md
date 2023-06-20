@@ -1,7 +1,15 @@
 # Introduktion
 Denne side beskriver de ting som man skal være opmærksom på når man bygger og arbejder med dashboards. Siden omhandler alt fra navngivning af bogmærker til best practice når man tiløjer filtre. Også mere avancerede ting som automatisk drill down på visualiseringer er beskrevet.
 
-#
+# Brugerstyring og sikkerhed
+
+# navngivning af faner
+# farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks.
+# Filtre - på siden, på figuren, i mesuret 
+# Selections
+# Sync slicers
+# Nulstil, Infoboks, vis filtervalg
+# Filter på stilling og organisation
 
 
 
