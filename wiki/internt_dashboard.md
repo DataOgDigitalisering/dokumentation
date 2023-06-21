@@ -19,10 +19,12 @@ Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det
  - "*Filtre*" - som indeholder alle slicers, bokse mm. som danner filtrene i højre side af dashboardet.
 
 TODO SELECTIONS
+<br><img src="Images/BillederInterntDashboard/selections.PNG" height="130" style="vertical-align:middle"/>
 
 Herudover er det ofte en god idé at gruppere figurer og visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. **Det er også en god idé at slå  "*Maintain Layer order*" til på alle figurer og knapper**, så de ikke "bytter" plads når man klikker på dem i det færdige dashboard.
 
 TODO LAYER ORDER
+<br><img src="Images/BillederInterntDashboard/layerOrder.PNG" height="130" style="vertical-align:middle"/>
 
 # Formatering af figurer og tekster
 Dashboardsne benytter bestemte farver, skrifttyper, skriftstørelser osv. Nogle af disse farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem Power BI. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i denne. På den måde sikrer man sig at skrifttype, skriftstørelse mm. er identiske. Overskrifter skriver man normalt ind manuelt med mindre den optræder flere steder eller skal være dynamisk. Hvis overskfiten skal være dynamisk kan man gemme den i kuben under "*_Tekster*".
@@ -48,6 +50,7 @@ Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis m
 Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. En sidste ting man skal være opmæskom på er at slicerne i højre skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
 
 TODO INSÆT SLICER INGEN VALGT FRA START
+<br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="130" style="vertical-align:middle"/>
 
 # Nulstil, Infoboks, vis filtervalg
 Der er tre vigtige knapper som går igen i alle temaerne, det er
