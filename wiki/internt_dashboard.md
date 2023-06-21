@@ -12,7 +12,7 @@ Fanerne i dashboardet nanvgives på følgende måde:
 - Siden med tooltips nanvgiver man "*TT*", f.eks. "*TT - Tirvsel - Hovedstillingsgruppe*".
 
 Rækkefølgen på fanerne er også vigtig. Her er kommer alle temaer og deres tilhørende undersider først. Herefter kommer alle sider med filtervalg, og til sidst kommer alle sider med tooltips. Dette kan f.eks. ses i HR Strategisk Dashboard.
-# Selection
+# Selection - gruppering af objekter
 Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det f.eks. lettere at holde styr på layer order og bogmærker. Under fanen "View" i Power BI kan man vælge at få fanen "*Selection*" vist. Det vigtigste er at man har de fire grupperinger:
  - "*Info*" - hvor alle objekter og tekstbokse som bliver vist i infoboksen er med.
  - "*Generelt*" - hvor overskift, logo og tekst som beskriver opdateringskadancen er med.
@@ -24,7 +24,7 @@ Herudover er det ofte en god idé at gruppere figurer og visualiseringer. Man sk
 
 TODO LAYER ORDER
 
-# farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks. Layer order!!, tekster som etiket eller ej...
+# Format på figurer og tekster
 Dashboardsne benytter bestemte farver, skrifttyper, skriftstørelser osv. Nogle af disse farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem Power BI. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i denne. På den måde sikrer man sig at skrifttype, skriftstørelse mm. er identiske. Overskrifter skriver man normalt ind manuelt med mindre den optræder flere steder eller skal være dynamisk. Hvis overskfiten skal være dynamisk kan man gemme den i kuben under "*_Tekster*".
 
 # Filtre - på siden, på figuren, i measuret
