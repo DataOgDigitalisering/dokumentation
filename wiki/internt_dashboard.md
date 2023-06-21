@@ -15,9 +15,15 @@ Fanerne i dashboardet nanvgives på følgende måde:
 - Siden med tooltips nanvgiver man "*TT*", f.eks. "*TT - Tirvsel - Hovedstillingsgruppe*".
 
 Rækkefølgen på fanerne er også vigtig. Her er kommer alle temaer og deres tilhørende undersider først. Herefter kommer alle sider med filtervalg, og til sidst kommer alle sider med tooltips. Dette kan f.eks. ses i HR Strategisk Dashboard.
-
 # Selection
-Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det f.eks. lettere at holde styr layer order og bogmærker. Under fanen "View" i Power BI kan man vælge at få fanen "*Selection*" vist.
+Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det f.eks. lettere at holde styr på layer order og bogmærker. Under fanen "View" i Power BI kan man vælge at få fanen "*Selection*" vist. Det vigtigste er at man har de fire grupperinger:
+ - "*Info*" - hvor alle objekter og tekstbokse som bliver vist i infoboksen er med.
+ - "*Generelt*" - hvor overskift, logo og tekst som beskriver opdateringskadancen er med.
+ - "*Filtre*" - som indeholder alle slicers, bokse mm. som danner filtrene i højre side af dashboardet.
+Herudover er det ofte en god idé at gruppere visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. Det er også en god idé at 
+
+TODO SELECTIONS
+
 
 # farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks. Layer order!!, tekster som etiket eller ej...
 
