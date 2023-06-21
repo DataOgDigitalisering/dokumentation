@@ -17,13 +17,9 @@ Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det
  - "*Info*" - hvor alle objekter og tekstbokse som bliver vist i infoboksen er med.
  - "*Generelt*" - hvor overskift, logo og tekst som beskriver opdateringskadancen er med.
  - "*Filtre*" - som indeholder alle slicers, bokse mm. som danner filtrene i højre side af dashboardet.
-
-TODO SELECTIONS
 <br><img src="Images/BillederInterntDashboard/selections.PNG" height="230" style="vertical-align:middle"/>
 
 Herudover er det ofte en god idé at gruppere figurer og visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. **Det er også en god idé at slå  "*Maintain Layer order*" til på alle figurer og knapper**, så de ikke "bytter" plads når man klikker på dem i det færdige dashboard.
-
-TODO LAYER ORDER
 <br><img src="Images/BillederInterntDashboard/layerOrder.PNG" height="220" style="vertical-align:middle"/>
 
 # Formatering af figurer og tekster
@@ -48,8 +44,6 @@ Bogmærker bruges bla. til at nulstille filtreringerne og vise infobokse. Alle b
 - "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at åbne infoboksen.
 Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis man vil vise figurer på tværs af organisiation og stilling vha. knapper. Dette kan ses i temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard.
 Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. En sidste ting man skal være opmæskom på er at slicerne i højre skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
-
-TODO INSÆT SLICER INGEN VALGT FRA START
 <br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="250" style="vertical-align:middle"/>
 
 # Nulstil, Infoboks, vis filtervalg
