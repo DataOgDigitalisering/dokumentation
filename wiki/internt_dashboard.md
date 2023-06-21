@@ -20,7 +20,7 @@ Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det
 <br><img src="Images/BillederInterntDashboard/selections.PNG" height="230" style="vertical-align:middle"/>
 
 Herudover er det ofte en god idé at gruppere figurer og visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. **Det er også en god idé at slå  "*Maintain Layer order*" til på alle figurer og knapper**, så de ikke "bytter" plads når man klikker på dem i det færdige dashboard.
-<br><img src="Images/BillederInterntDashboard/layerOrder.PNG" height="220" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntDashboard/layerOrder.PNG" height="250" style="vertical-align:middle"/>
 
 # Formatering af figurer og tekster
 Dashboardsne benytter bestemte farver, skrifttyper, skriftstørelser osv. Nogle af disse farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem Power BI. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i denne. På den måde sikrer man sig at skrifttype, skriftstørelse mm. er identiske. Overskrifter skriver man normalt ind manuelt med mindre den optræder flere steder eller skal være dynamisk. Hvis overskfiten skal være dynamisk kan man gemme den i kuben under "*_Tekster*".
