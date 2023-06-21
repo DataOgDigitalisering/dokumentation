@@ -13,7 +13,7 @@ Fanerne i dashboardet nanvgives på følgende måde:
 
 Rækkefølgen på fanerne er også vigtig. Her er kommer alle temaer og deres tilhørende undersider først. Herefter kommer alle sider med filtervalg, og til sidst kommer alle sider med tooltips. Dette kan f.eks. ses i HR Strategisk Dashboard.
 # Selection - gruppering af objekter
-Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det f.eks. lettere at holde styr på layer order og bogmærker. Under fanen "View" i Power BI kan man vælge at få fanen "*Selection*" vist. Det vigtigste er at man har de fire grupperinger:
+Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det f.eks. lettere at holde styr på layer order og bogmærker. Under fanen "View" i Power BI kan man vælge at få "*Selection*" vist. Det vigtigste er at man har de fire grupperinger:
  - "*Info*" - hvor alle objekter og tekstbokse som bliver vist i infoboksen er med.
  - "*Generelt*" - hvor overskift, logo og tekst som beskriver opdateringskadancen er med.
  - "*Filtre*" - som indeholder alle slicers, bokse mm. som danner filtrene i højre side af dashboardet.
@@ -28,17 +28,32 @@ TODO LAYER ORDER
 Dashboardsne benytter bestemte farver, skrifttyper, skriftstørelser osv. Nogle af disse farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem Power BI. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i denne. På den måde sikrer man sig at skrifttype, skriftstørelse mm. er identiske. Overskrifter skriver man normalt ind manuelt med mindre den optræder flere steder eller skal være dynamisk. Hvis overskfiten skal være dynamisk kan man gemme den i kuben under "*_Tekster*".
 
 # Filtre - på siden, på figuren, i measuret
+Filterering af data kan ske direkte i measuret eller det kan ske i Power BI. Ofte er det en god idé at lave nogle measures som er lidt mere generelle, men tilføje filtrene i Power BI. Dette er dog ikke altid muligt eller hensigtsmæssigt, og vi har ikke en fast regel for hvor et filter skal tilføjes. I Power BI kan man tilføje filtre på hele siden. Disse filtre vil være forskellige for hvert temae, da vi ikke har én standardpopulation som går igen i alle temaer og dashboards. Herudover kan man tilføje filtre på den enkelte figur. På den enkelte figur kan man også vælge eller fravælge funktionen "*Shot items with no data". Dette kan hjælpe med at frasortere uinteressante afsnit og stillinger uden data eller ansatte.
 
+# Anonymsering
+I det strategiske dashboard skal man være opmærksom på at alle visninger skal være anonymiseret korrekt. Man kan implementere anonymiseringen på flere måder. Dels kan man gøre det direkte i measuret, ved at sige den skal returnere værdien "BLANK()" hvis man er kommet under anonymitetsgrænsen. Man kan også lave et measure som tæller antal besvarelser og bruge dette i sit filter, ved f.eks. at sige antal besvarelse skal være større end eller lig 5. Det er op til en selv hvilken metode man synes er mest hensigsmæssig, men for at undgå for mange measures i kuben, kan det være hensigtsmæssigt at implementere anonymsieringen gennem et filter på den give figur i Power BI.
 
 # Filter på stilling og organisation
-
+Tabellerne "*v_DimOrganisation*" og "*v_DimStilling*" indholder både aktive og inaktive afsnit og stillinger. Dette kan være brugbart når man kigger tilbage i tiden, da man herved ikke "overser" nogle lukkede afsnit eller stillinger. Det kan dog være uhensigtsmæssigt at vise afsnit og stillinger, som ikke har nogle rækker i "v_DimAnsættelse", da der ikke er noget data på disse. Vi har ikke en konsistent måde at filtrere afsnit og stillinger. Til at filtrere afsnit kan man dog benytte kolonnen "MedarbejdereAnsat", som har værdien "1" hvis der findes rækker i "v_DimAnsættelse" som knytter sig til det givne afsnit, og eller har den væriden "0". Stilling har ikke en tilsvarende kolonne, men kan man vælge at frasoretere blanke rækker. Dette er et udviklingspunkt hvor vi skal finde en mere konsistent måde at filtrere "uinteressante" afsnit og stillinger fra.
 
 # Sync slicers
-
+De slicers som ligger i højre side af dashboardet og går igen henover flere temaer skal synkroniseres korrekt. Under fanen "*View*" kan man vælge at se "*Sync Slicers*", herefter kan man vælge en given slicer og sikre sig at den bliver vist og virker på alle de ønskede sider som f.eks. siderne med filtervalg.
 
 # Bogmærker
-# Nulstil, Infoboks, vis filtervalg
+Bogmærker bruges bla. til at nulstille filtreringerne og vise infobokse. Alle bogmærker er grupperet under det tema som de tilhører. Alle bogmærker virker som udgangspunkt på alle figurer og objekter på en given side. Hvert tema har som udgangspunkt tre bogmærker, f.eks. har trivsel følgende:
+- "*Trivsel - Nulstil*" som virker på alle figurer og også på "*Data*" hvilket vil sige at den styre de filtreringer man har valgt i slicerne og de filtre man har tilføjet til siden og figurerne. **Man skal huske at opdatere dette bogmærke hver gang man ændre filtrene på en figur**, ellers "overskriver" man filtrene når man klikker på bogmærket. Dette bogmærke bruges til "*Nulstil*"-knappen. 
+- "*Trivsel*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at lukke infoboksen.
+- "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at åbne infoboksen.
+Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis man vil vise figurer på tværs af organisiation og stilling vha. knapper. Dette kan ses i temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard.
+Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. En sidste ting man skal være opmæskom på er at slicerne i højre skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
 
+TODO INSÆT SLICER INGEN VALGT FRA START
+
+# Nulstil, Infoboks, vis filtervalg
+Der er tre vigtige knapper som går igen i alle temaerne, det er
+- "*Nulstil*" - Denne knap nulstiller alle filtre. Husk at opdater den hver gang du ændrer filtrene på dine figurer.
+- "*Infoboksen*" - Her er alle visualiseringerne beskrevet. Sørg for at figureren, tallene og teksten er grupperet korrekt. Se evt. siden "*Exit-undersøgelse*" i HR Strategisk Dashboard.
+-  "*Infoboksen*" - Her kan brugeren få et overblik over de filtreringer man har valgt i slicerne i højre side. Se evt. siden "*Exit-undersøgelse*" i HR Strategisk Dashboard for opsætning og layout.
 
 
 # Automatisk drilldown på visualiseringer
