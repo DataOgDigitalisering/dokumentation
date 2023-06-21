@@ -54,15 +54,10 @@ Der er tre vigtige knapper som går igen i alle temaerne, det er
 
 
 # Automatisk drilldown på visualiseringer
-## Funktionen anvendes på hierarkisk struktureret data og gør det muligt at automatisk få vist det nedre niveau, når man har filtreret på det øvre niveau. 
-Se Exitdashboard for et udvidet eksempel.
-
-Power BI understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
+Nogle gange ønsker man at en visualisering automatisk viser et lavere nivaeu når man filtrere på afdelinger eller stillinger. Det beskrives her hvordan man på hierarkisk struktureret data, automatisk kan få vist det nedre niveau, når man har filtreret på det øvre niveau. I temaet "*Exit-undersøgelse*" I HR Strategisk Dashboard kan man se det blive brugt med organisationsstrukturen. Power BI understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
 
 ## Hjælpetabellen
-
-Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. 
-Eksempel på hjælpetabellens struktur fra kursusportal dashboard. 
+Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. Her ses et eksempel på hjælpetabellens struktur fra kursusportal dashboard:
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
@@ -71,25 +66,22 @@ Eksempel på hjælpetabellens struktur fra kursusportal dashboard.
 | 1 | Hold | Holdnavn |
 | 2 | Hold |  Holdnavn |
 
-Se Kube tabellen **v_DimOrgDrill** for et mere fyldestgørende eksempel
+Den indeholder to kurser med ID'erne 1 og 2, og hvert kursus optræder to gange. En gang hvor man har inkluderet kursusnavnet, og en gang hvor man inkluderet holdnavnet. Se evt. tabellen "*v_DimOrgDrill*" i kuben for et eksempel med flere niveauer.
 
-Tabellen er opbygget som Union af hvert enkelt udsnit af hierarkiet, Hvor ID gentages for hvert niveau. 
+Tabellen er opbygget som Union hvor ID'erne gentages for hvert niveau. Tabellen tilføjes til resten af datamodellen via enten en begge vejet mange til mange relation eller ved brug af en bridge tabel.  
+## Bestem aktivt niveau i hierarkiet
+Man skal herefter fortælle Power BI hvilke rækker i hjælpetabellen som skal vises, da vi ikke ønsker at vise kurser og hold på samme tid! Dette kan gøres med et measure af typen:
 
-Tabellen tilføjes til resten af datamodellen via enten en begge vejet mange til mange relation eller en begge vejet bridge tabel.  
-## Measure til at bestemme aktivt niveau i hierarkiet 
-```
-Drill filter = IF(HASONEFILTER([Den Tabelkolonne som er slicer]),"Navn på næste nedre niveau","Navn på topniveau")
-```
-
-Her ses hvordan det fungere for kursusportalen. Et kursus kan have flere hold og vi ønsker at visualiseringen skifter til hold niveau, når man har anvendt sliceren til at filtrere et bestemt kursus frem. Vis man vælger flere kurser, vises visualiseringen på kursusniveau. Vis man ønsker fortsat drilldown selvom mere end et kursus (topniveau) er valgt, så ændre HASONEFILTER til ISFILTERED.
 ```
 Drill filter = IF(HASONEFILTER(Besvarelser[Kursusnavn]),"Hold","Kursus")
 ```
+
+Her ses hvordan det fungere for kursusportalen. Et kursus kan have flere hold og vi ønsker at visualiseringen skifter til hold-niveau, når man har valgt et bestemt kursus med sliceren. Vis man vælger flere kurser, vises visualiseringen på kursusniveau. Vis man ønsker fortsat drilldown selvom mere end et kursus (topniveau) er valgt, så skal man ændre HASONEFILTER til ISFILTERED:
  
 ## Filter Measure på visualiseringerne 
-
+Herefter skal man benytte sit measure til at filtrere visualiseringen i Power BI. Dette kan gøres ved at definere et measure af tyoe:
 ```
-VisualiseringDrill = IF(FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki])=[Drill filter],"Drill","Topniveau")
+VisualiseringDrill = IF(FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki])=[Drill filter],"Vis","VisIkke")
 
 ```
 Dette measure sættes som filter på visualiseringen. 
@@ -98,9 +90,9 @@ FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki
 
 Filteret på visualiseringen bestemmer hvad der skal vises. Filteret er sat til
 
-VisualiseringDrill IS NOT *Topniveau*
+VisualiseringDrill IS NOT *VisIkke*.
 
-Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, så vil kun det udsnit af tabellen hvor *placering i heiraki = Drill Filter* blive vist. Så hvis der ikke er valgt et filter, er Drill Filter falsk og navnet på topniveauet returneres og kun det vises. Hvis Drill filter var sand, så ville kun det nedre niveau vises. 
+Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, så vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vises. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" var sandt, så ville kun det nedre niveau, "*Hold*" som blev vist. 
 
 Så hvis der ikke er valgt et filter returnere Drill Filter *Kursus* og kun dette udsnit af hjælpetabellen indgår i visualiseringen 
 
