@@ -20,9 +20,12 @@ Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det
  - "*Info*" - hvor alle objekter og tekstbokse som bliver vist i infoboksen er med.
  - "*Generelt*" - hvor overskift, logo og tekst som beskriver opdateringskadancen er med.
  - "*Filtre*" - som indeholder alle slicers, bokse mm. som danner filtrene i højre side af dashboardet.
-Herudover er det ofte en god idé at gruppere visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. Det er også en god idé at 
 
 TODO SELECTIONS
+
+Herudover er det ofte en god idé at gruppere visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. Det er også en god idé at slå  "*Maintain Layer order" t
+
+TODO LAYER ORDER
 
 
 # farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks. Layer order!!, tekster som etiket eller ej...
