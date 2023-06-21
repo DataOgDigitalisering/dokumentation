@@ -4,9 +4,6 @@ Denne side beskriver de ting som man skal være opmærksom på når man bygger o
 # Brugerstyring og sikkerhed
 Hvis man vil dele sit dashboard med andre og lægge det op på FLIS skal man være opmærksom på hvem der kan tilgå dashboardet. Man kan se hvem der har adgang til filen ved at klikke på *...* til højre for filen, vælge *Manage* og herefter klikke på *Security*. Nogle personer bliver automatisk tilføjet som læsere når man uploader en Power BI fil til serveren. Det er derfor vigtigt at man altid tjekker hvem der har adgang efter man har uploadet sin fil. Under *Manage* kan man også sætte en systembruger op, hvis det er nødvendigt.
 
-
-
-
 # Navngivning af faner
 Fanerne i dashboardet nanvgives på følgende måde:
 - Den centrale side for et givent tema kalder man bare temaets navn. F.eks. "*Trivsel*"
@@ -23,16 +20,18 @@ Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det
 
 TODO SELECTIONS
 
-Herudover er det ofte en god idé at gruppere visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. Det er også en god idé at slå  "*Maintain Layer order" t
+Herudover er det ofte en god idé at gruppere figurer og visualiseringer. Man skal være opmærksom på at rækkefølgen på objekterne i "Selection" styrer deres layer order. **Det er også en god idé at slå  "*Maintain Layer order*" til på alle figurer og knapper**, så de ikke "bytter" plads når man klikker på dem i det færdige dashboard.
 
 TODO LAYER ORDER
 
-
 # farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks. Layer order!!, tekster som etiket eller ej...
+Dashboardsne benytter bestemte farver, skrifttyper, skriftstørelser osv. Nogle af disse farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem Power BI. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i denne. På den måde sikrer man sig at skrifttype, skriftstørelse mm. er identiske. Overskrifter skriver man normalt ind manuelt med mindre den optræder flere steder eller skal være dynamisk. Hvis overskfiten skal være dynamisk kan man gemme den i kuben under "*_Tekster*".
 
 # Filtre - på siden, på figuren, i measuret
 
+
 # Filter på stilling og organisation
+
 
 # Sync slicers
 
