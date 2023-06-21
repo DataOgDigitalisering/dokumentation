@@ -2,14 +2,34 @@
 Denne side beskriver de ting som man skal være opmærksom på når man bygger og arbejder med dashboards. Siden omhandler alt fra navngivning af bogmærker til best practice når man tiløjer filtre. Også mere avancerede ting som automatisk drill down på visualiseringer er beskrevet.
 
 # Brugerstyring og sikkerhed
+Hvis man vil dele sit dashboard med andre og lægge det op på FLIS skal man være opmærksom på hvem der kan tilgå dashboardet. Man kan se hvem der har adgang til filen ved at klikke på *...* til højre for filen, vælge *Manage* og herefter klikke på *Security*. Nogle personer bliver automatisk tilføjet som læsere når man uploader en Power BI fil til serveren. Det er derfor vigtigt at man altid tjekker hvem der har adgang efter man har uploadet sin fil. Under *Manage* kan man også sætte en systembruger op, hvis det er nødvendigt.
 
-# navngivning af faner
-# farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks.
-# Filtre - på siden, på figuren, i mesuret 
-# Selections
-# Sync slicers
-# Nulstil, Infoboks, vis filtervalg
+
+
+
+# Navngivning af faner
+Fanerne i dashboardet nanvgives på følgende måde:
+- Den centrale side for et givent tema kalder man bare temaets navn. F.eks. "*Trivsel*"
+- Undersider til det givne tema nanvgiver man "*SUB*", f.eks. "*SUB - Organisationsherakisk*".
+- Siden med filtervalg nanvgiver man "*FV*", f.eks. "*FV - Trivsel*"
+- Siden med tooltips nanvgiver man "*TT*", f.eks. "*TT - Tirvsel - Hovedstillingsgruppe*".
+
+Rækkefølgen på fanerne er også vigtig. Her er kommer alle temaer og deres tilhørende undersider først. Herefter kommer alle sider med filtervalg, og til sidst kommer alle sider med tooltips. Dette kan f.eks. ses i HR Strategisk Dashboard.
+
+# Selection
+Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det f.eks. lettere at holde styr layer order og bogmærker. Under fanen "View" i Power BI kan man vælge at få fanen "*Selection*" vist.
+
+# farver, tesktstørrelse, figurer - tag udgangpunkt i det der allerede er, kopier en figur f.eks. Layer order!!, tekster som etiket eller ej...
+
+# Filtre - på siden, på figuren, i measuret
+
 # Filter på stilling og organisation
+
+# Sync slicers
+
+
+# Bogmærker
+# Nulstil, Infoboks, vis filtervalg
 
 
 
