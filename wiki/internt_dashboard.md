@@ -3,7 +3,7 @@ Denne side beskriver de ting som man skal være opmærksom på når man bygger o
 
 # Brugerstyring og sikkerhed
 Man kan dele sit dashboard med andre ved at lægge det op på FLIS. Her skal man dog være opmærksom på hvem der kan tilgå dashboardet. Man kan se hvem der har adgang til filen ved at klikke på "*...*" til højre for filen, vælge "*Manage*" og herefter klikke på "*Security*". Nogle personer bliver automatisk tilføjet som læsere når man uploader en Power BI fil til serveren. Det er derfor vigtigt, at man altid tjekker hvem der har adgang til at tilgå dashboardet, efter man har uploadet sin fil. Under "*Manage*" kan man også sætte en systembruger op, hvis det er nødvendigt.
-<br><img src="Images/BillederInterntDashboard/SikkerhedFlisFil.png" height="240" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntDashboard/SikkerhedFlisFil.png" height="80" style="vertical-align:middle"/>
 
 # Navngivning af faner
 Fanerne i dashboardet nanvgives på følgende måde:
@@ -40,9 +40,7 @@ TODO TJEK OM DET ER RIGTIGT ANSAT = 1, 0
 
 # Sync slicers
 De slicers som ligger i højre side af dashboardet og går igen henover flere temaer skal synkroniseres korrekt. Under fanen "*View*" kan man vælge at vise "*Sync Slicers*". Herefter kan man vælge en given slicer og sikre sig at den bliver vist og virker på alle de ønskede sider som f.eks. siderne med filtervalg.
-
-TODO BILLEDE SYNC SLICERS
-<br><img src="Images/BillederInterntDashboard/SyncSlicer.png" height="180" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntDashboard/SyncSlicer.png" height="150" style="vertical-align:middle"/>
 
 # Bogmærker
 Bogmærker bruges bl.a. til at nulstille filtreringerne og vise infoboksene. Alle bogmærker er grupperet efter det tema som de knytter sig til, og de skal virke på alle figurer og objekter på den givne side. Hvert tema har som udgangspunkt tre bogmærker, f.eks. har trivsel følgende:
