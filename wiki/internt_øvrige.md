@@ -52,18 +52,6 @@ Om konventioner for navngivning af tabeller og measures.
 
 
 
-# Power BI
-
-## Generelt
-- Om brug af bookmarks. Navngivning, sektioner, grupperinger, lag mm. 
-  - Farvetema (brug af measures). Hvor?
-  - Conditional formatting
-  - Akser. Min/max-værdier vha measures. Hvor?
-  - Kolonnebredde=0
-  - Covers. Hvor og hvorfor?
-- Link til tabs. Ikke faner. (I lederdashboard). Begrund.
-
-
 ## Farvetema
 <!-- Embed iFrame. PowerPoint: "One pager - Design guidelines til rapporter i FLIS" på OneDrive-->
 {::options parse_block_html="true" /}
