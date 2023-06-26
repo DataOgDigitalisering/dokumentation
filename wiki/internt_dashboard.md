@@ -28,36 +28,43 @@ Vi benytter bestemte farver, skrifttyper, skriftstørelser i vores dashboards. N
 # Filtre - på siden, på figuren og i measuret
 Filterering af data kan ske direkte i measuret eller det kan ske i *Power BI*. Ofte er det en god idé at lave nogle measures som er lidt mere generelle, og herefter tilføje filtrene i *Power BI*. Dette er dog ikke altid muligt eller hensigtsmæssigt, og vi har ikke en fast regel for hvor et filter skal tilføjes. I *Power BI* kan man tilføje filtre på hele siden. Disse filtre er ofte forskellige for hvert tema, da vi ikke har én standardpopulation som går igen på tværs af alle temaer og dashboards. Herudover kan man tilføje filtre på den enkelte figur. På den enkelte figur kan man også vælge eller fravælge funktionen "*Show items with no data*". Dette kan hjælpe med at frasortere uinteressante afsnit og stillinger uden data eller ansatte.
 
+TODO Billede SHOW NO DATA
+
 # Anonymisering
 I *HR Strategisk Dashboard* skal man være opmærksom på at alle visninger skal være anonymiseret korrekt. Man kan implementere anonymiseringen på flere måder. Dels kan man gøre det direkte i measuret, ved at sige den skal returnere værdien "*BLANK()*" hvis antallet af personer eller besvarelser som man kigger på er under anonymitetsgrænsen. Man kan også lave et measure som tæller antal personer og bruge dette i sit filter, ved f.eks. at sige antal af personer skal være større end eller lig 5. Det er op til en selv hvilken metode man synes er mest hensigsmæssig, men for at undgå for mange measures i kuben, kan det være en fordel at implementere anonymsieringen gennem et filter på den give figur i *Power BI*.
 
 # Filter på stilling og organisation
 Tabellerne "*v_DimOrganisation*" og "*v_DimStilling*" indholder både aktive og inaktive afsnit og stillinger. Dette kan være brugbart når man kigger tilbage i tiden, da man herved ikke overser nogle lukkede afsnit eller stillinger. Det kan dog være uhensigtsmæssigt at vise afsnit og stillinger, som ikke har nogle tilhørende rækker i *"v_DimAnsættelse"*, da der ikke er noget data på disse. Vi har ikke en konsistent måde at filtrere disse afsnit og stillinger fra. Man kan dog filtrere afsnittene fra ved at benytte kolonnen "MedarbejdereAnsat", som har værdien "1" hvis der findes rækker i "v_DimAnsættelse" som knytter sig til det givne afsnit, og ellers har den væriden "0". Stilling har ikke en tilsvarende kolonne, men kan man vælge ikke at vise blanke rækker i sine visualiseringer. Dette er et udviklingspunkt hvor vi skal finde en mere konsistent måde at filtrere de uinteressante afsnit og stillinger fra.
 
+TODO TJEK OM DET ER RIGTIGT ANSAT = 1, 0
+
 # Sync slicers
 De slicers som ligger i højre side af dashboardet og går igen henover flere temaer skal synkroniseres korrekt. Under fanen "*View*" kan man vælge at vise "*Sync Slicers*". Herefter kan man vælge en given slicer og sikre sig at den bliver vist og virker på alle de ønskede sider som f.eks. siderne med filtervalg.
 
+TODO BILLEDE SYNC SLICERS
+
 # Bogmærker
 Bogmærker bruges bl.a. til at nulstille filtreringerne og vise infoboksene. Alle bogmærker er grupperet efter det tema som de knytter sig til, og de skal virke på alle figurer og objekter på den givne side. Hvert tema har som udgangspunkt tre bogmærker, f.eks. har trivsel følgende:
-- "*Trivsel - Nulstil*" som virker på alle figurer og også på "*Data*" hvilket vil sige at den styre de filtreringer man har valgt i slicerne og de filtre man har tilføjet til siden og figurerne. **Man skal huske at opdatere dette bogmærke hver gang man ændre filtrene på en figur**, ellers "overskriver" man filtrene når man klikker på bogmærket. Dette bogmærke bruges til "*Nulstil*"-knappen. 
+- "*Trivsel - Nulstil*" som virker på alle figurer og også på "*Data*" hvilket vil sige at den styre de filtreringer man har valgt i slicerne og de filtre man har tilføjet til siden og figurerne. **Man skal huske at opdatere dette bogmærke hver gang man ændre filtrene på en figur**, ellers "overskriver" man sine filtre når man klikker på bogmærket. Dette bogmærke bruges til *Nulstil-knappen*.
 - "*Trivsel*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at lukke infoboksen.
-- "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at åbne infoboksen.
+- "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Den bruges til at åbne infoboksen.
+TODO BILELDE OVER BOGMÆRKER
 Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis man vil vise figurer på tværs af organisiation og stilling vha. knapper. Dette kan ses i temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard.
-Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. En sidste ting man skal være opmæskom på er at slicerne i højre skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
+
+Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. En sidste ting man skal være opmæskom på er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
 <br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="250" style="vertical-align:middle"/>
 
-# Nulstil, Infoboks, vis filtervalg
+# Nulstil, Infoboks og vis filtervalg
 Der er tre vigtige knapper som går igen i alle temaerne, det er
-- "*Nulstil*" - Denne knap nulstiller alle filtre. Husk at opdater den hver gang du ændrer filtrene på dine figurer.
-- "*Infoboksen*" - Her er alle visualiseringerne beskrevet. Sørg for at figureren, tallene og teksten er grupperet korrekt. Se evt. siden "*Exit-undersøgelse*" i HR Strategisk Dashboard.
--  "*Infoboksen*" - Her kan brugeren få et overblik over de filtreringer man har valgt i slicerne i højre side. Se evt. siden "*Exit-undersøgelse*" i HR Strategisk Dashboard for opsætning og layout.
-
+- "*Nulstil*" - Denne knap nulstiller alle filtre. Husk at opdatere det tilhørende bogmærke hver gang du ændrer filtrene på dine figurer.
+- "*Infoboksen*" - Her er alle visualiseringerne beskrevet. Sørg for at cirklerne, tallene og teksten er grupperet korrekt. Se evt. siden *Exit-undersøgelse* i *HR Strategisk Dashboard*.
+-  "*Vis filtervalg*" - Her kan brugeren få et overblik over de filtreringer man har valgt i slicerne i højre side. Se evt. siden "*Exit-undersøgelse*" i HR Strategisk Dashboard for opsætning og layout.
 
 # Automatisk drilldown på visualiseringer
-Nogle gange ønsker man at en visualisering automatisk viser et lavere nivaeu når man filtrere på afdelinger eller stillinger. Det beskrives her hvordan man på hierarkisk struktureret data, automatisk kan få vist det nedre niveau, når man har filtreret på det øvre niveau. I temaet "*Exit-undersøgelse*" I HR Strategisk Dashboard kan man se det blive brugt med organisationsstrukturen. Power BI understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
+Nogle gange ønsker man at en visualisering automatisk viser et lavere nivaeu når man filtrere på afdelinger eller stillinger. Det beskrives her hvordan man på hierarkisk struktureret data, automatisk kan få vist det nedre niveau, når man har filtreret på det øvre niveau. I temaet "*Exit-undersøgelse*" I *HR Strategisk Dashboard* kan man se det blive brugt med organisationsstrukturen. *Power BI* understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
 
 ## Hjælpetabellen
-Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. Her ses et eksempel på hjælpetabellens struktur fra kursusportal dashboard:
+Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. Her ses et eksempel på hjælpetabellens struktur fra kursusportal dashboard'et:
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
@@ -69,30 +76,27 @@ Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. He
 Den indeholder to kurser med ID'erne 1 og 2, og hvert kursus optræder to gange. En gang hvor man har inkluderet kursusnavnet, og en gang hvor man inkluderet holdnavnet. Se evt. tabellen "*v_DimOrgDrill*" i kuben for et eksempel med flere niveauer.
 
 Tabellen er opbygget som Union hvor ID'erne gentages for hvert niveau. Tabellen tilføjes til resten af datamodellen via enten en begge vejet mange til mange relation eller ved brug af en bridge tabel.  
+
 ## Bestem aktivt niveau i hierarkiet
-Man skal herefter fortælle Power BI hvilke rækker i hjælpetabellen som skal vises, da vi ikke ønsker at vise kurser og hold på samme tid! Dette kan gøres med et measure af typen:
+Man skal herefter fortælle Power BI hvilke rækker i hjælpetabellen som skal vises, da vi ikke ønsker at vise kurser og hold på samme tid. Dette kan gøres med et measure af typen:
 
 ```
 Drill filter = IF(HASONEFILTER(Besvarelser[Kursusnavn]),"Hold","Kursus")
 ```
 
-Her ses hvordan det fungere for kursusportalen. Et kursus kan have flere hold og vi ønsker at visualiseringen skifter til hold-niveau, når man har valgt et bestemt kursus med sliceren. Vis man vælger flere kurser, vises visualiseringen på kursusniveau. Vis man ønsker fortsat drilldown selvom mere end et kursus (topniveau) er valgt, så skal man ændre HASONEFILTER til ISFILTERED:
+Her ses hvordan det fungerer for kursusportalen. Et kursus kan have flere hold og vi ønsker at visualiseringen skifter til hold-niveau, når man har valgt et bestemt kursus med sliceren. Vis man vælger flere kurser, vises visualiseringen på kursusniveau. Vis man ønsker fortsat drilldown selvom mere end et kursus (topniveau) er valgt, så skal man ændre HASONEFILTER til ISFILTERED.
  
-## Filter Measure på visualiseringerne 
-Herefter skal man benytte sit measure til at filtrere visualiseringen i Power BI. Dette kan gøres ved at definere et measure af tyoe:
+## Benyt filter på visualiseringerne 
+Herefter skal man benytte sit measure til at filtrere visualiseringen i Power BI. Dette kan gøres ved at definere et measure af typen:
 ```
 VisualiseringDrill = IF(FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki])=[Drill filter],"Vis","VisIkke")
-
 ```
-Dette measure sættes som filter på visualiseringen. 
+hvor "FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki])" udvælger øverste række i hjælpetabellen. Herefter sættes filteret på visualiseringen i *Power BI* til 
+```
+VisualiseringDrill IS *Vis*
+```
 
-FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki]) udvælger øverste række i hjælpetabellen
-
-Filteret på visualiseringen bestemmer hvad der skal vises. Filteret er sat til
-
-VisualiseringDrill IS NOT *VisIkke*.
-
-Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, så vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vises. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" var sandt, så ville kun det nedre niveau, "*Hold*" som blev vist. 
+Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, så vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vises. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" var sandt, så ville kun det nedre niveau, "*Hold*", som blev vist.
 
 Så hvis der ikke er valgt et filter returnere Drill Filter *Kursus* og kun dette udsnit af hjælpetabellen indgår i visualiseringen 
 
