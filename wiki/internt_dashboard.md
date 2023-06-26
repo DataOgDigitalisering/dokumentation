@@ -3,6 +3,7 @@ Denne side beskriver de ting som man skal være opmærksom på når man bygger o
 
 # Brugerstyring og sikkerhed
 Man kan dele sit dashboard med andre ved at lægge det op på FLIS. Her skal man dog være opmærksom på hvem der kan tilgå dashboardet. Man kan se hvem der har adgang til filen ved at klikke på "*...*" til højre for filen, vælge "*Manage*" og herefter klikke på "*Security*". Nogle personer bliver automatisk tilføjet som læsere når man uploader en Power BI fil til serveren. Det er derfor vigtigt, at man altid tjekker hvem der har adgang til at tilgå dashboardet, efter man har uploadet sin fil. Under "*Manage*" kan man også sætte en systembruger op, hvis det er nødvendigt.
+<br><img src="Images/BillederInterntDashboard/SikkerhedFlisFil.png" height="240" style="vertical-align:middle"/>
 
 # Navngivning af faner
 Fanerne i dashboardet nanvgives på følgende måde:
