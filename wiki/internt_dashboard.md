@@ -27,8 +27,6 @@ Vi benytter bestemte farver, skrifttyper, skriftstørelser i vores dashboards. N
 
 # Filtre - på siden, på figuren og i measuret
 Filterering af data kan ske direkte i measuret eller det kan ske i *Power BI*. Ofte er det en god idé at lave nogle measures som er lidt mere generelle, og herefter tilføje filtrene i *Power BI*. Dette er dog ikke altid muligt eller hensigtsmæssigt, og vi har ikke en fast regel for hvor et filter skal tilføjes. I *Power BI* kan man tilføje filtre på hele siden. Disse filtre er ofte forskellige for hvert tema, da vi ikke har én standardpopulation som går igen på tværs af alle temaer og dashboards. Herudover kan man tilføje filtre på den enkelte figur. På den enkelte figur kan man også vælge eller fravælge funktionen "*Show items with no data*". Dette kan hjælpe med at frasortere uinteressante afsnit og stillinger uden data eller ansatte.
-
-TODO Billede SHOW NO DATA
 <br><img src="Images/BillederInterntDashboard/showNoData.png" style="vertical-align:middle"/>
 
 # Anonymisering
@@ -43,14 +41,13 @@ TODO TJEK OM DET ER RIGTIGT ANSAT = 1, 0
 De slicers som ligger i højre side af dashboardet og går igen henover flere temaer skal synkroniseres korrekt. Under fanen "*View*" kan man vælge at vise "*Sync Slicers*". Herefter kan man vælge en given slicer og sikre sig at den bliver vist og virker på alle de ønskede sider som f.eks. siderne med filtervalg.
 
 TODO BILLEDE SYNC SLICERS
-<br><img src="Images/BillederInterntDashboard/SyncSlicer.png" height="240" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntDashboard/SyncSlicer.png" height="180" style="vertical-align:middle"/>
 
 # Bogmærker
 Bogmærker bruges bl.a. til at nulstille filtreringerne og vise infoboksene. Alle bogmærker er grupperet efter det tema som de knytter sig til, og de skal virke på alle figurer og objekter på den givne side. Hvert tema har som udgangspunkt tre bogmærker, f.eks. har trivsel følgende:
 - "*Trivsel - Nulstil*" som virker på alle figurer og også på "*Data*" hvilket vil sige at den styre de filtreringer man har valgt i slicerne og de filtre man har tilføjet til siden og figurerne. **Man skal huske at opdatere dette bogmærke hver gang man ændre filtrene på en figur**, ellers "overskriver" man sine filtre når man klikker på bogmærket. Dette bogmærke bruges til *Nulstil-knappen*.
 - "*Trivsel*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at lukke infoboksen.
 - "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Den bruges til at åbne infoboksen.
-TODO BILELDE OVER BOGMÆRKER
 <br><img src="Images/BillederInterntDashboard/bogmærkerTrivse.png" height="240" style="vertical-align:middle"/>
 
 
