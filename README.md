@@ -12,13 +12,15 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 
 
 
-# Introduktion til CHRU_HRKube UNDER UDVIKLING
+# Introduktion til hjemmesiden
 
-På denne wiki-side kan du finde dokumentation om
-  - *HR Strategisk Dashboard og Lederdashboard*, hvor alle figurer og filtreringer er dokumenteret og beskrevet. Der er tekster som ...
-  - CHRU_HRKube hvor kubens opbygning, measures og brugerstyrring er dokumenteret.
-  - Views, tabeller og databaser er også dokumenteret.
+På denne wiki-side finder du dokumentation af
+  - *HR Strategisk Dashboard* og *Lederdashboard*, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
+  - *CHRU_HRKube* hvor kubens opbygning og measures er forklaret.
+  - Views og tabeller som kuben bygger på er også beskrevet.
   - 
+
+ 
 # Software
 Følgende software er en forudsætning og kan findes i <a href="https://softwarecentral.regionh.top.local/Shop" target="_blank">Softwareshoppen</a>. 
 
