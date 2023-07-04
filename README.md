@@ -14,13 +14,15 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 
 # Introduktion til hjemmesiden
 
-På denne wiki-side finder du
-  - Dokumentation af *HR Strategisk Dashboard* og *Lederdashboard*, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
-  - Dokumentation af *CHRU_HRKube*, hvor kubens opbygning og measures er forklaret.
-  - Dokumentation af de views og tabeller som kuben bygger på.
-  - Interne dokumenter som beskriver vores workflow med databaser, kuber og dashboards.
-  - Interne dokumenter som beskriver hvordan vi versionsstyre og dokumenterer vores arbejde.
-  - Beskrivelser af hvordan vi besvarer postkassehenvendelser og laver dataudtræk.
+På denne wiki-side finder du:
+- Dokumentation:
+  - Dokumentation af ***HR Strategisk Dashboard* og *Lederdashboard***, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
+  - Dokumentation af ***CHRU_HRKube***, hvor kubens opbygning og measures er forklaret.
+  - Dokumentation af de **views og tabeller** som kuben bygger på.
+- Interne dokumenter:
+  - Interne dokumenter som beskriver hvordan vi arbejder med **databaser, kuber og dashboards**.
+  - Interne dokumenter som beskriver hvordan vi **versionsstyrer og dokumenterer vores arbejde**.
+  - Beskrivelser af hvordan vi besvarer **postkassehenvendelser og laver dataudtræk**.
 Nedenfor kan du se en liste de produkter som vi udbyder, samt hvilke datakilder og miljøer de bygger på. Du kan også se en liste over de programmer som vi benytter i vores daglige arbejde.
 
 # Vores produkter
