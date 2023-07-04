@@ -48,12 +48,11 @@ Bogmærker bruges bl.a. til at nulstille filtreringerne og vise infoboksene. All
 <br><img src="Images/BillederInterntDashboard/bogmærkerTrivse.png" height="240" style="vertical-align:middle"/>
 
 
-Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis man vil vise figurer på tværs af organisiation og stilling vha. knapper. Dette kan ses i temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard.
+Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis man vil vise figurer på tværs af organisiation og stilling vha. knapper. Dette kan ses i temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard. Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. 
 
-En sidste ting man skal være opmæskom på er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
+
+En sidste ting man skal være opmæskom på er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette:
 <br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="250" style="vertical-align:middle"/>
-
-Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. 
 
 # Nulstil, Infoboks og vis filtervalg
 Der er tre vigtige knapper som går igen i alle temaerne, det er
