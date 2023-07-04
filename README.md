@@ -18,7 +18,7 @@ På denne wiki-side finder du
   - Dokumentation af *HR Strategisk Dashboard* og *Lederdashboard*, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
   - Dokumentation af *CHRU_HRKube*, hvor kubens opbygning og measures er forklaret.
   - Dokumentation af de views og tabeller som kuben bygger på.
-  - Interne dokumenter som beksriver vores workflow med databser, kuber og dashboards
+  - Interne dokumenter som beskriver vores workflow med databaser, kuber og dashboards.
   - Interne dokumenter som beskriver hvordan vi versionsstyre og dokumenterer vores arbejde.
   - Beskrivelser af hvordan vi besvarer postkassehenvendelser og laver dataudtræk.
 Nedenfor kan du se en liste de produkter som vi udbyder, samt hvilke datakilder og miljøer de bygger på. Du kan også se en liste over de programmer som vi benytter i vores daglige arbejde.
@@ -32,7 +32,7 @@ Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger
 </center>
 <br>
 
-# Software vi benytter
+# Software som vi benytter
 Følgende software er en forudsætning og kan findes i <a href="https://softwarecentral.regionh.top.local/Shop" target="_blank">Softwareshoppen</a>. 
 
 Hav altid seneste version af Power BI Desktop installeret for at sikre nyeste og kompatibel funktionalitet med rapportserver. For versioner af øvrig software spørg en kollega, hvad de bruger.
@@ -46,7 +46,7 @@ Hav altid seneste version af Power BI Desktop installeret for at sikre nyeste og
 
 
 # Dataadgang
-Nedenstående dokument beskriver hvordan du søger om adgang til data. Dette er vigtigt at du har de korrekte adgange når du f.eks. laver udtræk eller bygger dashboards.
+Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er selvfølgelig vigtigt, at du har de nødvendige adgange, hvis du vil arbejde med data og lave dataudtræk.
 <!-- Embed iFrame. word-doc: "Guide til bestilling af adgange.docx" på OneDrive-->
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Guide til bestilling af dataadgange</summary>
@@ -69,7 +69,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Dette er 
 
 
 
-# SQL kursus
+# Guids til brug af programmer og software
 
 <!-- Embed iFrame. PowerPoint: "SQL-kursus.pptx" på OneDrive-->
 {::options parse_block_html="true" /}
