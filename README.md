@@ -28,9 +28,10 @@ Nedenfor kan du se en liste de produkter som vi udbyder, samt hvilke datakilder 
 Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger på. Hvis man ændrer i nogle af vores miljøer, skal man være opmærksom på hvilke produkter det kan påvirke.
 
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={73422d8a-9d4c-4727-aa0e-5b24d601e81e}&amp;action=embedview" height="587" width="1000" frameborder="0"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={73422d8a-9d4c-4727-aa0e-5b24d601e81e}&amp;action=embedview" height="587" width="800" frameborder="0" seamless="yes"></iframe>
 </center>
 <br>
+
 
 # Software som vi benytter
 Følgende software er en forudsætning og kan findes i <a href="https://softwarecentral.regionh.top.local/Shop" target="_blank">Softwareshoppen</a>. 
