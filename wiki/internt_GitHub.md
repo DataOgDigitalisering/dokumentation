@@ -1,3 +1,6 @@
+# Introduktion
+Under afsnittet [versionsstyring](https://dataogdigitalisering.github.io/dokumentation/internt_versionsstyring) kan du læse om hvordan vi benytter GitHub internt hos os. Hvis du mere interesseret i hvordan Git og GitHub virker, kan du læse om det nedenfor. Vi anbefaler dog som udgangspunkt at bruge *GitHub Desktop* til versionsstyring, hvis du ikke er vant til at benytte terminalen.
+
 # Git & GitHub 
 Med versionsstyring kan man let holde styr på ændringer i filer. Det er vigtigt at differentiere mellem Git og GitHub.
 
