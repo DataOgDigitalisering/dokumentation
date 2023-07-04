@@ -18,9 +18,58 @@ Herudover benytter vi GitHub til *versionsstyring af vores kuber*. På denne må
 Nedenfor er det beskrevet hvordan vi navngiver og opbygger vores kuber. Ved at følge disse konventioner, sikrer vi os at kubens opbygning er konsistent på tværs af temaer og emner.
 
 # Tabeller og relationer
+## Intro til tabellerne
+I grove træk falder al data i kuben indenfor kategorierne
+
+| **Grunddata** | **Temaespecifik data** | **Hjælpetabeller** | **Infotabeller** |
+ 
+- Med **grunddata** menes den data, som er fællesmængde på tværs af temaer, uanset om der beregnes på sygefravær, ferieafholdelse eller andet. I grunddata indgår:
+  - **Stamdata** er personaledata, organisations-, stillings- og lønarthieraki, tidstabel mm. 
+  - **Brugerstyring** er data om personales brugerroller, som er bestemmende for hvilke data, brugere af vores produkter må se. Det er essentielt at forstå, [hvordan brugerstyring er implementeret](./data_brugerstyring) for at sikre, at denne også virker på tilføjelser i kuben. 
+- **Temaspecifik data** anvendes specifikt til beregning på fx sygefravær, ferieafholdelse eller personalesammensætning. Af screenshottet herover ses, hvordan vores data groft er grupperet i temaer.
+
+Derudover findes en række øvrige tabeller, herunder:
+- Hjælpetabeller er **tally**- og **slicer**-tabeller. Disse bruges til definereing af intervaller (fx aldersintervaller), grupperings-, sorterings- og filtreringsmuligheder
+- Info er data som fx dato på **dataleverancer** og **servicemeddelelser** til brugere af dashboard om nye opdateringer eller tilføjelser
+
+## Navngivning af tabeller
+- Navngives som fx v_DimAnsættelse
+- Skabelon: [tabeltype]+[\_]+[Formål]+[BeskrivendeNavn]
+- **Views** indledes med __v\___ 
+  - Alt *efterfølgende* skrives i camelCase (**S**tort**B**egyndelsesbogstav)
+  - **Formål**: Dim, Fact, Security, Info, Slicer, Tally.
+  - **Beskrivende navn** er entydig(e) og letforståelig(e) *substantiv(er)*. (Gerne noget der minder om rådatatabellens oprindelige navn hvis viewet er baseret på en sådan). Sammensatte ord skrives i camelCase
+
+- **Tabeller** navngives som views. [Formål]+[**B**eskrivende**N**avn]. Fx DimLønart
+  - __v\___ udelades
+
+- **Kolonnenavne** er entydige og letforståelige *substantiver*
+  - camelCase
+  - Disse felter udfyldes i Tabular Editor, hvis ikke de er pre-udfyldt:
+    - Data Type
+    - Description
+    - Key
+
+
+### Calculated columns
+  - Undgå så vidt muligt datatransformation i Tabular Editor. Det giver bedre overblik at have samlet i SQL.
+    - (Flyt evt nedenstående til views og brug en mere robust metode til anonymisering:)
+      - v_DimAnsættelse[TjnrAnonymiseret]
+      - v_DimPerson[NavnAnonymiseret]   
+
+
 navn, definition, parititioner, kolonner, navn, type, format, sort by  navngivning, secutirycorssfiltering, 
 
 # Measures
+
+
+### Measures
+Via measures implementeres vores standardiserede beregningsmetoder. De er grupperet temavis. I gruppen \__Diverse_ indgår beregninger på stamdata og dette kan være et godt sted at starte med at skabe overblik over kuben. Foruden indblik i de mere centrale tabeller vil du hér se eksempler på, hvordan viden om stamdata er essentielt for at kunne definere fx hvilken personalegruppe, der skal indgå i en given beregning; hvordan dette kan variere fra tema til tema; hvordan antallet af personer, der indgår i en beregning, er afgørende for, om et resultat nødvendigvis skal anonymiseres mm.
+
+Andre measures—lokaliseret i mapperne, \__Farver_ og \__Tekster_—bruges til kontrol af layout på dashboards; Farvetemaer, dynamiske akselængder og tekstetiketter, meddelelser, kolonnebredder mm. 
+
+
+
 navn, mappe, Opbygning, __foran variabel?, format, type, 
 
 
@@ -98,28 +147,4 @@ Du kan med fordel prøve at bygge din egen version af kuben i Power BI; tabel fo
 Til hvert tema findes små **øvelser**, hvor du kan testen din viden. Du vil herigennem få lidt erfaring med datatræk fra både rådata og kuben og få indblik i nogle af de datatransformationer, som må foretages, før vi kan foretage beregninger og analyser.
 <br>
 
-
-
-### Tabeller
-
-I grove træk falder al data i kuben indenfor kategorierne
-
-| **Grunddata** | **Temaespecifik data** | **Hjælpetabeller** | **Infotabeller** |
- 
-- Med **grunddata** menes den data, som er fællesmængde på tværs af temaer, uanset om der beregnes på sygefravær, ferieafholdelse eller andet. I grunddata indgår:
-  - **Stamdata** er personaledata, organisations-, stillings- og lønarthieraki, tidstabel mm. 
-  - **Brugerstyring** er data om personales brugerroller, som er bestemmende for hvilke data, brugere af vores produkter må se. Det er essentielt at forstå, [hvordan brugerstyring er implementeret](./data_brugerstyring) for at sikre, at denne også virker på tilføjelser i kuben. 
-- **Temaspecifik data** anvendes specifikt til beregning på fx sygefravær, ferieafholdelse eller personalesammensætning. Af screenshottet herover ses, hvordan vores data groft er grupperet i temaer.
-
-Derudover findes en række øvrige tabeller, herunder:
-- Hjælpetabeller er **tally**- og **slicer**-tabeller. Disse bruges til definereing af intervaller (fx aldersintervaller), grupperings-, sorterings- og filtreringsmuligheder
-- Info er data som fx dato på **dataleverancer** og **servicemeddelelser** til brugere af dashboard om nye opdateringer eller tilføjelser
-<br>
-
-
-
-### Measures
-Via measures implementeres vores standardiserede beregningsmetoder. De er grupperet temavis. I gruppen \__Diverse_ indgår beregninger på stamdata og dette kan være et godt sted at starte med at skabe overblik over kuben. Foruden indblik i de mere centrale tabeller vil du hér se eksempler på, hvordan viden om stamdata er essentielt for at kunne definere fx hvilken personalegruppe, der skal indgå i en given beregning; hvordan dette kan variere fra tema til tema; hvordan antallet af personer, der indgår i en beregning, er afgørende for, om et resultat nødvendigvis skal anonymiseres mm.
-
-Andre measures—lokaliseret i mapperne, \__Farver_ og \__Tekster_—bruges til kontrol af layout på dashboards; Farvetemaer, dynamiske akselængder og tekstetiketter, meddelelser, kolonnebredder mm. 
 
