@@ -7,3 +7,9 @@
 
 - **Tabeller** navngives som views. [Formål]+[**B**eskrivende**N**avn]. Fx DimLønart
   - __v\___ udelades
+### Stored procedures
+  - Navngives kort og præcist beskrivende fx 'DanskeHelligdage'
+  - Brug så vidt muligt verber til at beskrive procedurens *funktion*
+  - camelCase
+
+- æ, ø, å tilladt
