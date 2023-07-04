@@ -59,7 +59,6 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 </center>
 </details>
 {::options parse_block_html="false" /}
-<br>
 
 <!-- ØVELSE -->
 {::options parse_block_html="true" /}
