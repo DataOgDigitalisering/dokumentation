@@ -60,6 +60,26 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 </details>
 {::options parse_block_html="false" /}
 <br>
+
+<!-- ØVELSE -->
+{::options parse_block_html="true" /}
+<details><summary markdown="span">**ØVELSE - KOLLEGAER** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
+
+> Kun vha. data fra CHRU_HRKube lav en tabel indeholdende alle dine kollegaer i sektionen. Tabellen skal indeholde en og kun en række pr. person med en af statuskoderne 0, 1 eller 3. Maksimalt ét søgekriterie må være hard-codet, fx et navn eller et id fra organisationshierakiet.
+> Sammensæt kolonnerne:
+>
+> | Navn | Fødselsdato | Alder | Stilling | Hovedstillingsgruppe | Sektion | Enhed | Statuskode | Anciennitet |
+>
+> - Hvad er aldersfordelingen blandt dine kollegaer
+> - Hvilke funktioner har I ansat i sektionen?
+> - Hvor længe har folk været ansat?
+>
+> Se <a href="https://github.com/DataOgDigitalisering/FortroligInformation/blob/main/Exercises/ex_kollegaer.sql" target="_blank">**løsningsforslag**</a>.
+
+</details>
+{::options parse_block_html="false" /}
+
+
 <!-- ØVELSE -->
 {::options parse_block_html="true" /}
 <details><summary markdown="span">**ØVELSE - KONTROL AF DATAADGANGE** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
