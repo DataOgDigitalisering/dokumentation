@@ -23,7 +23,8 @@ På denne wiki-side finder du:
   - Interne dokumenter som beskriver hvordan vi arbejder med **databaser, kuber og dashboards**.
   - Interne dokumenter som beskriver hvordan vi **versionsstyrer og dokumenterer vores arbejde**.
   - Beskrivelser af hvordan vi besvarer **postkassehenvendelser og laver dataudtræk**.
-Nedenfor kan du se en liste de produkter som vi udbyder, samt hvilke datakilder og miljøer de bygger på. Du kan også se en liste over de programmer som vi benytter i vores daglige arbejde.
+
+Nedenfor kan du se en liste over de produkter som vi udbyder, samt hvilke datakilder og miljøer de bygger på. Du kan også se en liste over de programmer som vi benytter i vores daglige arbejde.
 
 # Vores produkter
 
