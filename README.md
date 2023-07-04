@@ -14,14 +14,25 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 
 # Introduktion til hjemmesiden
 
-På denne wiki-side finder du dokumentation af
-  - *HR Strategisk Dashboard* og *Lederdashboard*, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
-  - *CHRU_HRKube* hvor kubens opbygning og measures er forklaret.
-  - Views og tabeller som kuben bygger på er også beskrevet.
-  - 
+På denne wiki-side finder du
+  - Dokumentation af *HR Strategisk Dashboard* og *Lederdashboard*, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
+  - Dokumentation af *CHRU_HRKube*, hvor kubens opbygning og measures er forklaret.
+  - Dokumentation af de views og tabeller som kuben bygger på.
+  - Interne dokumenter som beksriver vores workflow med databser, kuber og dashboards
+  - Interne dokumenter som beskriver hvordan vi versionsstyre og dokumenterer vores arbejde.
+  - Beskrivelser af hvordan vi besvarer postkassehenvendelser og laver dataudtræk.
+Nedenfor kan du se en liste de produkter som vi udbyder, samt hvilke datakilder og miljøer de bygger på. Du kan også se en liste over de programmer som vi benytter i vores daglige arbejde.
 
- 
-# Software
+# Vores produkter
+
+Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger på. Hvis man ændrer i nogle af vores miljøer, skal man være opmærksom på hvilke produkter det kan påvirke.
+
+<center>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={73422d8a-9d4c-4727-aa0e-5b24d601e81e}&amp;action=embedview" height="587" width="1000" frameborder="0"></iframe>
+</center>
+<br>
+
+# Software vi benytter
 Følgende software er en forudsætning og kan findes i <a href="https://softwarecentral.regionh.top.local/Shop" target="_blank">Softwareshoppen</a>. 
 
 Hav altid seneste version af Power BI Desktop installeret for at sikre nyeste og kompatibel funktionalitet med rapportserver. For versioner af øvrig software spørg en kollega, hvad de bruger.
@@ -33,19 +44,9 @@ Hav altid seneste version af Power BI Desktop installeret for at sikre nyeste og
   - Tabular Editor
 <br>
 
-# Produkter og hvad de bygger på
-
-Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger på. Hvis man ændrer i nogle af vores miljøer, skal man være opmærksom på hvilke produkter det kan påvirke.
-
-<center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={73422d8a-9d4c-4727-aa0e-5b24d601e81e}&amp;action=embedview" height="587" width="1000" frameborder="0"></iframe>
-</center>
-<br>
-
-
 
 # Dataadgang
-
+Nedenstående dokument beskriver hvordan du søger om adgang til data. Dette er vigtigt at du har de korrekte adgange når du f.eks. laver udtræk eller bygger dashboards.
 <!-- Embed iFrame. word-doc: "Guide til bestilling af adgange.docx" på OneDrive-->
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Guide til bestilling af dataadgange</summary>
@@ -55,6 +56,18 @@ Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger
 </details>
 {::options parse_block_html="false" /}
 <br>
+
+<!-- ØVELSE -->
+{::options parse_block_html="true" /}
+<details><summary markdown="span">**ØVELSE - KONTROL AF DATAADGANGE** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
+
+> - Følg <a href="https://github.com/DataOgDigitalisering/FortroligInformation/blob/main/Exercises/ex_dataadgange.sql" target="_blank">**dette link til SQL-script**</a>.
+> - Åbn og eksekver scriptet i SQL Server Management Studio. Kørslen kan tage >20 minutter og returnerer en tabel, der beskriver dine adgange. Spørg en kollega om du har de adgange, du har brug for.
+
+</details>
+{::options parse_block_html="false" /}
+
+
 
 # SQL kursus
 
@@ -67,16 +80,4 @@ Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger
 </details>
 {::options parse_block_html="false" /}
 <br>
-
-
-<!-- ØVELSE -->
-{::options parse_block_html="true" /}
-<details><summary markdown="span">**ØVELSE - KONTROL AF DATAADGANGE** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
-
-> - Følg <a href="https://github.com/DataOgDigitalisering/FortroligInformation/blob/main/Exercises/ex_dataadgange.sql" target="_blank">**dette link til SQL-script**</a>.
-> - Åbn og eksekver scriptet i SQL Server Management Studio. Kørslen kan tage >20 minutter og returnerer en tabel, der beskriver dine adgange. Spørg en kollega om du har de adgange, du har brug for.
-
-</details>
-{::options parse_block_html="false" /}
-
 
