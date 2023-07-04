@@ -1,20 +1,28 @@
 # Introduktion - UNDER UDVIKLING
 Denne side beskriver de ting som man skal være opmærksom på når man bygger og arbejder med kuber.
 
-# Arbejd med kuber
-navngivning + dokumentation + flyt arbejde mellem kuber
-
 # Brugerstyring og roller
-I *Tabular Editor* kan man 
-både tab editor + ssms
-Jeg mener at folk kan tilgå measrues gennem DAX-Studio, så pas på med hvad du skriver...
+Når man arbejder på en kube, er det vigtigt at man ved hvem der kan tilgå den. I dokumentationen af kuben er [brugerstyrring](https://dataogdigitalisering.github.io/dokumentation/kube_brugerstyring) beskrevet. Her er det beskrevet hvordan vi benytter Row-Level Security på vores kube. Ofte ønsker man dog først at lade folk tilgå en kube efter den er færdigudviklet og klar til brug. Man kan se hvem der har adgang til en given kube ved tilgå kuben i SSMS:
+- Åben SQL Server Management Stuio og forbind til den ønskede kube. Højreklik herefter på en af rollerne og vælg "*Properties*"
+TODO BILLEDE ÅBEN ROLE
+- Under "*Memebership*" kan du se hvem der har fået tildelt den givne rolle. Ofte ønsker vi kun at folk internt i *Data og Rapportering* skal kunne tilgå kuber som stadig er under udvikling. Når sikkerhed og brugerstyrring er testet igennem, kan man tildele eksterne folk i regionen rollen "*ReportReader*".
+TODO BILLEDE ROLE SHOW MEMEBRS
+
+I *Tabular Editor* kan man implementere brugerstyrring og RLS. Man skal dog være opmærksom på at alle som kan tilgå kuben også kan tilgå alle measures gennem DAX-Studio. Så man skal ikke skrive personfølsomme data ind i de measures som ligger i kuben.
+
+# Arbejd med kuber
+Når man laver ændringer i kuben er det vigtigt at *dokumenterer sit arbejde*. Dels skal man sørge for at komme *descriptions* på alle measures, tabeller og kolonner. Men man skal også huske at opdaterer dokumnetationen på vores Wiki-side, så den ikke bliver uddateret. Dette er beskrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering). 
+
+Herudover benytter vi GitHub til *versionsstyring af vores kuber*. På denne måde kan vi let arbejde parallelt på den samme kube, og *merge* vores ændringer sammen. Hvis man laver ændringer i en kube, eller vil lave en ny kube, er det vigtigt at man benytter versionsstyring fra starten. Man kan læse mere om dette under [*versionsstyring*](https://dataogdigitalisering.github.io/dokumentation/internt_versionsstyring)
+
+Nedenfor er det beskrevet hvordan vi navngiver og opbygger vores kuber. Ved at følge disse konventioner, sikrer vi os at kubens opbygning er konsistent på tværs af temaer og emner.
 
 # Tabeller og relationer
 navn, definition, parititioner, kolonner, navn, type, format, sort by  navngivning, secutirycorssfiltering, 
 
 # Measures
 navn, mappe, Opbygning, __foran variabel?, format, type, 
-Rækkefølgen på fanerne er også vigtig. Alle temaer og deres tilhørende undersider kommer først. Herefter kommer alle sider med filtervalg, og til sidst kommer alle sider med tooltips. Dette kan f.eks. ses i *HR Strategisk Dashboard*.
+
 
 
 #Gamle ting
