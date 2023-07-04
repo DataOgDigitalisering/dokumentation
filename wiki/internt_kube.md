@@ -25,10 +25,6 @@ Som introduktion til kuben kan anbefales at gennemgå materialet hér på siden 
 Du kan med fordel prøve at bygge din egen version af kuben i Power BI; tabel for tabel; measure for measure; figur for figur. 
 
 Til hvert tema findes små **øvelser**, hvor du kan testen din viden. Du vil herigennem få lidt erfaring med datatræk fra både rådata og kuben og få indblik i nogle af de datatransformationer, som må foretages, før vi kan foretage beregninger og analyser.
-<br>
-
-
-
 
 
 # Brugerstyring og roller
@@ -48,6 +44,8 @@ Herudover benytter vi GitHub til *versionsstyring af vores kuber*. På denne må
 Nedenfor er det beskrevet hvordan vi navngiver og opbygger vores kuber. Ved at følge disse konventioner, sikrer vi os at kubens opbygning er konsistent på tværs af temaer og emner.
 
 # Tabeller og relationer
+navn, definition, parititioner, kolonner, navn, type, format, sort by  navngivning, secutirycorssfiltering, 
+
 ## Intro til tabellerne
 I grove træk falder al data i kuben indenfor kategorierne
 
@@ -79,21 +77,12 @@ Derudover findes en række øvrige tabeller, herunder:
 
   - Undgå så vidt muligt datatransformation i Tabular Editor. Det giver bedre overblik at have samlet i SQL.
 
-
-
-navn, definition, parititioner, kolonner, navn, type, format, sort by  navngivning, secutirycorssfiltering, 
-
 # Measures
-
-
+navn, mappe, Opbygning, __foran variabel?, format, type, 
 ### Intro til measures
 Via measures implementeres vores standardiserede beregningsmetoder. De er grupperet temavis. I gruppen \__Diverse_ indgår beregninger på stamdata og dette kan være et godt sted at starte med at skabe overblik over kuben. Foruden indblik i de mere centrale tabeller vil du hér se eksempler på, hvordan viden om stamdata er essentielt for at kunne definere fx hvilken personalegruppe, der skal indgå i en given beregning; hvordan dette kan variere fra tema til tema; hvordan antallet af personer, der indgår i en beregning, er afgørende for, om et resultat nødvendigvis skal anonymiseres mm.
 
 Andre measures—lokaliseret i mapperne, \__Farver_ og \__Tekster_—bruges til kontrol af layout på dashboards; Farvetemaer, dynamiske akselængder og tekstetiketter, meddelelser, kolonnebredder mm. 
-
-
-
-navn, mappe, Opbygning, __foran variabel?, format, type, 
 
 
 ### Navngivning af measures
