@@ -52,6 +52,7 @@ Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis m
 
 En sidste ting man skal være opmæskom på er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette.
 <br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="250" style="vertical-align:middle"/>
+
 Da bogmærker let kan overskrive filtre på figurer er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. 
 
 # Nulstil, Infoboks og vis filtervalg
