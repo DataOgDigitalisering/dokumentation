@@ -59,7 +59,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 </center>
 </details>
 {::options parse_block_html="false" /}
-
+<br>
 <!-- ØVELSE -->
 {::options parse_block_html="true" /}
 <details><summary markdown="span">**ØVELSE - KONTROL AF DATAADGANGE** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
@@ -72,7 +72,11 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 
 
 
-# Guids til brug af programmer og software
+# Guids til programmer og software
+Vi har her samlet nogle gode links og dokumenter som beskriver hvordan man arbejder med de programmer og programmeringssprog som vi benytter dagligt.
+
+## Gode links og hjemmesider
+- [https://www.sqlbi.com](https://www.sqlbi.com/), beskriver mange vigtige aspekter af SQL og Power BI, og er et super sted at finde information om alt fra filterkontekt i DAX til opbygning af datamodeller.
 
 ## SQL-kursus
 <!-- Embed iFrame. PowerPoint: "SQL-kursus.pptx" på OneDrive-->
@@ -84,7 +88,4 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 </details>
 {::options parse_block_html="false" /}
 <br>
-
-## Gode links og hjemmesider
-- [https://www.sqlbi.com](https://www.sqlbi.com/), beskriver mange vigtige aspekter af SQL og Power BI, og er et super sted at finde information om alt fra filterkontekt i DAX til opbygning af datamodeller.
 
