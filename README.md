@@ -73,7 +73,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 
 
 # Guids til programmer og software
-Vi har her samlet nogle gode links og dokumenter, som beskriver hvordan man arbejder med de programmer og programmeringssprog som vi benytter til daglig.
+Vi har her samlet nogle gode links og dokumenter, som beskriver hvordan man arbejder med de programmer og programmeringssprog, som vi benytter til daglig.
 
 ## Gode links og hjemmesider
 - [https://www.sqlbi.com](https://www.sqlbi.com/), beskriver mange vigtige aspekter af SQL og Power BI, og er et super sted at finde information om alt fra filterkontekt i DAX til opbygning af datamodeller.
