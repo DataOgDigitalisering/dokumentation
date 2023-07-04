@@ -60,6 +60,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 </details>
 {::options parse_block_html="false" /}
 <br>
+
 <!-- ØVELSE -->
 {::options parse_block_html="true" /}
 <details><summary markdown="span">**ØVELSE - KONTROL AF DATAADGANGE** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
