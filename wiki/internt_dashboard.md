@@ -84,7 +84,7 @@ Man skal herefter fortælle Power BI hvilke rækker i hjælpetabellen som skal v
 Drill filter = IF(HASONEFILTER(Besvarelser[Kursusnavn]),"Hold","Kursus")
 ```
 
-Her ses hvordan det fungerer for kursusportalen. Et kursus kan have flere hold og vi ønsker at visualiseringen skifter til hold-niveau, når man har valgt et bestemt kursus med sliceren. Dvs. vi går fra at vise hvert kursus som en liggende søjle,til at vise hvert hold. Hvis man vælger flere kurser, vises visualiseringen på kursusniveau. Vis man ønsker fortsat drilldown selvom mere end et kursus (topniveau) er valgt, så skal man ændre HASONEFILTER til ISFILTERED.
+Her ses hvordan det fungerer for kursusportalen. Et kursus kan have flere hold og vi ønsker at visualiseringen skifter til hold-niveau, når man har valgt et bestemt kursus med sliceren. Dvs. vi går fra at vise hvert kursus som en liggende søjle, til at vise hvert hold. Hvis man vælger flere kurser, vises visualiseringen på kursusniveau. Vis man ønsker fortsat drilldown selvom mere end et kursus (topniveau) er valgt, så skal man ændre HASONEFILTER til ISFILTERED.
  
 ## Benyt filter på visualiseringerne 
 Herefter skal man benytte sit measure til at filtrere visualiseringen i Power BI. Dette kan gøres ved at definere et measure af typen:
@@ -93,12 +93,12 @@ VisualiseringDrill = IF(FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpet
 ```
 hvor "FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i heiraki])" udvælger øverste række i hjælpetabellen. Herefter sættes filteret på visualiseringen i *Power BI* til 
 ```
-VisualiseringDrill IS *Vis*
+VisualiseringDrill IS "Vis"
 ```
 
 Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, så vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vises. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" var sandt, så ville kun det nedre niveau, "*Hold*", som blev vist.
 
-Så hvis der ikke er valgt et filter returnere Drill Filter *Kursus* og kun dette udsnit af hjælpetabellen indgår i visualiseringen 
+Så hvis der ikke er valgt et filter, returnerer Drill Filter *Kursus*, og kun dette udsnit af hjælpetabellen indgår i visualiseringen 
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
@@ -112,9 +112,5 @@ Havde man valgt et filter ville kun denne del af hjælpetabellen indgå i visual
 | 1 | Hold | Holdnavn |
 | 2 | Hold |  Holdnavn |
 
-For et udvidet eksempel, hvor hierarkiet har mere en to niveauer se. 
-Kube measure 
-
-*OrgNiveau* og 
-*OrgNiveauFilterDrill*
+For et udvidet eksempel, hvor hierarkiet har mere en to niveauer, kan du se de to measrues *OrgNiveau* og *OrgNiveauFilterDrill* som fanen "*Exit-undersøgelse*" I *HR Strategisk Dashboard* benytter.
  
