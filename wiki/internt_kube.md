@@ -40,9 +40,6 @@ Derudover findes en række øvrige tabeller, herunder:
   - **Formål**: Dim, Fact, Security, Info, Slicer, Tally.
   - **Beskrivende navn** er entydig(e) og letforståelig(e) *substantiv(er)*. (Gerne noget der minder om rådatatabellens oprindelige navn hvis viewet er baseret på en sådan). Sammensatte ord skrives i camelCase
 
-- **Tabeller** navngives som views. [Formål]+[**B**eskrivende**N**avn]. Fx DimLønart
-  - __v\___ udelades
-
 - **Kolonnenavne** er entydige og letforståelige *substantiver*
   - camelCase
   - Disse felter udfyldes i Tabular Editor, hvis ikke de er pre-udfyldt:
@@ -50,12 +47,8 @@ Derudover findes en række øvrige tabeller, herunder:
     - Description
     - Key
 
-
-### Calculated columns
   - Undgå så vidt muligt datatransformation i Tabular Editor. Det giver bedre overblik at have samlet i SQL.
-    - (Flyt evt nedenstående til views og brug en mere robust metode til anonymisering:)
-      - v_DimAnsættelse[TjnrAnonymiseret]
-      - v_DimPerson[NavnAnonymiseret]   
+
 
 
 navn, definition, parititioner, kolonner, navn, type, format, sort by  navngivning, secutirycorssfiltering, 
@@ -73,32 +66,6 @@ Andre measures—lokaliseret i mapperne, \__Farver_ og \__Tekster_—bruges til 
 navn, mappe, Opbygning, __foran variabel?, format, type, 
 
 
-
-#Gamle ting
-### Tabeller
-- Navngives som fx v_DimAnsættelse
-- Skabelon: [tabeltype]+[\_]+[Formål]+[BeskrivendeNavn]
-- **Views** indledes med __v\___ 
-  - Alt *efterfølgende* skrives i camelCase (**S**tort**B**egyndelsesbogstav)
-  - **Formål**: Dim, Fact, Security, Info, Slicer, Tally.
-  - **Beskrivende navn** er entydig(e) og letforståelig(e) *substantiv(er)*. (Gerne noget der minder om rådatatabellens oprindelige navn hvis viewet er baseret på en sådan). Sammensatte ord skrives i camelCase
-
-- **Tabeller** navngives som views. [Formål]+[**B**eskrivende**N**avn]. Fx DimLønart
-  - __v\___ udelades
-
-- **Kolonnenavne** er entydige og letforståelige *substantiver*
-  - camelCase
-  - Disse felter udfyldes i Tabular Editor, hvis ikke de er pre-udfyldt:
-    - Data Type
-    - Description
-    - Key
-
-
-### Calculated columns
-  - Undgå så vidt muligt datatransformation i Tabular Editor. Det giver bedre overblik at have samlet i SQL.
-    - (Flyt evt nedenstående til views og brug en mere robust metode til anonymisering:)
-      - v_DimAnsættelse[TjnrAnonymiseret]
-      - v_DimPerson[NavnAnonymiseret]   
 
 
 ### Stored procedures
