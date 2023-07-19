@@ -40,8 +40,6 @@ Nedenfor er det beskrevet hvordan vi navngiver og opbygger vores kuber. Ved at f
 
 # Tabeller og relationer
 
-navn, definition, parititioner, kolonner, navn, type, format, sort by  navngivning, secutirycorssfiltering, 
-
 ## Intro til tabellerne
 I grove træk falder al data i kuben indenfor kategorierne
 
@@ -57,21 +55,21 @@ Derudover findes en række øvrige tabeller, herunder:
 - Info er data som fx dato på **dataleverancer** og **servicemeddelelser** til brugere af dashboard om nye opdateringer eller tilføjelser
 
 ## Navngivning af tabeller
-- **Tabeller** i kuben navngives på måden [tabeltype]+[\_]+[Formål]+[BeskrivendeNavn], hvor
+- **Tabeller** i kuben navngives på måden [tabeltype]+[\_]+[Formål]+[BeskrivendeNavn] som fx *v_DimAnsættelse*, hvor
   - *Tabeltype* angiver hvilken kilde tabellen bygger på, alle vores tabeller bygger på **Views** og indledes med __v\___ 
   - *Formål* angiver tabellens funktion, og kan være *Dim, Fact, Security, Info, Slicer,* eller *Tally*.
   - *Beskrivende navn* er entydig(e) og letforståelig(e) *substantiv(er)*. Dette navne skal gerne være identisk med navnet på det view som tabellen bygger på. Sammensatte ord skrives i camelCase (**S**tort**B**egyndelsesbogstav).
+- **Kolonnenavne** skal være entydige og letforståelige *substantiver*, og navngives på følgende måde:
+  - Ligesom for tabelnanvn skal kolonnenenavnene være identiske med dem som er i det view som tabellen bygger på.
+  - Der benyttes camelCase
+  - Den primære nøgle i dimensionstabeller navngives *ID*, den fremmednøgle navngives *[Beskrivende navn på dimensionstabel] + [ID]*. Dette kan fx i tabellen *v_DimExitSurveyRespondent* som har en primærnøgle  *'v_DimExitSurveyRespondent'[ID]* og en relation til *'v_FactExitSurvey'[ExitSurveyRespondentID]*. Det er vigtigt at huske at navngive disse kolonner korrekt, ellers kan datamodellen hurtigt blive uoverskuelig, og det kan være svært at få overblik over relationer.
 
-En tabel kan fx hedde *v_DimAnsættelse*. 
-
-**Kolonnenavne** skal være entydige og letforståelige *substantiver*, og navngives på følgende måde:
-- camelCase
- Disse felter udfyldes i Tabular Editor, hvis ikke de er pre-udfyldt:
-  - Data Type
-  - Description
-  - Key
-  - Undgå så vidt muligt datatransformation i Tabular Editor. Det giver bedre overblik at have samlet i SQL.
-
+Der er et par andre ting som man skal være opmærksomme på når man opretter tabeller i kuben:
+  - Undgå så vidt muligt *datatransformation i Tabular Editor*. Det giver bedre overblik at have samlet i SQL. Dvs. at datatypen, kolonnenavne, tabelnavn osv. skal være idend dem som er i det view tabellen bygger på.
+  - Husk at udfylde feltet med *description* Tabular Editor, både for tabellen og kolonnerne. Dette er også beksrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering).
+  - Sørg også for at formateringen* af kolonnen er korrekt, så tal bliver vist med tusindtalsseparator og det ønskede antal decimaler.
+  - Man kan også udfylde feltet med *Sort by Column*. På denne måde kan man fx styre rækkefølgen spørgsmålstekster bliver vist i, når man laver figurer i PowerBI.
+  - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt. TODO BILLEDE + VIRKER IKKE ALTID
 # Measures
 navn, mappe, Opbygning, __foran variabel?, format, type, 
 ### Intro til measures
