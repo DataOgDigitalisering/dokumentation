@@ -2,14 +2,10 @@
 Denne side beskriver de ting som man skal være opmærksom på når man bygger og arbejder med kuber.
 
 # Kort om kuben
-I dit arbejde får du brug for at kende og kunne arbejde med data i "**kuben**" (med kuben menes—indtil videre—CHRU_HRKube). 
+I dit arbejde får du brug for at kende og kunne arbejde med data i "**kuben**" (med kuben menes primært CHRU_HRKube). 
 
-I kuben processeres data fra mange forskellige kilder til en række forskellige formål. Kuben er datamodel i bl.a. 
-<a href="https://flis.regionh.top.local:444/PBIReports/powerbi/L%C3%B8n%20og%20HR/HR%20Lederdashboard/HR%20Lederdashboard?RC:Toolbar=False" target="_blank">___HR Lederdashboard___</a> 
-og 
-<a href="https://flis.regionh.top.local:444/PBIReports/powerbi/L%C3%B8n%20og%20HR/HR%20Strategisk%20Dashboard/HR%20Strategisk%20Dashboard?RC:Toolbar=False" target="_blank">___HR Strategisk Dashboard___</a>. 
-I disse implementeres vores standardiserede beregningsmetoder indenfor temaer som sygefravær, ferieafholdelse, personalesammensætning, løn, vagtplan m.fl. 
-Flere temaer tilføjes løbende i takt med efterspørgsel og tilgængelige datakilder, hvorfor vi altid bestræber os på, at kuben skal være en adaptiv størrelse. Hér er din indsigt i både muligheder og begrænsninger med den nuværende model værdifuld, da vi altid gerne vil kunne tilføje nye temaer *og* samtidig bevare muligheden for at foretage vores nuværende beregninger.
+Både *HR Lederdashbord* og *HR Strategisk Dashboard* bygger på kuben. I kuben implementeres vores standardiserede beregningsmetoder indenfor temaer som sygefravær, ferieafholdelse, personalesammensætning, løn, vagtplan m.fl. 
+Flere temaer tilføjes løbende i takt med efterspørgsel og tilgængelige datakilder, hvorfor vi altid bestræber os på, at kuben skal være en adaptiv størrelse. Hér er din indsigt i både muligheder og begrænsninger med den nuværende model værdifuld.
 
 På produktions- og udviklingsserverne findes data under skemaet, **chru_cube**. I Tabular Editor findes kuben under navnet **CHRU_HRKube**.
 
@@ -21,8 +17,8 @@ På produktions- og udviklingsserverne findes data under skemaet, **chru_cube**.
 </details>
 <br> 
 
-Som introduktion til kuben kan anbefales at gennemgå materialet hér på siden ét tema ad gangen. Husk dog, at denne data er processeret til brug i datamodellen, hvorfor det er en nødvendighed, at du også har indblik i rådata fra fx Silkeborg Data (**SD**). 
-Du kan med fordel prøve at bygge din egen version af kuben i Power BI; tabel for tabel; measure for measure; figur for figur. 
+Som introduktion til kuben kan anbefales at gennemgå materialet hér på wiki-siden, ét tema ad gangen. Husk dog, at denne data er processeret til brug i datamodellen, hvorfor det er en nødvendighed, at du også har indblik i rådata fra fx Silkeborg Data (**SD**). 
+Du kan med fordel prøve at bygge din egen kube i Tabular Editor. Dette kan give en god indsigt i hvordan *CHRU_HRKube* er bygget op.
 
 Til hvert tema findes små **øvelser**, hvor du kan testen din viden. Du vil herigennem få lidt erfaring med datatræk fra både rådata og kuben og få indblik i nogle af de datatransformationer, som må foretages, før vi kan foretage beregninger og analyser.
 
