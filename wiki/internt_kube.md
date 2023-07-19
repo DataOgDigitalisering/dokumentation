@@ -14,6 +14,11 @@ På produktions- og udviklingsserverne findes data under skemaet, **chru_cube**.
  <center>
   <img src="Images/erd/erd_pbi_chru_hrkube_labels.png" height="480" width="800" onmouseover="CHRU_HRKube, 2023-01-30" style="vertical-align:middle"/>
  </center>
+<center>
+<iframe width="100%" height="700" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/:i:/r/personal/stefan_sajin-henningsen_regionh_dk/Documents/DokumentationStatisk/Git%20Pages-mappen/billeder/erd_pbi_chru_hrkube_labels.png?csf=1&web=1&e=5WxQ7R"></iframe>
+</center>
+
+ 
 </details>
 <br> 
 
