@@ -1,15 +1,11 @@
-# Data
+# Introduktion
+Vores views bygger på tabeller som ligger på de databaser vi har adgang til. Nedenfor er en oversigt over vores serverer og databaser. Det er også beskrevet hvordan vi arbejder med tabeller.
 
+# Overblik over serverer og databaser
 <!-- PowerPoint: "Data.pptx"  -->
 <center>
 <iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={1eabb8b8-ee27-4f6b-a998-091ce9ca0872}&amp;action=embedview&amp;wdAr=1.7777777777777777" height="587" width="1000" frameborder="0"></iframe>
 </center>
 
-- **Tabeller** navngives som views. [Formål]+[**B**eskrivende**N**avn]. Fx DimLønart
-  - __v\___ udelades
-### Stored procedures
-  - Navngives kort og præcist beskrivende fx 'DanskeHelligdage'
-  - Brug så vidt muligt verber til at beskrive procedurens *funktion*
-  - camelCase
-
-- æ, ø, å tilladt
+# Tabeller
+Vi opretter som udgangspunkt ikke selv tabeller i vores udviklings eller produktionsmiljøer. Dette står CØK for. Under [*Versionsstyring af databaser og tabeller*](https://github.com/DataOgDigitalisering/Tabeller) kan man se CØK's egen dokumentation af de tabeller som ligger på vores udviklings- og produktionsserver. Andre tabeller med "rådata" er dokumenteret her: [*https://www.silkeborgdata.dk/start/support/vejledning/beskrivelse-af-dataleverancer*]([https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering](https://www.silkeborgdata.dk/start/support/vejledning/beskrivelse-af-dataleverancer)).
