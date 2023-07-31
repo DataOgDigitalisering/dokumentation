@@ -97,21 +97,21 @@ hvor "FIRSTNONBLANK(Hjælpetabel[Placering i heiraki],Hjælpetabel[Placering i h
 VisualiseringDrill IS "Vis"
 ```
 
-Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, så vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vises. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" var sandt, så ville kun det nedre niveau, "*Hold*", som blev vist.
+Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vil blive vist. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" derimod var sandt, så er det kun det nedre niveau, "*Hold*", som bliver vist.
 
-Så hvis der ikke er valgt et filter, returnerer Drill Filter *Kursus*, og kun dette udsnit af hjælpetabellen indgår i visualiseringen 
+Så hvis der ikke er valgt et filter, returnerer Drill Filter *Kursus*, og kun dette udsnit af hjælpetabellen indgår i visualiseringen: 
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
 | 1 | Kursus | Kursusnavn |
 | 2 | Kursus |  Kursusnavn |
 
-Havde man valgt et filter ville kun denne del af hjælpetabellen indgå i visualiseringen.
+Havde man derimod valgt ét bestemt kursus, ville kun denne del af hjælpetabellen indgå i visualiseringen:
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
 | 1 | Hold | Holdnavn |
 | 2 | Hold |  Holdnavn |
 
-For et udvidet eksempel, hvor hierarkiet har mere en to niveauer, kan du se de to measures *OrgNiveau* og *OrgNiveauFilterDrill* som fanen "*Exit-undersøgelse*" I *HR Strategisk Dashboard* benytter.
+For et udvidet eksempel, hvor hierarkiet har mere en to niveauer, kan du se de to measures *OrgNiveau* og *OrgNiveauFilterDrill* som fanen "*Exit-undersøgelse*" i HR Strategisk Dashboard benytter.
  
