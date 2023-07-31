@@ -23,11 +23,11 @@ Som introduktion til kuben kan det anbefales at gennemgå materialet hér på wi
 Når man arbejder på en kube, er det vigtigt at man ved hvem der kan tilgå den. I dokumentationen af kuben er [*brugerstyring*](https://dataogdigitalisering.github.io/dokumentation/kube_brugerstyring) beskrevet. Her er det beskrevet hvordan vi benytter Row-Level Security (RLS) til at implementere brugerstyring på kuben. Ofte ønsker man dog først at lade folk tilgå en kube når den er færdigudviklet og klar til brug. Man kan se hvem der har adgang til en given kube ved tilgå kuben gennem *SQL Server Management Studio* (SSMS):
 - Åben *SSMS* og forbind til den ønskede kube. Højreklik herefter på en af rollerne og vælg "*Properties*"
 TODO BILLEDE ÅBEN ROLE
-<br><img src="Images/BillederInterntKube/seRoles.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntKube/seRoles.png" height="250" style="vertical-align:middle"/>
 
 - Under "*Memebership*" kan du se hvem der har fået tildelt den givne rolle. Ofte ønsker vi kun at folk internt i *Data og Rapportering* skal kunne tilgå kuber som stadig er under udvikling. Når sikkerhed og brugerstyrring er testet igennem, kan man tildele eksterne folk i regionen rollen "*ReportReader*".
 TODO BILLEDE ROLE SHOW MEMEBRS
-<br><img src="Images/BillederInterntKube/seRollerPersoner.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntKube/seRollerPersoner.png" height="90" style="vertical-align:middle"/>
 
 I *Tabular Editor* kan man implementere brugerstyrring og RLS. Man skal dog være opmærksom på at alle som kan tilgå kuben også kan tilgå alle measures gennem DAX-Studio. Så man skal ikke skrive personfølsomme oplysninger ind i de measures som ligger i kuben.
 
@@ -70,7 +70,7 @@ Der er et par andre ting som man skal være opmærksomme på når man opretter t
   - Sørg også for at **formateringen af kolonnen** er korrekt, så tal bliver vist med tusindtalsseparator og det ønskede antal decimaler.
   - Man kan også udfylde feltet med *Sort by Column*. På denne måde kan man fx styre rækkefølgen spørgsmålstekster bliver vist i, når man laver figurer i PowerBI.
   - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt, selvom der også kan være problemer med RLS selv når man har indstillet *Securiry Filtering Behavior* korrekt. TODO SKRIV NOGET OM DETTE TIL BRUGERSTYRING.
-<br><img src="Images/BillederInterntKube/securityFiltering.png" height="150" style="vertical-align:middle"/>
+<br><img src="Images/BillederInterntKube/securityFiltering.png" height="130" style="vertical-align:middle"/>
 
 # Measures
 ## Intro til measures
