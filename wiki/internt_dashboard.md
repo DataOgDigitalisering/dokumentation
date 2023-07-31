@@ -62,7 +62,7 @@ Der er tre vigtige knapper som går igen i alle temaerne, det er
 -  "*Vis filtervalg*" - Her kan brugeren få et overblik over de filtreringer man har valgt i slicerne i højre side. Se evt. siden "*Exit-undersøgelse*" i HR Strategisk Dashboard for opsætning og layout.
 
 # Automatisk drilldown på visualiseringer
-Nogle gange ønsker man at en visualisering automatisk viser et lavere niveau, når man filtrerer på afdelinger eller stillinger. Det beskrives her hvordan man på hierarkisk struktureret data, automatisk kan få vist det nedre niveau, når man har filtreret på det øvre niveau. I temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard kan man se det blive brugt med organisationsstrukturen i en figur med liggende søjler. *Power BI* understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
+Nogle gange ønsker man at en visualisering automatisk viser et lavere niveau, når man fx filtrerer på afdelinger eller stillinger. Det beskrives her hvordan man på hierarkisk struktureret data, automatisk kan få vist det nedre niveau, når man har filtreret på det øvre niveau. I temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard kan man se det blive brugt med organisationsstrukturen i en figur med liggende søjler. *Power BI* understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
 
 ## Hjælpetabellen
 Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. Her ses et eksempel på hjælpetabellens struktur fra kursusportal dashboardet:
