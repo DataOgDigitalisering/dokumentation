@@ -72,13 +72,13 @@ Der er et par andre ting som man skal være opmærksomme på når man opretter t
   - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt. TODO BILLEDE + VIRKER IKKE ALTID
 # Measures
 navn, mappe, Opbygning, __foran variabel?, format, type, 
-### Intro til measures
+## Intro til measures
 Via measures implementeres vores standardiserede beregningsmetoder. De er grupperet temavis. I gruppen \__Diverse_ indgår beregninger på stamdata og dette kan være et godt sted at starte med at skabe overblik over kuben. Foruden indblik i de mere centrale tabeller vil du hér se eksempler på, hvordan viden om stamdata er essentielt for at kunne definere fx hvilken personalegruppe, der skal indgå i en given beregning; hvordan dette kan variere fra tema til tema; hvordan antallet af personer, der indgår i en beregning, er afgørende for, om et resultat nødvendigvis skal anonymiseres mm.
 
 Andre measures—lokaliseret i mapperne, \__Farver_ og \__Tekster_—bruges til kontrol af layout på dashboards; Farvetemaer, dynamiske akselængder og tekstetiketter, meddelelser, kolonnebredder mm. 
 
 
-### Navngivning af measures
+## Navngivning af measures
 - Navngives fx [Fravær - vægtede fuldtidsfraværsdage]. 
 - Skabelon: [tema - beskrivende og letforståelig tekst]
   - (ikke nødvendigvis camelCase)
@@ -86,8 +86,6 @@ Andre measures—lokaliseret i mapperne, \__Farver_ og \__Tekster_—bruges til 
   - Enkelte basis-measures placeres i mappen _Diverse_, hvis de bruges på tværs af temaer. Fx [Antal fuldtidsansatte] og [FilterSlicer]
 - æ ø å tilladt
 - Ikke alle measures er navngivet efter denne konvention. Ved tvivl se mappen _Sygefravær_
-- Disse felter udfyldes i Tabular Editor, hvis ikke de er pre-udfyldt:
-  - Description
-<br>
 
+Husk også at udfylde feltet med *description* Tabular Editor. Dette er også beskrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering). Feltet med *formatering* af measuret skal også være udfyldt korrekt, så tal fx bliver vist med tusindtalsseparator.
 
