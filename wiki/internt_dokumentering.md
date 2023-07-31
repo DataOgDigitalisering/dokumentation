@@ -39,8 +39,8 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 - Beskrivelse af tabeller og vores database. Dette giver en indsigt i hvordan tabeller er defineret og hvordan vores miljø er bygget op. **Denne dokumentation skrives sideløbende med at man tilføjer nye tabeller eller laver andre ændringer på vores database i produktion**.
 - Beskrivelse af vores **arbejdsprocesser og de værktøjer** som vi bruger. Dette gælder dels brug at GitHub, wiki-siden, dokumentering og versionsstyring, men også hvordan man udvikler og arbejder med dashboards, kuber, views og tabeller. Dette er med til at sikre vi har en konsistent måde at arbejde på i alt fra navngivning af kolonner til opsætning af bogmærker i Power BI. **Denne dokumentation skrives løbende**.
 
-# Skabeloner til dokumentation - under udvikling
-Følgende skabeloner viser hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden.
+# Skabeloner til dokumentation - UNDER UDVIKLING
+Følgende skabeloner viser hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden. TODO DETTE AFSNIT ER UNDER UDVIKLING
 ## Dashboards - skabelon
 
 - Dashboards
