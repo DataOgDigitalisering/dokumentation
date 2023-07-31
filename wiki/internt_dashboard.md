@@ -99,7 +99,7 @@ VisualiseringDrill IS "Vis"
 
 Fordi hjælpetabellen indeholder gentagende ID'er for hvert udsnit af hierarkiet, vil kun det udsnit af tabellen hvor *Hjælpetabel[Placering i heiraki]=[Drill filter]* blive vist. Så hvis der ikke er valgt et filter, er *[Drill Filter] = "Kursus"* og kun de rækker med "*Kursus*" i kolonnen "*Hjælpetabel[Placering i heiraki]*" vil blive vist. Hvis "*HASONEFILTER(Besvarelser[Kursusnavn])*" derimod var sandt, så er det kun det nedre niveau, "*Hold*", som bliver vist.
 
-Så hvis der ikke er valgt et filter, returnerer Drill Filter *Kursus*, og kun dette udsnit af hjælpetabellen indgår i visualiseringen: 
+Så hvis der ikke er valgt et filter, returnerer measuret *Drill Filter* værdien *Kursus*, og følgende udsnit af hjælpetabellen indgår i visualiseringen: 
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
