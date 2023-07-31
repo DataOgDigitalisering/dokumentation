@@ -23,7 +23,7 @@ Man kan bruge Git med kommandoer via terminalen eller vha. et program som f.eks.
 * Sidst laves et ```git push``` for lægge ændringer op i GitHub 
 
 ### Nyt Projekt
-Når et nyt projekt startes, som skal versionsstyres, skal der oprettes en folder til projektet. Herefter skabes der et git repository ved at køre kommandoen '''git init''' i stien til den nyoprettede folder. Der vil nu blive oprettet en skjult mappe .git, som er git repository’et. Den sørger for registrere og gemme alle ændringer, der sker på filer i projektmappen – et såkaldt lokalt repository.
+Når et nyt projekt startes, som skal versionsstyres, skal der oprettes en folder til projektet. Herefter skabes der et git repository ved at køre kommandoen ```git init``` i stien til den nyoprettede folder. Der vil nu blive oprettet en skjult mappe .git, som er git repository’et. Den sørger for registrere og gemme alle ændringer, der sker på filer i projektmappen – et såkaldt lokalt repository.
 
 For at kunne samarbejde med andre og have backup af projekter er det dog vigtigt at benytte sig repositories, der ligger i ”skyen”. Det er her GitHub kommer ind i billedet, hvor man ”pusher” sit lokale repository til en server på GitHub.
 
