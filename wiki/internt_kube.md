@@ -32,7 +32,7 @@ TODO BILLEDE ROLE SHOW MEMEBRS
 I *Tabular Editor* kan man implementere brugerstyrring og RLS. Man skal dog være opmærksom på at alle som kan tilgå kuben også kan tilgå alle measures gennem DAX-Studio. Så man skal ikke skrive personfølsomme oplysninger ind i de measures som ligger i kuben.
 
 # Dokumentation og versionsstyring af kuben
-Når man laver ændringer i kuben er det vigtigt at *dokumenterer sit arbejde*. Dels skal man sørge for at komme *descriptions* på alle measures, tabeller og kolonner. Men man skal også huske at opdaterer dokumnetationen på vores Wiki-side, så den ikke bliver uddateret. Dette er beskrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering). 
+Når man laver ændringer i kuben er det vigtigt at *dokumenterer sit arbejde*. Dels skal man sørge for at komme *descriptions* på alle measures, tabeller og kolonner. Men man skal også huske at opdaterer dokumentationen på vores Wiki-side, så den ikke bliver uddateret. Dette er beskrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering). 
 
 Herudover benytter vi GitHub til *versionsstyring af vores kuber*. På denne måde kan vi let arbejde parallelt på den samme kube, og *merge* vores ændringer sammen. Hvis man laver ændringer i en kube, eller vil lave en ny kube, er det vigtigt at man benytter versionsstyring fra starten. Man kan læse mere om dette under [*versionsstyring*](https://dataogdigitalisering.github.io/dokumentation/internt_versionsstyring)
 
@@ -51,7 +51,7 @@ I grove træk falder al data i kuben indenfor kategorierne
 - **Temaspecifik data** anvendes specifikt til beregning på fx sygefravær, ferieafholdelse eller personalesammensætning. Af screenshottet herover ses, hvordan vores data groft er grupperet i temaer.
 
 Derudover findes en række øvrige tabeller, herunder:
-- Hjælpetabeller er **tally**- og **slicer**-tabeller. Disse bruges til definereing af intervaller (fx aldersintervaller), grupperings-, sorterings- og filtreringsmuligheder
+- Hjælpetabeller er **tally**- og **slicer**-tabeller. Disse bruges til definering af intervaller (fx aldersintervaller), grupperings-, sorterings- og filtreringsmuligheder
 - Info er data som fx dato på **dataleverancer** og **servicemeddelelser** til brugere af dashboard om nye opdateringer eller tilføjelser
 
 ## Navngivning af tabeller
@@ -60,13 +60,13 @@ Derudover findes en række øvrige tabeller, herunder:
   - *Formål* angiver tabellens funktion, og kan være *Dim, Fact, Security, Info, Slicer,* eller *Tally*.
   - *Beskrivende navn* er entydig(e) og letforståelig(e) *substantiv(er)*. Dette navne skal gerne være identisk med navnet på det view som tabellen bygger på. Sammensatte ord skrives i camelCase (**S**tort**B**egyndelsesbogstav).
 - **Kolonnenavne** skal være entydige og letforståelige *substantiver*, og navngives på følgende måde:
-  - Ligesom for tabelnanvn skal kolonnenenavnene være identiske med dem som er i det view som tabellen bygger på.
+  - Ligesom for tabelnavn skal kolonnenavnene være identiske med dem som er i det view som tabellen bygger på.
   - Der benyttes camelCase
   - Den primære nøgle i dimensionstabeller navngives *ID*, den fremmednøgle navngives *[Beskrivende navn på dimensionstabel] + [ID]*. Dette kan fx i tabellen *v_DimExitSurveyRespondent* som har en primærnøgle  *'v_DimExitSurveyRespondent'[ID]* og en relation til *'v_FactExitSurvey'[ExitSurveyRespondentID]*. Det er vigtigt at huske at navngive disse kolonner korrekt, ellers kan datamodellen hurtigt blive uoverskuelig, og det kan være svært at få overblik over relationer.
 
 Der er et par andre ting som man skal være opmærksomme på når man opretter tabeller i kuben:
-  - Undgå så vidt muligt *datatransformation i Tabular Editor*. Det giver bedre overblik at have samlet i SQL. Dvs. at datatypen, kolonnenavne, tabelnavn osv. skal være idend dem som er i det view tabellen bygger på.
-  - Husk at udfylde feltet med *description* Tabular Editor, både for tabellen og kolonnerne. Dette er også beksrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering).
+  - Undgå så vidt muligt *datatransformation i Tabular Editor*. Det giver bedre overblik at have samlet i SQL. Dvs. at datatypen, kolonnenavne, tabelnavn osv. skal være identisk med dem som er i det view tabellen bygger på.
+  - Husk at udfylde feltet med *description* Tabular Editor, både for tabellen og kolonnerne. Dette er også beskrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering).
   - Sørg også for at formateringen* af kolonnen er korrekt, så tal bliver vist med tusindtalsseparator og det ønskede antal decimaler.
   - Man kan også udfylde feltet med *Sort by Column*. På denne måde kan man fx styre rækkefølgen spørgsmålstekster bliver vist i, når man laver figurer i PowerBI.
   - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt. TODO BILLEDE + VIRKER IKKE ALTID
