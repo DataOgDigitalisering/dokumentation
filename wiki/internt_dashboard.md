@@ -16,7 +16,7 @@ Rækkefølgen på fanerne er også vigtig. Alle temaer og deres tilhørende unde
 # Selection - gruppering af objekter
 Alle objekter som figurer, knapper og tekstfelter skal grupperes. Dette gør det bl.a. lettere at holde styr på layer order og bogmærker. Under fanen "*View*" i Power BI kan man vælge at få "*Selection*" vist. Vi inddeler objekterne i følgende grupperinger:
  - "*Info*" - hvor alle objekter og tekstbokse, som bliver vist i infoboksen, er med.
- - "*Generelt*" - hvor overskrift, logo og tekst som beskriver opdateringskadancen er med.
+ - "*Generelt*" - hvor overskrift, logo og tekst som beskriver opdateringskadencen er med.
  - "*Filtre*" - som indeholder alle slicers, bokse mm. som danner filtrene i højre side af dashboardet.
 <br><img src="Images/BillederInterntDashboard/selections.PNG" height="240" style="vertical-align:middle"/>
 
@@ -24,7 +24,7 @@ Herudover er det ofte en god idé at gruppere grafer og visualiseringer. Man ska
 <br><img src="Images/BillederInterntDashboard/layerOrder.PNG" height="260" style="vertical-align:middle"/>
 
 # Formatering af figurer og tekster
-Vi benytter bestemte farver, skrifttyper og skriftstørrelser i vores dashboards. Nogle farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem *Power BI*. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i den, når man vil tilføje nye figurer. På den måde sikrer man sig at skrifttype og skriftstørrelser mm. er identiske. Man skriver normalt overskrifter og tekster ind manuelt i *Power BI*, medmindre den optræder flere steder eller skal være dynamisk. Hvis overskriften skal være dynamisk kan man gemme den i kuben under "*_Tekster*".
+Vi benytter bestemte farver, skrifttyper og skriftstørrelser i vores dashboards. Nogle farvekoder er gemt i kuben under "*_Farver*" og kan refereres til gennem *Power BI*. Andre er tastet manuelt ind på den givne figur. **Det er ofte en god idé at kopiere en figur som allerede er i dashboardet** og tage udgangspunkt i den, når man vil tilføje nye figurer. På den måde sikrer man sig at skrifttype og skriftstørrelser mm. er identiske. Man skriver normalt overskrifter og tekster ind manuelt i *Power BI*, medmindre den optræder flere steder eller skal være dynamisk. Hvis overskriften skal være dynamisk, kan man gemme den i kuben under "*_Tekster*".
 
 # Filtre - på siden, på figuren og i measuret
 Filtrering af data kan ske direkte i measuret eller det kan ske i *Power BI*. Ofte er det en god idé at lave nogle measures som er lidt mere generelle, og herefter tilføje filtrene i *Power BI*. Dette er dog ikke altid muligt eller hensigtsmæssigt, og vi har ikke en fast regel for hvor et filter skal tilføjes. I *Power BI* kan man tilføje filtre på hele siden. Disse filtre er ofte forskellige for hvert tema, da vi ikke har én standardpopulation som går igen på tværs af alle temaer og dashboards. Herudover kan man tilføje filtre på den enkelte figur. På den enkelte figur kan man også vælge eller fravælge funktionen "*Show items with no data*". Dette kan hjælpe med at frasortere uinteressante afsnit og stillinger uden data eller ansatte.
@@ -51,7 +51,7 @@ Bogmærker bruges bl.a. til at nulstille filtreringerne og vise infoboksene. All
 Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis man vil vise figurer på tværs af organisation og stilling vha. knapper. Dette kan ses i temaet "*Exit-undersøgelse*" i HR Strategisk Dashboard. Da bogmærker let kan overskrive filtre på figurer, er det vigtigt at man har dokumenteret sine filtreringer her på vores Wiki-side, så man kan genskabe visualiseringerne, hvis det skulle blive nødvendigt. 
 
 
-En sidste ting man skal være opmærksom på er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette:
+En sidste ting man skal være opmærksom på, er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette:
 <br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="250" style="vertical-align:middle"/>
 
 # Nulstil, Infoboks og vis filtervalg
@@ -64,7 +64,7 @@ Der er tre vigtige knapper som går igen i alle temaerne, det er
 Nogle gange ønsker man at en visualisering automatisk viser et lavere niveau, når man filtrerer på afdelinger eller stillinger. Det beskrives her hvordan man på hierarkisk struktureret data, automatisk kan få vist det nedre niveau, når man har filtreret på det øvre niveau. I temaet "*Exit-undersøgelse*" I *HR Strategisk Dashboard* kan man se det blive brugt med organisationsstrukturen i en figur med liggende søjler. *Power BI* understøtter desværre ikke denne funktion som standard, men ved brug af en hjælpetabel, to measures og et filter på visualisering, kan funktionen opnås.
 
 ## Hjælpetabellen
-Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. Her ses et eksempel på hjælpetabellens struktur fra kursusportal dashboard'et:
+Det er nødvendigt at have en hjælpetabel, som indeholder det fulde heiraki. Her ses et eksempel på hjælpetabellens struktur fra kursusportal dashboardet:
 
 | ID |  Placering i heiraki |Navn |
 | ----------- | ----------- | ----------- |
