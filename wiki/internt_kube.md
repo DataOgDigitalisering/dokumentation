@@ -70,6 +70,7 @@ Der er et par andre ting som man skal være opmærksomme på når man opretter t
   - Sørg også for at formateringen* af kolonnen er korrekt, så tal bliver vist med tusindtalsseparator og det ønskede antal decimaler.
   - Man kan også udfylde feltet med *Sort by Column*. På denne måde kan man fx styre rækkefølgen spørgsmålstekster bliver vist i, når man laver figurer i PowerBI.
   - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt. TODO BILLEDE + VIRKER IKKE ALTID
+
 # Measures
 ## Intro til measures
 Via measures implementeres vores standardiserede beregningsmetoder. De er grupperet temavis. I gruppen \__Diverse_ indgår beregninger på stamdata og dette kan være et godt sted at starte med at skabe overblik over kuben. Foruden indblik i de mere centrale tabeller vil du hér se eksempler på, hvordan viden om stamdata er essentielt for at kunne definere fx hvilken personalegruppe, der skal indgå i en given beregning; hvordan dette kan variere fra tema til tema; hvordan antallet af personer, der indgår i en beregning, er afgørende for, om et resultat nødvendigvis skal anonymiseres mm.
