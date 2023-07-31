@@ -15,7 +15,7 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
   - Hjælpe **andre i Region Hovedstaden** med at forstå opbygningen af vores kuber og dashboards.
 
 # Hvor, hvordan og hvornår dokumenterer vi?
-Alle ændringer som laves i vors dashboards, *CHRU_HRKube*, views samt i de tabeller som kuben bygger på skal dokumenteres. Dette gælder både når man tilføjer nye temaer og når man ændrer på allerede eksisterende. Vi dokumenterer vores arbejde følgende steder:
+Alle ændringer som laves i vores dashboards, *CHRU_HRKube*, views samt i de tabeller som kuben bygger på skal dokumenteres. Dette gælder både når man tilføjer nye temaer og når man ændrer på allerede eksisterende. Vi dokumenterer vores arbejde følgende steder:
 ## Power BI-filer
 Dashboards og de tilhørende infobokse skal **give et overblik** over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden. **Når man bygger dashboardet kommer alt dette naturligt med**.
 
