@@ -19,7 +19,6 @@ Man kan bruge Git med kommandoer via terminalen eller vha. et program som f.eks.
 * Git opretter en skjult mappe, som registerer alle ændringer
 * Når en fil, bliver ændret, tilføjet eller slettet registreres det som en ændring
 * Så vælges de filer, der skal lægges op på GitHub med `git add`
-* Herefter vælges de ændrede filer som skal ```git stage```.
 * De staged filer skal ```git commit```, hvilket får Git til at gemme et permanemt "snapshot" af filerne
 * Sidst laves et ```git push``` for lægge ændringer op i GitHub 
 
