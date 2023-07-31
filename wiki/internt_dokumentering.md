@@ -32,15 +32,15 @@ Her kan man skrive **spørgsmål eller ændringsforslag** ind. Dette sikrer dels
 Alle **ændringer i CHRU_HRKube** i udvikling og produktion skal ske gennem GitHub. Dette er med til at sikre at vi har et sikkert og stabilt miljø, hvor flere kan arbejde samtidigt. Alle **views som har skema-navnet "*chru_cube*"** og dermed ligger til grund for vores *CHRU_HRKube* skal også versionsstyres via. GitHub. Man kan læse mere om dette under [*versionsstyring*](./internt_versionsstyring). **Versionsstyringen skal ske sideløbende med at man skriver sin kode**.
 
 ## Wiki-siden
-Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøer og arbejdsgange. Alle ændringer i vores dashboards, kuber og datamodel kræver at man opdaterer wiki-siden så den ikke bliver uddateret. Her er en liste over hvad der skal dokumenteres på wiki-siden, samt hvornår i arbejdsprocessen man skal gøre det.
+Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøer og arbejdsgange. Alle ændringer i vores dashboards, kuber og datamodel kræver at man opdaterer wiki-siden så den ikke bliver uddateret. Her er en liste over hvad der skal dokumenteres på wiki-siden, samt hvornår i arbejdsprocessen man skal gøre det:
 - Beskrivelse af alle **faner og figurer** i HR Strategisk Dashboard og HR Lederdashboard. Her er information om hvad figurerne viser samt hvilke definitioner og antagelser de bygger på. Alle measures som figuren bygger på og hele filterkonteksten er også beskrevet her. Dette kan bruges til at forstå hvordan figuren er bygget op og til besvarelse af postkassehenvendelser. **Denne dokumentation laves sideløbende med at man udvikler dashboardet, eller umiddelbart efter dashboardet er færdigudviklet**.
 - Beskrivelse af **"*CHRU_HRKube*" i produktion**. Dette giver et overblik over alle measures, tabeller, relationer i kuben. **Denne dokumentation skrives sideløbende med at man arbejder i kuben, eller umiddelbart efter man har færdigudviklet det givne tema**.
-- Beskrivelse af **views på i produktion** med skema-navn "*chru_cube*". **Denne dokumentation skrives sideløbende med at man arbejder i kuben, eller umiddelbart efter man har færdigudviklet det givne tema**.
+- Beskrivelse af **views i produktion** med skema-navn "*chru_cube*". **Denne dokumentation skrives sideløbende med at man arbejder i kuben, eller umiddelbart efter man har færdigudviklet det givne tema**.
 - Beskrivelse af tabeller og vores database. Dette giver en indsigt i hvordan tabeller er defineret og hvordan vores miljø er bygget op. **Denne dokumentation skrives sideløbende med at man tilføjer nye tabeller eller laver andre ændringer på vores database i produktion**.
 - Beskrivelse af vores **arbejdsprocesser og de værktøjer** som vi bruger. Dette gælder dels brug at GitHub, wiki-siden, dokumentering og versionsstyring, men også hvordan man udvikler og arbejder med dashboards, kuber, views og tabeller. Dette er med til at sikre vi har en konsistent måde at arbejde på i alt fra navngivning af kolonner til opsætning af bogmærker i Power BI. **Denne dokumentation skrives løbende**.
 
 # Skabeloner til dokumentation - under udvikling
-Følgende skabeloner angiver hvordan dokumentationen af measures og tabeller er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden.
+Følgende skabeloner viser hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden.
 ## Dashboards - skabelon
 
 - Dashboards
