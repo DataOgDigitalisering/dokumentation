@@ -1,5 +1,5 @@
 # Introduktion
-Vores views bygger på de tabeller som ligger på de databaser vi har adgang til. Nedenfor er en oversigt over vores serverer og databaser. Det er også beskrevet hvor man kan finde dokumentation på tabellerne.
+Vores views bygger på de tabeller som ligger på de databaser vi har adgang til. Nedenfor er en oversigt over vores serverer og databaser. Det er også beskrevet hvor man kan finde dokumentation af tabellerne.
 
 # Overblik over serverer og databaser
 Følgende tabel giver overblik over de serverer og databaser vi arbejder med:
