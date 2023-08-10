@@ -7,7 +7,7 @@ Hvis man vil oprette nye views, eller lave ændringer på eksisterende views, sk
 # Navngivning og konventioner
 Vores views navngives meget på samme måde som tabellerne i kuben:
 
-- **Views** navngives på formen [skemanavn].[tabeltype]+[\_]+[Formål]+[BeskrivendeNavn] som fx *v_DimAnsættelse*, hvor
+- **Views** navngives på formen [skemanavn].[tabeltype]+[\_]+[Formål]+[BeskrivendeNavn] som fx *[chru_cube].[v_DimAnsættelse]*, hvor
   - *Skemnavn* skal være *[chru_cube]*, hvis det er et view som bruges i *CHRU_HRKube* på udvikling eller produktion. Ellers kan man også benytte skemanavnet *[test]*.
   - *Tabeltype* angiver at det er et view og indledes med __v\___.
   - *Formål* angiver viewets funktion i kuben og kan være *Dim, Fact, Security, Info, Slicer,* eller *Tally*.
