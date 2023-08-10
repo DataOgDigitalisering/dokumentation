@@ -4,7 +4,7 @@ Denne guide beskriver, hvordan wiki-sider oprettes og redigeres.
 **Forudsætninger:**
 
 1.	<a href="https://github.com/" target="_blank">GitHub konto</a> oprettet med RegionH mail med et identificerbart brugernavn på formen [navn]+[Efternavn]+[RegionH] (fx AlbertAndersenRegionH)
-2.	Adgang til organisationsprofilen i GitHub [DataOgDigitalisering](https://github.com/DataOgDigitalisering) (gives af Admin: Stefan)
+2.	Adgang til organisationsprofilen i GitHub [DataOgDigitalisering](https://github.com/DataOgDigitalisering) (gives af Admin: Stefan eller Casper)
 
 # Oprettelse af ny wiki-side
 En ny side oprettes i Github Pages-repositoriet, [**_dokumentation_**](https://github.com/DataOgDigitalisering/dokumentation). Navigér ind I mappen *wiki*.  Klik på *’Add file’* -> *’Create new file’*. Navngiv din nye side *NavnPåSide.md* med fil-suffixet *.md* for at skabe en ny tom markdown fil.
