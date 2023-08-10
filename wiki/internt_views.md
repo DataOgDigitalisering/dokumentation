@@ -1,7 +1,7 @@
 # Introduktion
 I både udvikling og produktion refererer vores tabeller i kuben til views. Vores views er altså bindeled mellem kuber og tabeller. Ofte laver vi også datatransformationer og beregninger i vores views, og de spiller derfor en central rolle i vores arbejde. Afsnittene nedenfor beskriver vores arbejdsproces med views, samt nogle af de konventioner vi benytter ved navngivning af kolonner mm.
 
-# Arbejdsproces med views
+# Arbejde med views
 Hvis man vil oprette nye views, eller lave ændringer på eksisterende views, skal det som udgangspunkt altid ske i vores udviklingsmiljø og under skemanavnet *[test]*. Når viewet er testet og færdigt, kan man oprette det under skemanavnet *[chru_cube]*. Alle views som kuben bygger på skal have dette skemanavn. Alle views med skemanavnet *[chru_cube]* bliver versionsstyret gennem GitHub. Dette sikrer et stabilt miljø, og gør det lettere at flytte ændringer fra udvikling til produktion. Du kan læse mere om dette under siden (*Versionsstyring - Guide*)[https://dataogdigitalisering.github.io/dokumentation/internt_versionsstyring].
 
 # Navngivning og konventioner
