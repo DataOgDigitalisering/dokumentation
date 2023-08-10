@@ -1,5 +1,5 @@
 # Introduktion
-Denne side indeholder ekstra ting som der ikke var plads til andre steder.
+Denne side indeholder ekstra ting som der ikke var plads til andre steder. Noget af dette skal slettes på et tidspunkt, andet skal flyttes.
 
 
 ## Farvetema
