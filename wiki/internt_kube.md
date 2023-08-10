@@ -60,7 +60,7 @@ Derudover findes en række øvrige tabeller, herunder:
 - **Kolonnenavne** skal være entydige og letforståelige *substantiver*, og navngives på følgende måde:
   - Ligesom for tabelnavn skal kolonnenavnene være identiske med dem som er i det view som tabellen bygger på.
   - Der benyttes camelCase
-  - Den primære nøgle i dimensionstabeller navngives *ID*, den fremmednøgle navngives *[Beskrivende navn på dimensionstabel] + [ID]*. Dette kan fx i tabellen *v_DimExitSurveyRespondent* som har en primærnøgle  *'v_DimExitSurveyRespondent'[ID]* og en relation til *'v_FactExitSurvey'[ExitSurveyRespondentID]*. Det er vigtigt at huske at navngive disse kolonner korrekt, ellers kan datamodellen hurtigt blive uoverskuelig, og det kan være svært at få overblik over relationer.
+  - Den primære nøgle i dimensionstabeller navngives *ID*, den fremmednøgle navngives *[Beskrivende navn på dimensionstabel] + [ID]*. Dette kan fx ses i tabellen *v_DimExitSurveyRespondent* som har en primærnøgle  *'v_DimExitSurveyRespondent'[ID]* og en relation til *'v_FactExitSurvey'[ExitSurveyRespondentID]*. Det er vigtigt at huske at navngive disse kolonner korrekt, ellers kan datamodellen hurtigt blive uoverskuelig, og det kan være svært at få overblik over relationer.
 
 Der er et par andre ting som man skal være opmærksomme på når man opretter tabeller i kuben:
   - Undgå så vidt muligt **datatransformation** i Tabular Editor. Det giver bedre overblik at have samlet i views. Dvs. at datatypen, kolonnenavne, tabelnavn osv. skal være identisk med dem som er i det view tabellen bygger på.
