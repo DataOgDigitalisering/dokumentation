@@ -67,7 +67,7 @@ Der er et par andre ting som man skal være opmærksomme på når man opretter t
   - Husk at udfylde feltet med **description** Tabular Editor, både for tabellen og kolonnerne. Dette er også beskrevet i afsnittet om [*dokumentering*](https://dataogdigitalisering.github.io/dokumentation/internt_dokumentering).
   - Sørg også for at **formateringen af kolonnen** er korrekt, så tal bliver vist med tusindtalsseparator og det ønskede antal decimaler.
   - Man kan også udfylde feltet med *Sort by Column*. På denne måde kan man fx styre rækkefølgen spørgsmålstekster bliver vist i, når man laver figurer i PowerBI.
-  - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt, selvom der også kan være problemer med RLS, selv når man har indstillet *Securiry Filtering Behavior* korrekt. TODO SKRIV NOGET OM DETTE UNDER BRUGERSTYRING.
+  - Sørg også for at *Securiry Filtering Behavior* er sat til *BothDirections* i relationen mellem to tabeller, hvis man benytter en dobbeltvejs-relation. Ellers vil RLS ikke fungere korrekt, selvom der også kan være problemer med RLS, selv når man har indstillet *Securiry Filtering Behavior* korrekt.
 <br><img src="Images/BillederInterntKube/securityFiltering.png" height="130" style="vertical-align:middle"/>
 
 # Measures
