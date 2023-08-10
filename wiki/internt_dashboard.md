@@ -46,8 +46,8 @@ De slicers som ligger i højre side af dashboardet og går igen henover flere te
 # Bogmærker
 Bogmærker bruges bl.a. til at nulstille filtreringerne og vise infoboksene. Alle bogmærker er grupperet efter det tema som de knytter sig til, og de skal virke på alle figurer og objekter på den givne side. Hvert tema har som udgangspunkt tre bogmærker, fx har trivsel følgende:
 - "*Trivsel - Nulstil*" som virker på alle figurer og også på "*Data*", hvilket vil sige at den styre de filtreringer man har valgt i slicerne og de filtre man har tilføjet til siden og figurerne. **Man skal huske at opdatere dette bogmærke hver gang man ændrer filtrene på en figur**, ellers "overskriver" man sine filtre når man klikker på bogmærket. Dette bogmærke bruges til *Nulstil-knappen*.
-- "*Trivsel*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Det bruges til at lukke infoboksen.
-- "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtrevalgene. Den bruges til at åbne infoboksen.
+- "*Trivsel*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtervalgene. Det bruges til at lukke infoboksen.
+- "*Trivsel Info*" virker på alle figurer, men ikke på "*Data*", den påvirker derfor ikke filtervalgene. Den bruges til at åbne infoboksen.
 <br><img src="Images/BillederInterntDashboard/bogmærkerTrivse.png" height="240" style="vertical-align:middle"/>
 
 
