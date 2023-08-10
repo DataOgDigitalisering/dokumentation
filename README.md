@@ -78,6 +78,7 @@ Vi har her samlet nogle gode links og dokumenter, som beskriver hvordan man arbe
 
 ## Gode links og hjemmesider
 - [https://www.sqlbi.com](https://www.sqlbi.com/), beskriver mange vigtige aspekter af SQL og Power BI, og er et super sted at finde information om alt fra filterkontekt i DAX til opbygning af datamodeller.
+- [https://www.youtube.com/@GuyInACube](https://www.youtube.com/@GuyInACube) har en hel del videoer som beskriver mange centrale dele af Power BI, kuber og datamodeller.
 
 ## Kurser og andre dokumenter
 <!-- Embed iFrame. PowerPoint: "SQL-kursus.pptx" på OneDrive-->
