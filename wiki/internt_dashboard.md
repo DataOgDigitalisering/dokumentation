@@ -57,7 +57,7 @@ Nogle gange er der behov for flere bogmærker, dette er f.eks. tilfældet hvis m
 En sidste ting man skal være opmærksom på, er at slicerne i højre side skal sættes op så ingen felter er valgt på forhånd. Dette skal gøres manuelt, og man skal sikre sig at det er tilfældet hver gang man gemmer. Bogmærker kan ikke styre dette:
 <br><img src="Images/BillederInterntDashboard/SlicerSettingIngenValgt.PNG" height="250" style="vertical-align:middle"/>
 
-# Nulstil, Infoboks og vis filtervalg
+# Knapper
 Der er tre vigtige knapper som går igen i alle temaerne, det er
 - "*Nulstil*" - Denne knap nulstiller alle filtre. Husk at opdatere det tilhørende bogmærke hver gang du ændrer filtrene på dine figurer.
 - "*Infoboksen*" - Her er alle visualiseringerne beskrevet. Sørg for at cirklerne, tallene og teksten er grupperet korrekt. Se evt. siden *Exit-undersøgelse* i HR Strategisk Dashboard.
