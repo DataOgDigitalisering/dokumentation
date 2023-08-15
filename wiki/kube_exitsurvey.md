@@ -1,4 +1,35 @@
-# Exitsurvey
+# Introduktion til temaet
+kort lille tekst
+
+# Tabeller
+Nedenfor er alle tabeller som knytter sig til temaet Exitsurvey beskrevet.
+## Tabel 1
+- Hvad den bygger på af views + råtabeller,  Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
+ Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
+
+- lav oversigt i excel over tabel + kolonner
+- Lav oversigt over relationer fra denne tabel til andre + beskriv dem kort.
+
+## Tabel 2
+
+
+
+
+
+Beskrivelse af selve tabellen (ikke mere end 100 tegn).
+Liste over alle kolonner (minder om SD’s dokumentation):
+Key, Kolonnenavn, Datatype, Len, Null’s, Beskrivelse af hvad kolonnen viser (ikke mere end 100 tegn) med eksempel på værdi
+Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres…
+
+
+
+
+
+
+
+
+
+# Exitsurvey Tidligere
 
 Exit-undersøgelsesfanen i HR Strategisk Dashboard tager afsæt i Exitsurveyen, som automatisk udsendes til alle personer, der frivilligt fratræder. 
 
