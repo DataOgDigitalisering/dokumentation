@@ -73,13 +73,13 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 
 
 
-# Guids til programmer og software
+# Guides til programmer og software
 Vi har her samlet nogle gode links og dokumenter, som beskriver hvordan man arbejder med de programmer og programmeringssprog, som vi benytter til daglig.
 
 ## Gode links og hjemmesider
 - [https://www.sqlbi.com](https://www.sqlbi.com/), beskriver mange vigtige aspekter af SQL og Power BI, og er et super sted at finde information om alt fra filterkontekt i DAX til opbygning af datamodeller.
 - [https://www.youtube.com/@GuyInACube](https://www.youtube.com/@GuyInACube) har en hel del videoer som beskriver mange centrale dele af Power BI, kuber og datamodeller.
-
+- [https://learn.microsoft.com/en-us/dax/](https://learn.microsoft.com/en-us/dax/) DAX dokumentation fra Microsoft
 ## Kurser og andre dokumenter
 <!-- Embed iFrame. PowerPoint: "SQL-kursus.pptx" på OneDrive-->
 {::options parse_block_html="true" /}
