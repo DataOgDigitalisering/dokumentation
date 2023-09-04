@@ -1,20 +1,23 @@
 # Introduktion til temaet
 kort lille tekst
 
-# Kube metadata
+# Tabeller og kolonner
+Her er de tabeller som knytter sig til temaet Exit-undersøgelse beskrevet i mere detalje
 
+## Oversigt over tabeller og kolonner
+Tabeller:
 <center>
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
 </center>
 <br>
 
+Kolonner:
 <center>
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Kolonner&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
 </center>
 <br>
 
-
-# Tabeller
+## Beskrivelse af hver tabel
 Nedenfor er alle tabeller som knytter sig til temaet Exitsurvey beskrevet.
 ## Tabel 1
 - Hvad den bygger på af views + råtabeller,  Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
@@ -25,17 +28,19 @@ Nedenfor er alle tabeller som knytter sig til temaet Exitsurvey beskrevet.
 
 ## Tabel 2
 
-
-
-
-
 Beskrivelse af selve tabellen (ikke mere end 100 tegn).
 Liste over alle kolonner (minder om SD’s dokumentation):
 Key, Kolonnenavn, Datatype, Len, Null’s, Beskrivelse af hvad kolonnen viser (ikke mere end 100 tegn) med eksempel på værdi
 Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres…
 
 
+# Measures
+Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet i mere detalje.
 
+## Oversigt over measures
+
+
+## Measure 1
 
 
 
