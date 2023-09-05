@@ -1,4 +1,4 @@
-# Introduktion til temaet
+![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/bf6d332d-dce8-440e-8b93-ca1ef15387ac)# Introduktion til temaet
 ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboard. Nedestående beskriver de tabeller, kolonner og measures i CHRU_HRKube som knytter sig til temaet. Under fanen "HR Strategisk Dashboard" i sidemenuen kan du læse mere om de figurer som optræder i dashboardet.
 # Tabeller og kolonner
 Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion , dette kan ses i de vedhæftede Excel-filer.
@@ -29,6 +29,8 @@ Relationer
 - Hvad den bygger på af views + råtabeller,  Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
  Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
 
+
+
 - lav oversigt i excel over tabel + kolonner
 - Lav oversigt over relationer fra denne tabel til andre + beskriv dem kort.
 
@@ -41,7 +43,7 @@ Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan s
 
 
 # Measures
-Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet i mere detalje.
+Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Nogle measures har også en mere uddybende tekst.
 
 ## Oversigt over measures
 <details><summary markdown="span">Oversigt over measures</summary>
@@ -52,10 +54,20 @@ Measures
 </center>
 </details>  
 
-## Measure 1
+## Exit - AntalBesvarelser
+- Inputværdier:
+  - Ingen
+- Returværdi
+  - anonymitetsgrænse
+- Uddybbende bemærkninger:
+  - Denne værdi følger den som også gælder for trivselsdata.
 
+Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle faldgrupper/corner-cases osv.
+![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/6ad82b8d-091d-45af-b133-c0cf4c1675b9)
 
 ## Measure 2
+Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
+![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/cd1d34b2-7afc-4891-b830-338a568c3c6b)
 
 
 
