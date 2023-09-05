@@ -1,11 +1,9 @@
 # Introduktion til temaet
-kort lille tekst
-
+ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboard. Nedestående beskriver de tabeller, kolonner og measures i CHRU_HRKube som knytter sig til temaet. Under fanen "HR Strategisk Dashboard" i sidemenuen kan du læse mere om de figurer som optræder i dashboardet.
 # Tabeller og kolonner
-Her er de tabeller som knytter sig til temaet Exit-undersøgelse beskrevet i mere detalje
+Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion , dette kan ses i de vedhæftede Excel-filer.
 
 ## Oversigt over tabeller og kolonner
-
 <details><summary markdown="span">Oversigt over kuben</summary>
  
 Tabeller
