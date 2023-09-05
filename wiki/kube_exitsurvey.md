@@ -57,7 +57,7 @@ Measures
 ## Exit - AntalBesvarelser
 - Inputværdier:
   - Ingen
-- Returværdi
+- Returværdier:
   - anonymitetsgrænse
 - Uddybbende bemærkninger:
   - Denne værdi følger den som også gælder for trivselsdata.
