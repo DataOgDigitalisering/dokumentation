@@ -6,18 +6,27 @@ Her er de tabeller som knytter sig til temaet Exit-undersøgelse beskrevet i mer
 
 ## Oversigt over tabeller og kolonner
 Tabeller:
+<details><summary markdown="span">Tabeller</summary>
 <center>
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
 </center>
+</details>  
 <br>
 
-Kolonner:
+<details><summary markdown="span">Kolonner</summary>
 <center>
-<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Kolonner_tabel&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
+<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
 </center>
+</details>  
 <br>
 
-<iframe width="700" height="585" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Kolonner_tabel&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<details><summary markdown="span">Relationer</summary>
+<center>
+<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
+</center>
+</details>  
+<br>
+
 
 ## Beskrivelse af hver tabel
 Nedenfor er alle tabeller som knytter sig til temaet Exitsurvey beskrevet.
