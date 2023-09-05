@@ -25,8 +25,6 @@ Relationer
 </details>  
 <br>
 
-## Beskrivelse af hver tabel
-Nedenfor er alle tabeller som knytter sig til temaet Exitsurvey beskrevet.
 ## Tabel 1
 - Hvad den bygger på af views + råtabeller,  Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
  Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
@@ -57,6 +55,7 @@ Measures
 ## Measure 1
 
 
+## Measure 2
 
 
 
