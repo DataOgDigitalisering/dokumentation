@@ -6,26 +6,14 @@ Her er de tabeller som knytter sig til temaet Exit-undersøgelse beskrevet i mer
 
 ## Oversigt over tabeller og kolonner
 Tabeller:
-<details><summary markdown="span">Tabeller</summary>
 <center>
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
 </center>
-</details>  
 <br>
 
-<details><summary markdown="span">Kolonner</summary>
 <center>
-<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
+<iframe width="700" height="365" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Tabeller&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
-</details>  
-<br>
-
-<details><summary markdown="span">Relationer</summary>
-<center>
-<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={6cec8183-4afe-4095-b5cb-80970503ae79}&action=embedview&Item=Exit_unders%C3%B8gelse_Tabeller&wdAllowInteractivity=FALSE&wdHideGridlines=TRUE&wdHideHeaders=TRUE&wdInConfigurator=TRUE&wdInConfigurator=TRUE&edesNext=TRUE&edrtees6=FALSE&resen=FALSE&ed1JS=FALSE&wdHideSheetTabs=TRUE&ActiveCell=Z1000"></iframe>
-</center>
-</details>  
-<br>
 
 
 ## Beskrivelse af hver tabel
