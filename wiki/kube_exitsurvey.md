@@ -7,13 +7,13 @@ Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukk
 ## Oversigt over tabeller og kolonner
 <details><summary markdown="span">Oversigt over kuben</summary>
  
-Tabeller
+<b>Tabeller</b>
 <center>
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Tabeller&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
 <br>
  
-Kolonner
+<b>Kolonner</b>
 <center>
 <iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Kolonner&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
@@ -27,16 +27,19 @@ Kolonner
 <br>
 
 ## v_FactExitSurvey
-
-
 **Bygger på følgende views**:
 - https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql
 
 **Ekstra informationer om tabellen**:
-- vigtige tanker/overvejelser ved dannelsen af tabellen
-- vigtige tanker/overvejelser ved afgrænsning af data
-- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
-- Andet
+- Selvom tabellen bliver procersseret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause:
+```sql
+WHERE ...
+    AND Leverancedato < DATEFROMPARTS(YEAR(GETDATE()),MONTH(GETDATE()),1)
+    AND Leverancedato >= DATEFROMPARTS(YEAR(GETDATE())-1,MONTH(GETDATE()),1)
+```
+- Tabellen indeholder kun svar fra gennemførte surveys, og hvis en person ved en fejl har fået tilsendt flere surveys til samme tjenestenummer vælges det først besvarede survey ud.
+- Mange af spørgsmåls- og svarteksterne er hard-coded i viewet. Man skal derfor altid tjekke viewet efter, hvis der bliver ændret i surveyets ordlyd, temaer, svarmuligheder mm.
+
 **Ekstra informationer om kolonnerne**:
 - vigtige tanker/overvejelser ved dannelsen af kolonner
 - vigtige tanker/overvejelser ved afgrænsning af data
@@ -51,7 +54,7 @@ Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Nogl
 ## Oversigt over measures
 <details><summary markdown="span">Oversigt over measures</summary>
  
-Measures
+<b>Measures</b>
 <center>
 <iframe width="100%" height="800" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Measures&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
@@ -124,3 +127,21 @@ Exit-undersøgelsen indgår som en selvstændig fane/side i HR Strategisk Dashbo
 Kommer snart og tester
 
 Tester lige lidt...
+
+
+
+## v_FactExitSurvey
+
+
+**Bygger på følgende views**:
+- https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql
+
+**Ekstra informationer om tabellen**:
+- vigtige tanker/overvejelser ved dannelsen af tabellen
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
+- Andet
+**Ekstra informationer om kolonnerne**:
+- vigtige tanker/overvejelser ved dannelsen af kolonner
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Andet
