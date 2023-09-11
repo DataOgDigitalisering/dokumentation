@@ -31,13 +31,12 @@ Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukk
 - [v_FactExitSurvey](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql)
 
 **Ekstra informationer om tabellen**:
-- Selvom tabellen bliver procersseret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause:
+- Selvom tabellen bliver procersseret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause (leverancedato er en dato som SurveyXact opgiver):
 ```sql
 WHERE ...
     AND Leverancedato < DATEFROMPARTS(YEAR(GETDATE()),MONTH(GETDATE()),1)
     AND Leverancedato >= DATEFROMPARTS(YEAR(GETDATE())-1,MONTH(GETDATE()),1)
 ```
-hvor Leverancedato er en dato som SurveyXact opgiver.
 - Tabellen indeholder kun svar fra gennemførte surveys, og hvis en person ved en fejl har fået tilsendt flere surveys til samme tjenestenummer vælges det først besvarede survey ud.
 - Mange af spørgsmåls- og svarteksterne er hard-coded i viewet. Man skal derfor altid tjekke viewet efter, hvis der bliver ændret i surveyets ordlyd, temaer, svarmuligheder mm.
 
