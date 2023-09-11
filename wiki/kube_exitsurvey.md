@@ -28,7 +28,7 @@ Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukk
 
 ## v_FactExitSurvey
 **Bygger på følgende views**:
-- https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql
+- [v_FactExitSurvey](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql)
 
 **Ekstra informationer om tabellen**:
 - Selvom tabellen bliver procersseret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause:
@@ -37,16 +37,40 @@ WHERE ...
     AND Leverancedato < DATEFROMPARTS(YEAR(GETDATE()),MONTH(GETDATE()),1)
     AND Leverancedato >= DATEFROMPARTS(YEAR(GETDATE())-1,MONTH(GETDATE()),1)
 ```
+hvor Leverancedato er en dato som SurveyXact opgiver.
 - Tabellen indeholder kun svar fra gennemførte surveys, og hvis en person ved en fejl har fået tilsendt flere surveys til samme tjenestenummer vælges det først besvarede survey ud.
 - Mange af spørgsmåls- og svarteksterne er hard-coded i viewet. Man skal derfor altid tjekke viewet efter, hvis der bliver ændret i surveyets ordlyd, temaer, svarmuligheder mm.
+
+## v_DimExitSurveyRespondent
+**Bygger på følgende views**:
+- [link til view fra denne folder](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_DimExitSurveyRespondent.sql)
+
+**Ekstra informationer om tabellen**:
+- vigtige tanker/overvejelser ved dannelsen af tabellen
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
+- Andet
 
 **Ekstra informationer om kolonnerne**:
 - vigtige tanker/overvejelser ved dannelsen af kolonner
 - vigtige tanker/overvejelser ved afgrænsning af data
 - Andet
 
+## v_TallyAmbassadør
+**Bygger på følgende views**:
+- [link til view fra denne folder](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_TallyAmbassad%C3%B8r.sql)
 
-## Tabel 2
+**Ekstra informationer om tabellen**:
+- vigtige tanker/overvejelser ved dannelsen af tabellen
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
+- Andet
+
+**Ekstra informationer om kolonnerne**:
+- vigtige tanker/overvejelser ved dannelsen af kolonner
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Andet
+
 
 # Measures
 Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Nogle measures har også en mere uddybende tekst.
@@ -130,17 +154,16 @@ Tester lige lidt...
 
 
 
-## v_FactExitSurvey
-
-
+## Tabel_skabelon
 **Bygger på følgende views**:
-- https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql
+- [link til view fra denne folder](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder)
 
 **Ekstra informationer om tabellen**:
 - vigtige tanker/overvejelser ved dannelsen af tabellen
 - vigtige tanker/overvejelser ved afgrænsning af data
 - Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
 - Andet
+
 **Ekstra informationer om kolonnerne**:
 - vigtige tanker/overvejelser ved dannelsen af kolonner
 - vigtige tanker/overvejelser ved afgrænsning af data
