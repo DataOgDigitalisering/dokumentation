@@ -4,7 +4,7 @@ ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboar
 # Tabeller og kolonner
 Nedenfor er tabeller, kolonner og relationer beskrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion, dette kan ses i de vedhæftede Excel-filer:
 
-<details><summary markdown="span">Oversigt over kuben</summary>
+<details><summary markdown="span">Oversigt over tabeller og kolonner</summary>
 <b>Tabeller</b>
 <center>
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Tabeller&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
