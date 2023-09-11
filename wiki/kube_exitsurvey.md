@@ -27,26 +27,23 @@ Kolonner
 <br>
 
 ## v_FactExitSurvey
+
+
 **Bygger på følgende views**:
 - https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql
 
+**Ekstra informationer om tabellen**:
+- vigtige tanker/overvejelser ved dannelsen af tabellen
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
+- Andet
+**Ekstra informationer om kolonnerne**:
+- vigtige tanker/overvejelser ved dannelsen af kolonner
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Andet
 
-
-## tabel_skabelon
- Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
-
-
-
-- lav oversigt i excel over tabel + kolonner
-- Lav oversigt over relationer fra denne tabel til andre + beskriv dem kort.
 
 ## Tabel 2
-
-Beskrivelse af selve tabellen (ikke mere end 100 tegn).
-Liste over alle kolonner (minder om SD’s dokumentation):
-Key, Kolonnenavn, Datatype, Len, Null’s, Beskrivelse af hvad kolonnen viser (ikke mere end 100 tegn) med eksempel på værdi
-Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres…
-
 
 # Measures
 Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Nogle measures har også en mere uddybende tekst.
