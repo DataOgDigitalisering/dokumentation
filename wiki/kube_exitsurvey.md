@@ -24,7 +24,7 @@ Nedenfor er tabeller, kolonner og relationer beskrevet. Der er også blevet truk
 </details>  
 
 ## v_FactExitSurvey
-Tabellen bygger på følgende viewet [*v_FactExitSurvey*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql). I sit arbejde med tabellen er det vigtigt at være opmærksom på følgende:
+Tabellen bygger på viewet [*v_FactExitSurvey*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql). I sit arbejde med tabellen er det vigtigt at være opmærksom på følgende:
 - Selvom tabellen bliver processeret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause (leverancedato er en dato som SurveyXact opgiver):
 ```sql
 WHERE ...
@@ -35,9 +35,7 @@ WHERE ...
 - Mange af spørgsmåls- og svarteksterne er hard-coded i viewet. Man skal derfor altid tjekke viewet efter, hvis der bliver ændret i surveyets ordlyd, temaer, svarmuligheder mm.
 
 ## v_DimExitSurveyRespondent
-**Bygger på følgende views**:
-- [link til view fra denne folder](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_DimExitSurveyRespondent.sql)
-
+Tabellen bygger på viewet [*v_DimExitSurveyRespondent*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_DimExitSurveyRespondent.sql). I sit arbejde med tabellen er det vigtigt at være opmærksom på følgende:
 **Ekstra informationer om tabellen**:
 - vigtige tanker/overvejelser ved dannelsen af tabellen
 - vigtige tanker/overvejelser ved afgrænsning af data
@@ -50,9 +48,7 @@ WHERE ...
 - Andet
 
 ## v_TallyAmbassadør
-**Bygger på følgende views**:
-- [link til view fra denne folder](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_TallyAmbassad%C3%B8r.sql)
-
+Tabellen bygger på viewet [*v_TallyAmbassadør*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_TallyAmbassad%C3%B8r.sql). I sit arbejde med tabellen er det vigtigt at være opmærksom på følgende:
 **Ekstra informationer om tabellen**:
 - vigtige tanker/overvejelser ved dannelsen af tabellen
 - vigtige tanker/overvejelser ved afgrænsning af data
