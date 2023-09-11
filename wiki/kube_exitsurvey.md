@@ -3,6 +3,7 @@ ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboar
 
 # Tabeller og kolonner
 Nedenfor er tabeller, kolonner og relationer beskrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion, dette kan ses i de vedhæftede Excel-filer:
+
 <details><summary markdown="span">Oversigt over kuben</summary>
 <b>Tabeller</b>
 <center>
@@ -21,7 +22,6 @@ Nedenfor er tabeller, kolonner og relationer beskrevet. Der er også blevet truk
 <iframe width="100%" height="150" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Relationer&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
 </details>  
-<br>
 
 ## v_FactExitSurvey
 **Bygger på følgende views**:
@@ -69,11 +69,9 @@ WHERE ...
 
 
 # Measures
-Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Nogle measures har også en mere uddybende tekst.
+Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion, dette kan ses i de vedhæftede Excel-filer:
 
-## Oversigt over measures
 <details><summary markdown="span">Oversigt over measures</summary>
- 
 <b>Measures</b>
 <center>
 <iframe width="100%" height="800" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Measures&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
