@@ -24,10 +24,7 @@ Nedenfor er tabeller, kolonner og relationer beskrevet. Der er også blevet truk
 </details>  
 
 ## v_FactExitSurvey
-**Bygger på følgende views**:
-- [v_FactExitSurvey](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql)
-
-**Ekstra informationer om tabellen**:
+- Tabellen bygger på følgende view: [*v_FactExitSurvey*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql).
 - Selvom tabellen bliver processeret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause (leverancedato er en dato som SurveyXact opgiver):
 ```sql
 WHERE ...
