@@ -1,8 +1,8 @@
 # Introduktion til temaet
-ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboard. Nedestående beskriver de tabeller, kolonner og measures i CHRU_HRKube som knytter sig til temaet. Under fanen "HR Strategisk Dashboard" i sidemenuen kan du læse mere om de figurer som optræder i dashboardet.
+ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboard. Nedenstående beskriver de tabeller, kolonner og measures i CHRU_HRKube som knytter sig til temaet. Under fanen "HR Strategisk Dashboard" i sidemenuen kan du læse mere om de figurer som optræder i dashboardet.
 
 # Tabeller og kolonner
-Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion , dette kan ses i de vedhæftede Excel-filer.
+Nedenfor er tabeller, kolonner og relationer beskrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion, dette kan ses i de vedhæftede Excel-filer.
 
 ## Oversigt over tabeller og kolonner
 <details><summary markdown="span">Oversigt over kuben</summary>
@@ -31,7 +31,7 @@ Nedefor er tabeller, kolonner og relationer beksrevet. Der er også blevet trukk
 - [v_FactExitSurvey](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql)
 
 **Ekstra informationer om tabellen**:
-- Selvom tabellen bliver procersseret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause (leverancedato er en dato som SurveyXact opgiver):
+- Selvom tabellen bliver processeret dagligt, bliver data kun indlæst én gang om måneden og går pt. kun ét år tilbage. Dette er sikret ved at benytte følgende where-clause (leverancedato er en dato som SurveyXact opgiver):
 ```sql
 WHERE ...
     AND Leverancedato < DATEFROMPARTS(YEAR(GETDATE()),MONTH(GETDATE()),1)
@@ -88,7 +88,7 @@ Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Nogl
   - Ingen
 - Returværdier:
   - anonymitetsgrænse
-- Uddybbende bemærkninger:
+- Uddybende bemærkninger:
   - Denne værdi følger den som også gælder for trivselsdata.
 
 Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle faldgrupper/corner-cases osv.
@@ -140,7 +140,7 @@ v_TallyAmbassadør er en hjælpetabel, som benyttes til at danne et ambassadørf
 
 
 
-## HR Strategisk dahboard
+## HR Strategisk dashboard
 Exit-undersøgelsen indgår som en selvstændig fane/side i HR Strategisk Dashboard.
 
 
