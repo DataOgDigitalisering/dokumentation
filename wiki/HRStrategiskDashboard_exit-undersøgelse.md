@@ -1,3 +1,4 @@
-# Der arbejdes på at få denne side klar!
+# Introuktion
+Herunder er alle figurer i fanen Exit-undersøgelse i HR Strategisk Dashboard beskrevet:
 
-<center><img src="Images/sideUdarbejdes.png" height="95%" width="95%" style="vertical-align:middle"/></center>
+# Svarprocent of antal besvarelser
