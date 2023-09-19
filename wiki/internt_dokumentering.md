@@ -42,48 +42,42 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 # Skabeloner til dokumentation - UNDER UDVIKLING
 Følgende skabeloner viser hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden. TODO DETTE AFSNIT ER UNDER UDVIKLING
 ## Dashboards - skabelon
+Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Man kan benytte følgende opbygning:
 
-- Dashboards
-- Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
-- FAQ ved siden af?
-
+**Figur A**
+- **Kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som der står i info-boksene på selve dashboardet.
+- Bygger på følgende measrues:
+  - Angiv alle de **measures, etiketter og farvekoder** som figuren benytter.
+-  Følgende filtreringer er benyttet:
+  - Angiv de **filtreringer på siden** som slår igennem på figuren.
+  - Angiv de **default-filtervalg** som benyttes på figuren.
+  - Angiv de **filtreringer på figuren** som er benyttet.
+  - Angiv de **filtreringer som er blevet benyttet i de measures** som figuren bygger på.
+- Andre bemærkninger:
+  - Vigtige informationer om figuren og hvad den viser/ikke viser.
+  - Vigtige tanker/overvejelser ved opbygning/afgrænsninger, eventuelle corner-cases osv.
 
 ## Measures - skabelon
 Alle measrues som er knyttet til et givent tema er beskrevet i selve kuben via. descriptions. Denne metadata vises i et Excel-ark med følgende oplysninger:
 - Navnet på den folder som measuret hører under, measurets navn, returværdiens datatype, formatering på returværdien, DAX-udtrykket som definerer measuret.
-- Beskrivelse af alle measures og deres værdier - fx "beregner antal besvarelser uden anonymitetshensyn [13, 193, 23,...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets altid med et par eksempler på measurets returværdier: "[a, b, ...]".
+- Beskrivelse af alle measures og deres værdier - fx "beregner antal besvarelser uden anonymitetshensyn [13, 193, 23,...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på measurets returværdier: "[a, b, ...]".
 Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige overvejelser/antagelser/definitioner man skal være opmærksom på når man bruger kuben og trækker tal.
-- Measures
-  - Liste over alle measures indenfor temaet – ligesom for tabellerne
-  - Measurenavn, returnType, Beskrivelse af measure (ikke mere end 100 tegn) med eksempel på returnValue.
-  - Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres.
-  - Beskrivelse/Resume af hvert measure:
-  - Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle corner-cases osv.
-  - Oversigt over hvor measures indgår/relaterer til hinanden.
-  - Dette skal suppleres af et repository i GitHub med hele kuben og alle measures som man kan linke til. Det skal måske også suppelers med ExcelFil over hvordan measures bygger på hinanden/hvor de bruges i dashboards/hvilke der ikke bruges i dashboards.
 
-
-Measrue_skabelon
-Inputværdier/filter:
-Ingen
-Returværdier:
-anonymitetsgrænse
-Uddybende bemærkninger:
-Denne værdi følger den som også gælder for trivselsdata.
-Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle faldgrupper/corner-cases osv. image
-
-Measure 2
-Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres) image
-
-
-
+Herudover kan enkelte measures beskrives i deres eget afsnit. Her kan man benytte følgende opbygning:
+- Inputværdier/Filtreringer:
+  - Angiv de filtrer og værider measuret skal bruge. F.eks. en dato, personalegruppe osv.
+- Returværdier:
+  - Angiv hvad measuret returnerer.
+- Uddybende bemærkninger:
+  - Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measuret, eventuelle corner-cases osv.
+  - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
 
 ## Tabeller og kolonner - skabelon
 Alle tabeller og kolonner som er knyttet til et givent tema er beskrevet i selve kuben via. descriptions. Denne metadata vises i et Excel-ark med følgende oplysninger:
 - Navn på alle relevante tabeller, hvornår de sidst er blevet processeret samt den forespørgsel til SQL-severen som de bygger på.
 - Beskrivelse af alle tabellerne - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
 - Navn på alle kolonner samt deres datatype og hvilken kolonne de evt. sorteres efter.
-- Beskrivelse af alle kolonner og deres værdier - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets altid med et par eksempler på kolonnens værdier: "[a, b, ...]".
+- Beskrivelse af alle kolonner og deres værdier - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
 - Oversigt over alle relationer som relevante tabeller indgår i.
 
 Herudover har hver tabel et kort afsnit hvor den er beskrevet i mere detalje. Afsnittene er opbygget på følgende måde:
