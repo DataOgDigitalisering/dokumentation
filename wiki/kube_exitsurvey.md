@@ -56,7 +56,7 @@ Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Der 
 </details>  
 
 ## Exit - Anonymitetsgrænse
-- Inputværdier/filter:
+- Inputværdier/Filtrer:
   - Ingen
 - Returværdier:
   - Anonymitetsgrænse
