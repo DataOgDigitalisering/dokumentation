@@ -59,15 +59,41 @@ Den skal angive hvordan de bruges, hvad de returnerer/viser og beskrive vigtige 
   - Oversigt over hvor measures indgår/relaterer til hinanden.
   - Dette skal suppleres af et repository i GitHub med hele kuben og alle measures som man kan linke til. Det skal måske også suppelers med ExcelFil over hvordan measures bygger på hinanden/hvor de bruges i dashboards/hvilke der ikke bruges i dashboards.
 
-## Tabeller - skabelon
-- Tabeller
-  - Beskrivelse af selve tabellen (ikke mere end 100 tegn).
-  - Liste over alle kolonner (minder om SD’s dokumentation):
-  - Key, Kolonnenavn, Datatype, Len, Null’s, Beskrivelse af hvad kolonnen viser (ikke mere end 100 tegn) med eksempel på værdi
-  - Beskrivelse skal ind som ”description” i TabularEditor – dvs. listen kan stort set autogenereres…
-  - Beskrivelse/Resume af hver tabel:
-  - Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
-  - Billede af datamodel og liste over relationer.
-  - Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
+## Tabeller og kolonner - skabelon
+Alle tabeller og kolonner som er knyttet til et givent tema er beskrevet i selve kuben via. descriptions. Denne metadata vises i Excel-ark med følgende oplysninger:
+- Navn på alle relevante tabeller, hvornår de sidst er blevet processeret samt den forespørgsel til SQL-severen som de bygger på.
+- Beskrivelse af alle tabellerne - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
+- Navn på alle kolonner samt deres datatype og hvilken kolonne de evt. sorteres efter.
+- Beskrivelse af alle kolonner og deres værdier - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets altid med et par eksempler på kolonnens værdier: "[a, b, ...]".
+- Kolonnenavn, Datatype, Len, Null’s, Beskrivelse af hvad kolonnen viser (ikke mere end 100 tegn) med eksempel på værdi
+- Oversigt over alle relationer til de relevante tabeller.
 
+Herudover har hver tabel et kort afsnit hvor den er beskrevet i mere detalje. Afsnittene er opbygget på følgende måde:
+
+**Tabel A**
+- Bygger på følgende views: link til view fra denne mappe [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
+
+**Ekstra informationer om tabellen:**
+- vigtige tanker/overvejelser ved dannelsen af tabellen
+- vigtige tanker/overvejelser ved afgrænsning af data
+- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
+- Andet
+
+**Ekstra informationer om kolonnerne:**
+- Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
+- Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
+- Andet
+
+
+Measrue_skabelon
+Inputværdier/filter:
+Ingen
+Returværdier:
+anonymitetsgrænse
+Uddybende bemærkninger:
+Denne værdi følger den som også gælder for trivselsdata.
+Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle faldgrupper/corner-cases osv. image
+
+Measure 2
+Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres) image
 
