@@ -46,7 +46,7 @@ Tabellen bygger på viewet [*v_TallyAmbassadør*](https://github.com/DataOgDigit
 - Dette er en simpel Tally-tabel. Den er lavet for at kunne lave en slicer hvor både "ambassadør" og "ikke ambassadør" vises, også selvom man har filtreret ned på en gruppe som kun består af fx ambassadører.
 
 # Measures
-Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Der er også blevet trukket noget metadata fra CHRU_HRKube'n i produktion, dette kan ses i de vedhæftede Excel-filer:
+Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Der er blevet trukket noget metadata fra CHRU_HRKube'n i produktion, dette kan ses i Excel-filen nedenfor. Herudover er enkelt measures beskrevet mere detaljeret.
 
 <details><summary markdown="span">Oversigt over measures</summary>
 <b>Measures</b>
@@ -55,73 +55,13 @@ Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Der 
 </center>
 </details>  
 
-## Exit - AntalBesvarelser
-- Inputværdier:
+## Exit - Anonymitetsgrænse
+- Inputværdier/filter:
   - Ingen
 - Returværdier:
-  - anonymitetsgrænse
+  - Anonymitetsgrænse
 - Uddybende bemærkninger:
-  - Denne værdi følger den som også gælder for trivselsdata.
-
-Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle faldgrupper/corner-cases osv.
-![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/6ad82b8d-091d-45af-b133-c0cf4c1675b9)
-
-## Measure 2
-Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
-![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/cd1d34b2-7afc-4891-b830-338a568c3c6b)
-
-
-
-
-# Exitsurvey Tidligere
-
-Exit-undersøgelsesfanen i HR Strategisk Dashboard tager afsæt i Exitsurveyen, som automatisk udsendes til alle personer, der frivilligt fratræder. 
-
-## Resume af tabeller
-
-### v_DimExitSurveyRespondent
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[v_DimExitSurveyRespondent] | [DM_FL_HR].[SD_EXITSURVEY_RESPONSES] |
-
-
-
-### v_FactExitSurvey
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[v_FactExitSurvey] | [DM_FL_HR].[SD_EXITSURVEY_RESPONSES] [DM_FL_HR].[SD_EXITSURVEY_STRUCTURE] [DM_FL_HR].[SD_EXITSURVEY_LABELS] |
-
-
-
-### v_TallyAmbassadør
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[v_TallyAmbassadør] | - |
-v_TallyAmbassadør er en hjælpetabel, som benyttes til at danne et ambassadørfilter i HR Strategisk Dashboard, som kan trækkes ned over visningerne. Tabellen indeholder to kolonner: ID og Ambassadørtype. I tabellen svarer ambassadørtypen "Ikke ambassadør" til ID=0, mens ambassadørtypen "Ambassadør" svarer til ID=1. Den enkelte respondent får tilddelt et ambassadørFilter-ID (0 eller 1) i viewet v_FactExitSurvey. 
-
-
-
-### (v_DimOrgDrill)
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[DimOrgDrill] | [chru_cube].[v_DimOrganisation] |
-
-
-
-## HR Strategisk dashboard
-Exit-undersøgelsen indgår som en selvstændig fane/side i HR Strategisk Dashboard.
-
-
-**Beregninger**
-
-
-Kommer snart og tester
-
-Tester lige lidt...
+  - Denne værdi følger den som også gælder for trivselsdata og onboarding. Den bruges også i fanen "onboarding".
 
 
 
@@ -139,3 +79,19 @@ Tester lige lidt...
 - vigtige tanker/overvejelser ved dannelsen af kolonner
 - vigtige tanker/overvejelser ved afgrænsning af data
 - Andet
+
+## Measrue_skabelon
+- Inputværdier/filter:
+  - Ingen
+- Returværdier:
+  - anonymitetsgrænse
+- Uddybende bemærkninger:
+  - Denne værdi følger den som også gælder for trivselsdata.
+  - 
+Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measure, eventuelle faldgrupper/corner-cases osv.
+![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/6ad82b8d-091d-45af-b133-c0cf4c1675b9)
+
+## Measure 2
+Skal dokumentere filtre og figurer (klar struktur, overvej vedligeholdelse + hvor der skal dokumenteres)
+![image](https://github.com/DataOgDigitalisering/dokumentation/assets/116676022/cd1d34b2-7afc-4891-b830-338a568c3c6b)
+
