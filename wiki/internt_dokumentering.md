@@ -46,12 +46,12 @@ De følgende afsnit viser hvordan dokumentationen af dashboards, measures og tab
 Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal indeholde følgende:
 - **Figurens navn**
 - En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som der står i info-boksene på selve dashboardet.
-- Liste med alle de **measures, etiketter og farvekoder** som figuren benytter.
-- Liste med alle de **filtre som er benyttet**:
-  - De filtreringer på siden som slår igennem på figuren.
-  - De default-filtervalg som benyttes på figuren.
-  - De filtreringer på figuren som er benyttet.
-  - De filtreringer som er blevet benyttet i de measures som figuren bygger på.
+- En liste med alle de **measures, etiketter og farvekoder** som figuren benytter.
+- En liste med alle de **filtre** som slår igennem på figuren, herunder:
+  - Filtreringer på siden.
+  - Default-slicervalg som benyttes siden.
+  - Filtreringer på figuren.
+  - Filtreringer i de measures som figuren bygger på.
 - Andre bemærkninger:
   - Vigtige informationer om figuren og hvad den viser/ikke viser.
   - Vigtige tanker/overvejelser ved opbygning/afgrænsninger, eventuelle corner-cases osv.
