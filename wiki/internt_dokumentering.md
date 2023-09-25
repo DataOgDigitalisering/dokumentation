@@ -67,22 +67,23 @@ Alle measures som er knyttet til et givent tema er beskrevet i kuben via. descri
 
 Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man benytte følgende opbygning:
 - Inputværdier/Filtreringer:
-  - Angiv de filtrer og værider measuret skal bruge. F.eks. en dato, personalegruppe osv.
+  - Angiv de filtrer og værdier measuret skal bruge. F.eks. en dato, personalegruppe osv.
 - Returværdier:
   - Angiv hvad measuret returnerer.
 - Uddybende bemærkninger:
-  - Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measuret, eventuelle corner-cases osv.
+  - Vigtige informationer om measuret. Hvad er dets funktion, hvordan bruges det, vigtige tanker og overvejelser omkring opbygning og afgrænsninger i measuret
+  - Eventuelle corner-cases.
   - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
 
 ## Tabeller og kolonner - dokumentation
-Alle tabeller og kolonner er beskrevet i selve kuben vha. descriptions. Denne metadata vises i for hvert tema i et Excel-ark med følgende oplysninger:
+Alle tabeller og kolonner er beskrevet i selve kuben vha. descriptions. Denne **metadata vises i for hvert tema i et Excel-ark** med følgende oplysninger:
 - **Navn på alle relevante tabeller**, hvornår de sidst er blevet **processeret** samt de **forespørgsler til SQL-severen** som de bygger på.
 - **Beskrivelse af alle tabellerne** - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
 - **Navn på alle kolonner** samt deres **datatype** og hvilken **kolonne de evt. sorteres efter**.
 - **Beskrivelse af alle kolonner og deres værdier** - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
 - Oversigt over **alle relationer** som de relevante tabeller indgår i.
 
-Herudover har hver tabel et kort afsnit hvor den er beskrevet i mere detalje. Afsnittene indeholder følgende:
+Herudover skal der for hver tabel være **et kort afsnit hvor tabellen er beskrevet i mere detalje**. Afsnittene indeholder følgende:
 
 - Navn på tabellen
 - Navn og link til de views som tabellen bygger på. Man skal linke til et view i denne mappe [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
