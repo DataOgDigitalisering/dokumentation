@@ -88,12 +88,8 @@ Herudover skal der for hver tabel være **et kort afsnit hvor tabellen er beskre
 - Navn på tabellen
 - Navn og link til de views som tabellen bygger på. Man skal linke til de views som ligger i denne mappe: [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
 
-- Ekstra informationer om tabellen
-  - vigtige tanker/overvejelser ved dannelsen af tabellen
-  - vigtige tanker/overvejelser ved afgrænsning af data
-  - Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
-  - Andet
-- Ekstra informationer om kolonnerne
-  - Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
-  - Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
-  - Andet
+- Ekstra informationer om tabellen og kolonner
+  - vigtige tanker/overvejelser ved dannelsen af tabellen og kolonnerne.
+  - vigtige tanker/overvejelser ved afgrænsning af data.
+  - Hvornår og hvordan opdateres den - skal den opdateres manuelt nogle gange (fx hvis der er nogle værdier som er hard-coded ind el.lign.).
+  - Andet.
