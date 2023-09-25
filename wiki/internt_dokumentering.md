@@ -59,11 +59,11 @@ Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal inde
 
 ## Measures - dokumentation
 Alle measures som er knyttet til et givent tema er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** med følgende oplysninger:
-- Navnet på den folder som measuret hører under.
-- Measurets navn.
-- Returværdiens datatype og formatering.
-- Det DAX-udtryk som definerer measuret.
-- Beskrivelse af measuret og dets returværdier. Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på measurets returværdier: "[a, b, ...]". Beskrivelsen skal angive hvad measuret beregner og evt. hvilke input-værdier measuret skal bruge. Yderligere kan man beskrive vigtige overvejelser, antagelser og definitioner som man skal være opmærksom på, når man benytter measuret.
+- **Navnet på den folder** som measuret hører under.
+- **Measurets navn**.
+- Returværdiens **datatype og formatering**.
+- Det **DAX-udtryk** som definerer measuret.
+- **Beskrivelse af measuret og dets returværdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "*description*" og afsluttets med et par **eksempler på measurets returværdier**: "[a, b, ...]". Beskrivelsen skal angive **hvad measuret beregner** og evt. hvilke **input-værdier** measuret skal bruge. Yderligere kan man beskrive **vigtige overvejelser, antagelser og definitioner** som man skal være opmærksom på, når man benytter measuret.
 
 Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man bygge afsnittet op på følgende måde:
 - Inputværdier/Filtreringer:
