@@ -76,12 +76,12 @@ Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man by
   - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
 
 ## Tabeller og kolonner - dokumentation
-Alle tabeller og kolonner er beskrevet i selve kuben vha. descriptions. Denne **metadata vises i for hvert tema i et Excel-ark** med følgende oplysninger:
-- **Navn på alle relevante tabeller**, hvornår de sidst er blevet **processeret** samt de **forespørgsler til SQL-severen** som de bygger på.
-- **Beskrivelse af alle tabellerne** - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
+Alle tabeller og kolonner er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
+- **Navn på tabellen**, hvornår den sidst er blevet **processeret** samt den **forespørgsler til SQL-severen** som tabellen bygger på.
+- **Beskrivelse af tabellen**. Beskrivelsen skrives ind i Tabular Editor under feltet "description".
 - **Navn på alle kolonner** samt deres **datatype** og hvilken **kolonne de evt. sorteres efter**.
-- **Beskrivelse af alle kolonner og deres værdier** - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
-- Oversigt over **alle relationer** som de relevante tabeller indgår i.
+- **Beskrivelse af alle kolonner og deres værdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "description" og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
+- Oversigt over **alle relationer** som tabellen indgår i.
 
 Herudover skal der for hver tabel være **et kort afsnit hvor tabellen er beskrevet i mere detalje**. Afsnittene indeholder følgende:
 
