@@ -52,7 +52,7 @@ Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal inde
   - Filtreringer på siden.
   - Filtreringer på figuren.
   - Filtreringer i de measures som figuren benytter.
-- Andre bemærkninger:
+- Evt. andre bemærkninger:
   - Vigtige tanker og overvejelser vedr. opbygning af figuren og afgrænsninger i data.
   - Eventuelle corner-cases man skal være opmærksom på.
   - Andet.
@@ -71,7 +71,7 @@ Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man by
 - Returværdier:
   - Angiv hvad measuret returnerer.
 - Uddybende bemærkninger:
-  - Vigtige informationer om measuret. Hvad er dets funktion, hvordan bruges det, vigtige tanker og overvejelser omkring opbygning og afgrænsninger i measuret
+  - Vigtige informationer om measuret. Hvad er dets funktion, hvordan bruges det, vigtige tanker og overvejelser omkring opbygning og afgrænsninger i measuret.
   - Eventuelle corner-cases.
   - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
 
