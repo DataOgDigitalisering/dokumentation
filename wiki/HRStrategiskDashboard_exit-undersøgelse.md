@@ -12,7 +12,7 @@ Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. st
 **Følgende filtreringer er benyttet**:
 - Filtrer på siden og slicer:
   - Ingen
-- Filter på figuren:
+- Filtrer på figuren:
   - Center, Afdeling og svar-pct. == not blank
   - v_DimExitSurveyRespondent[Status] == Gennemført
   - v_DimTidDato'[12MdrIntervallerAfsluttede] == seneste 12 afsluttede mdr.
