@@ -73,12 +73,12 @@ Herudover kan enkelte measures beskrives i deres eget afsnit. Her kan man benytt
   - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
 
 ## Tabeller og kolonner - skabelon
-Alle tabeller og kolonner som er knyttet til et givent tema er beskrevet i selve kuben via. descriptions. Denne metadata vises i et Excel-ark med følgende oplysninger:
-- Navn på alle relevante tabeller, hvornår de sidst er blevet processeret samt den forespørgsel til SQL-severen som de bygger på.
-- Beskrivelse af alle tabellerne - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
-- Navn på alle kolonner samt deres datatype og hvilken kolonne de evt. sorteres efter.
-- Beskrivelse af alle kolonner og deres værdier - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
-- Oversigt over alle relationer som relevante tabeller indgår i.
+Alle tabeller og kolonner er beskrevet i selve kuben vha. descriptions. Denne metadata vises i for hvert tema i et Excel-ark med følgende oplysninger:
+- **Navn på alle relevante tabeller**, hvornår de sidst er blevet **processeret** samt de **forespørgsler til SQL-severen** som de bygger på.
+- **Beskrivelse af alle tabellerne** - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
+- **Navn på alle kolonner** samt deres **datatype** og hvilken **kolonne de evt. sorteres efter**.
+- **Beskrivelse af alle kolonner og deres værdier** - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
+- Oversigt over **alle relationer** som de relevante tabeller indgår i.
 
 Herudover har hver tabel et kort afsnit hvor den er beskrevet i mere detalje. Afsnittene er opbygget på følgende måde:
 
