@@ -84,12 +84,10 @@ Alle tabeller og kolonner er beskrevet i kuben via. descriptions. Denne **metada
 - Oversigt over **alle relationer** som tabellen indgår i.
 
 Herudover skal der for hver tabel være **et kort afsnit hvor tabellen er beskrevet i mere detalje**. Afsnittene indeholder følgende:
-
 - Navn på tabellen
 - Navn og link til de views som tabellen bygger på. Man skal linke til de views som ligger i denne mappe: [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
-
 - Ekstra informationer om tabellen og kolonner
-  - vigtige tanker/overvejelser ved dannelsen af tabellen og kolonnerne.
-  - vigtige tanker/overvejelser ved afgrænsning af data.
+  - vigtige tanker og overvejelser ved dannelsen af tabellen og kolonnerne.
+  - vigtige tanker og overvejelser ved afgrænsning af data.
   - Hvornår og hvordan opdateres den - skal den opdateres manuelt nogle gange (fx hvis der er nogle værdier som er hard-coded ind el.lign.).
   - Andet.
