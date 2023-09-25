@@ -42,13 +42,12 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 # Skabeloner til dokumentation - UNDER UDVIKLING
 Følgende skabeloner viser hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden. TODO DETTE AFSNIT ER UNDER UDVIKLING
 ## Dashboards - skabelon
-Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Man kan benytte følgende opbygning:
+Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal indeholde følgende:
 
-**Figur A**
-- **Kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som der står i info-boksene på selve dashboardet.
-- Bygger på følgende measrues:
-  - Angiv alle de **measures, etiketter og farvekoder** som figuren benytter.
--  Følgende filtreringer er benyttet:
+- Figurens navn
+- En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som der står i info-boksene på selve dashboardet.
+- Angiv alle de **measures, etiketter og farvekoder** som figuren benytter.
+- Oplist alle filtereringer som er benyttet:
   - Angiv de **filtreringer på siden** som slår igennem på figuren.
   - Angiv de **default-filtervalg** som benyttes på figuren.
   - Angiv de **filtreringer på figuren** som er benyttet.
