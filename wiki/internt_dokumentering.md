@@ -56,7 +56,7 @@ Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal inde
   - Vigtige informationer om figuren og hvad den viser/ikke viser.
   - Vigtige tanker/overvejelser ved opbygning/afgrænsninger, eventuelle corner-cases osv.
 
-## Measures - skabelon
+## Measures - dokumentation
 Alle measures som er knyttet til et givent tema er beskrevet i selve kuben via. descriptions. Denne **metadata vises i et Excel-ark** med følgende oplysninger:
 - Navnet på den folder som measuret hører under
 - Measurets navn
@@ -73,7 +73,7 @@ Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man be
   - Vigtige informationer om measure’et. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved opbygning/afgrænsninger i measuret, eventuelle corner-cases osv.
   - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
 
-## Tabeller og kolonner - skabelon
+## Tabeller og kolonner - dokumentation
 Alle tabeller og kolonner er beskrevet i selve kuben vha. descriptions. Denne metadata vises i for hvert tema i et Excel-ark med følgende oplysninger:
 - **Navn på alle relevante tabeller**, hvornår de sidst er blevet **processeret** samt de **forespørgsler til SQL-severen** som de bygger på.
 - **Beskrivelse af alle tabellerne** - fx "Indeholder svar, spørgsmål og respondent, bruges som fact-tabel". Beskrivelsen skrives ind i Tabular Editor under feltet "description".
