@@ -43,12 +43,12 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 De følgende afsnit beskriver hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal dokumentere et tema.
 
 ## Dashboards - dokumentation
-Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal indeholde følgende:
+Hver figur i dashboardet skal dokumenteres i hvert sit afsnit. Afsnittet skal indeholde følgende:
 - **Figurens navn**
 - En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som står i info-boksene i selve dashboardet.
 - En liste med alle de **measures, etiketter og farvekoder** som figuren benytter.
 - En liste med alle de **filtre** som slår igennem på figuren. Den skal inkludere:
-  - Default-slicervalg som benyttes siden.
+  - De default filtervalg som benyttes i slicerne i højre side af dashboardet.
   - Filtreringer på siden.
   - Filtreringer på figuren.
   - Filtreringer i de measures som figuren benytter.
@@ -73,14 +73,14 @@ Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man by
 - Uddybende bemærkninger:
   - Vigtige informationer om measuret. Hvad er dets funktion, hvordan bruges det, vigtige tanker og overvejelser omkring opbygning og afgrænsninger i measuret.
   - Eventuelle corner-cases.
-  - Oversigt over hvor measures indgår/relaterer til andre measures, hvis dette er relevant.
+  - Oversigt over hvor measuret indgår og hvordan det relaterer sig til andre measures, hvis dette er relevant.
 
 ## Tabeller og kolonner - dokumentation
 Alle tabeller og kolonner er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
-- **Navn på tabellen**, hvornår den sidst er blevet **processeret** samt den **forespørgsler til SQL-severen** som tabellen bygger på.
+- **Navn på tabellen**, hvornår den sidst er blevet **processeret** samt den **forespørgsler til SQL-serveren** som tabellen bygger på.
 - **Beskrivelse af tabellen**. Beskrivelsen skrives ind i Tabular Editor under feltet "description".
 - **Navn på alle kolonner** samt deres **datatype** og hvilken **kolonne de evt. sorteres efter**.
-- **Beskrivelse af alle kolonner og deres værdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "description" og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
+- **Beskrivelse af alle kolonner og deres værdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "description" og afsluttes med et par eksempler på kolonnens værdier: "[a, b, ...]".
 - Oversigt over **alle relationer** som tabellen indgår i.
 
 Herudover skal der for hver tabel være **et kort afsnit hvor tabellen er beskrevet i mere detalje**. Afsnittene indeholder følgende:
