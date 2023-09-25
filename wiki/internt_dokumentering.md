@@ -58,7 +58,7 @@ Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal inde
   - Andet.
 
 ## Measures - dokumentation
-Alle measures som er knyttet til et givent tema er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** med følgende oplysninger:
+Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
 - **Navnet på den folder** som measuret hører under.
 - **Measurets navn**.
 - Returværdiens **datatype og formatering**.
