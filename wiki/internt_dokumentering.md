@@ -47,7 +47,7 @@ Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal inde
 - **Figurens navn**
 - En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som står i info-boksene i selve dashboardet.
 - En liste med alle de **measures, etiketter og farvekoder** som figuren benytter.
-- En liste med alle de **filtre** som slår igennem på figuren, herunder:
+- En liste med alle de **filtre** som slår igennem på figuren. Den skal inkludere:
   - Default-slicervalg som benyttes siden.
   - Filtreringer på siden.
   - Filtreringer på figuren.
