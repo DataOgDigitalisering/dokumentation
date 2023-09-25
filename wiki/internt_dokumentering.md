@@ -40,29 +40,30 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 - Beskrivelse af vores **arbejdsprocesser og de værktøjer** som vi bruger. Dette gælder dels brug at GitHub, wiki-siden, dokumentering og versionsstyring, men også hvordan man udvikler og arbejder med dashboards, kuber, views og tabeller. Dette er med til at sikre vi har en konsistent måde at arbejde på i alt fra navngivning af kolonner til opsætning af bogmærker i Power BI. **Denne dokumentation skrives løbende**.
 
 # Skabeloner til dokumentation - UNDER UDVIKLING
-De følgende afsnit viser hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden.
+De følgende afsnit beskriver hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal skrive dokumentation ind på wiki-siden.
 
 ## Dashboards - dokumentation
 Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal indeholde følgende:
 - **Figurens navn**
-- En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som der står i info-boksene på selve dashboardet.
+- En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som står i info-boksene i selve dashboardet.
 - En liste med alle de **measures, etiketter og farvekoder** som figuren benytter.
 - En liste med alle de **filtre** som slår igennem på figuren, herunder:
-  - Filtreringer på siden.
   - Default-slicervalg som benyttes siden.
+  - Filtreringer på siden.
   - Filtreringer på figuren.
-  - Filtreringer i de measures som figuren bygger på.
+  - Filtreringer i de measures som figuren benytter.
 - Andre bemærkninger:
-  - Vigtige informationer om figuren og hvad den viser/ikke viser.
-  - Vigtige tanker/overvejelser ved opbygning/afgrænsninger, eventuelle corner-cases osv.
+  - Vigtige tanker og overvejelser vedr. opbygning of afgrænsninger.
+  - Eventuelle corner-cases man skal være opmærksom på.
+  - Andet.
 
 ## Measures - dokumentation
-Alle measures som er knyttet til et givent tema er beskrevet i selve kuben via. descriptions. Denne **metadata vises i et Excel-ark** med følgende oplysninger:
-- Navnet på den folder som measuret hører under
-- Measurets navn
-- Returværdiens datatype og formatering
+Alle measures som er knyttet til et givent tema er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** med følgende oplysninger:
+- Navnet på den folder som measuret hører under.
+- Measurets navn.
+- Returværdiens datatype og formatering.
 - Det DAX-udtryk som definerer measuret.
-- Beskrivelse af measuret og dets returværdier - fx "beregner antal besvarelser uden anonymitetshensyn [13, 193, 23,...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på measurets returværdier: "[a, b, ...]". Beskrivelsen skal angive hvad measuret beregner og evt. hvilke input-værdier measuret skal bruge. Yderligere kan man beskrive vigtige overvejelser, antagelser og definitioner som man skal være opmærksom på, når man benytter measuret.
+- Beskrivelse af measuret og dets returværdier. Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på measurets returværdier: "[a, b, ...]". Beskrivelsen skal angive hvad measuret beregner og evt. hvilke input-værdier measuret skal bruge. Yderligere kan man beskrive vigtige overvejelser, antagelser og definitioner som man skal være opmærksom på, når man benytter measuret.
 
 Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man benytte følgende opbygning:
 - Inputværdier/Filtreringer:
