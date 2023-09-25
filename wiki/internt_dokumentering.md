@@ -80,18 +80,17 @@ Alle tabeller og kolonner er beskrevet i selve kuben vha. descriptions. Denne me
 - **Beskrivelse af alle kolonner og deres værdier** - fx "Angiver det område spørgsmålet hører under [Løn, Tilhører ikke et område, ...]". Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på kolonnens værdier: "[a, b, ...]".
 - Oversigt over **alle relationer** som de relevante tabeller indgår i.
 
-Herudover har hver tabel et kort afsnit hvor den er beskrevet i mere detalje. Afsnittene er opbygget på følgende måde:
+Herudover har hver tabel et kort afsnit hvor den er beskrevet i mere detalje. Afsnittene indeholder følgende:
 
-**Tabel A**
-- Bygger på følgende views: link til view fra denne mappe [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
+- Navn på tabellen
+- Navn og link til de views som tabellen bygger på. Man skal linke til et view i denne mappe [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
 
-**Ekstra informationer om tabellen:**
-- vigtige tanker/overvejelser ved dannelsen af tabellen
-- vigtige tanker/overvejelser ved afgrænsning af data
-- Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
-- Andet
-
-**Ekstra informationer om kolonnerne:**
-- Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
-- Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
-- Andet
+- Ekstra informationer om tabellen
+  - vigtige tanker/overvejelser ved dannelsen af tabellen
+  - vigtige tanker/overvejelser ved afgrænsning af data
+  - Hvornår/hvordan opdateres den - skal den opdateres manuelt nogle gange (f.eks. hvis der er nogle værdier som er hard-coded ind el.lign.)
+  - Andet
+- Ekstra informationer om kolonnerne
+  - Vigtige informationer om given tabel. Hvad er dens funktion, hvordan bruges den, vigtige tanker/overvejelser ved dannelsen af kolonner/afgrænsning af data. Hvornår opdateres den?
+  - Dette skal suppleres af SQL og SAS-kode som skal være i sit eget repository på GitHub – gerne linket direkte til det her.
+  - Andet
