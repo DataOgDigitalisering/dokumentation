@@ -65,7 +65,7 @@ Alle measures som er knyttet til et givent tema er beskrevet i kuben via. descri
 - Det DAX-udtryk som definerer measuret.
 - Beskrivelse af measuret og dets returværdier. Beskrivelsen skrives ind i Tabular Editor under feltet "description", og afsluttets med et par eksempler på measurets returværdier: "[a, b, ...]". Beskrivelsen skal angive hvad measuret beregner og evt. hvilke input-værdier measuret skal bruge. Yderligere kan man beskrive vigtige overvejelser, antagelser og definitioner som man skal være opmærksom på, når man benytter measuret.
 
-Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man benytte bygge det op på følgende måde:
+Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man bygge afsnittet op på følgende måde:
 - Inputværdier/Filtreringer:
   - Angiv de filtrer og værdier measuret skal bruge. F.eks. en dato, personalegruppe osv.
 - Returværdier:
