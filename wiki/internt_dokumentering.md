@@ -53,7 +53,7 @@ Hver figur i dashboadet skal dokumenteres i hvert sit afsnit. Ansittet skal inde
   - Filtreringer på figuren.
   - Filtreringer i de measures som figuren benytter.
 - Andre bemærkninger:
-  - Vigtige tanker og overvejelser vedr. opbygning af figuren og afgrænsninger.
+  - Vigtige tanker og overvejelser vedr. opbygning af figuren og afgrænsninger i data.
   - Eventuelle corner-cases man skal være opmærksom på.
   - Andet.
 
