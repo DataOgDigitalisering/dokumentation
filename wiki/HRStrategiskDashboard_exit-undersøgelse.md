@@ -1,4 +1,4 @@
-# Introduktion
+# HR Strategisk Dashboard - Exit-undersøgelse
 Herunder er alle figurer i fanen Exit-undersøgelse i HR Strategisk Dashboard beskrevet.
 
 # Svarprocent of antal besvarelser
@@ -23,3 +23,5 @@ Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. st
     VAR __StartPeriode = MIN ( v_DimTidDato[Dato] )
     VAR __SlutPeriode = EDATE ( __StartPeriode , 12 ) - 1
     ```
+**Andre bemærkninger**:
+- Man skal være opmærksom på at nye besvarelser på exit-survey kun indlæses i kuben én gang om måneden. Dette er beskrevet i dokumentationen af de views som exit-undersøgelsen benytter.
