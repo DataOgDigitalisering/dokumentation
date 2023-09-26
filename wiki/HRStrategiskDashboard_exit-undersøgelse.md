@@ -1,10 +1,10 @@
 # Introduktion
-Herunder er alle figurer i fanen Exit-undersøgelse i HR Strategisk Dashboard beskrevet:
+Herunder er alle figurer i fanen Exit-undersøgelse i HR Strategisk Dashboard beskrevet.
 
-# Figur: Svarprocent of antal besvarelser
+# Svarprocent of antal besvarelser (øverst til venstre)
 Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. stilling og organisation.
 
-**Figuren bygger op følgende measures og etiketter**:
+**Figuren bygger på følgende measures og etiketter**:
 - Svar-pct. benytter measuret [Exit - Svarprocent].
 - Antal svar benytter measuret [Exit - AntalSvar].
 - Ambassadørvilje benytter measuret [Exit - Ambassadørvilje].
@@ -13,7 +13,7 @@ Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. st
 - Filtrer på siden og default filtervalg:
   - Ingen
 - Filtrer på figuren:
-  - ```v_DimOrganisation[Center], v_DimOrganisation[Afdeling] og [Exit - Svarprocent] == not blank```
+  - ```v_DimOrganisation[Center], v_DimOrganisation[Afdeling] og [Svar-pct.] == not blank```
   - ```v_DimExitSurveyRespondent[Status] == Gennemført``` dvs. vi kategoriserer ikke delvist besvarede surveys som besvarede.
   - ```v_DimTidDato'[12MdrIntervallerAfsluttede] == seneste 12 afsluttede mdr.```
 - Filtrer i measures:
