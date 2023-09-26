@@ -18,7 +18,7 @@ Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. st
   - ```v_DimTidDato'[12MdrIntervallerAfsluttede] == seneste 12 afsluttede mdr.```
 - Filtrer i measures:
   - [Exit - Svarprocent] og [Exit - AntalSvar] indeholder ingen yderligere filtreringer.
-  - [Exit - Ambassadørvilje] inkluderer kun gennemførte surveys hvor ```v_DimExitSurveyRespondent[Leverancedato]``` ligger indenfor en 12 måneders periode:
+  - [Exit - Ambassadørvilje] inkluderer kun gennemførte surveys hvor ```v_DimExitSurveyRespondent[Leverancedato]``` ligger indenfor følgende 12 måneders periode:
      ```
     VAR __StartPeriode = MIN ( v_DimTidDato[Dato] )
     VAR __SlutPeriode = EDATE ( __StartPeriode , 12 ) - 1
