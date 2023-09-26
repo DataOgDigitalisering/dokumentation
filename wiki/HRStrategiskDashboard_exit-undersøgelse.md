@@ -1,7 +1,7 @@
 # Introduktion
 Herunder er alle figurer i fanen Exit-undersøgelse i HR Strategisk Dashboard beskrevet.
 
-# Svarprocent of antal besvarelser (øverst til venstre)
+# Svarprocent of antal besvarelser
 Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. stilling og organisation.
 
 **Figuren bygger på følgende measures og etiketter**:
