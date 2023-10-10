@@ -1,28 +1,8 @@
 # Exit-undersøgelse - HR Strategisk Dashboard
 Herunder er alle figurer i fanen Exit-undersøgelse i HR Strategisk Dashboard beskrevet.
 
-# Svarprocent of antal besvarelser
-Figuren angiver svarprocent, svarværdi og ambassadørviljen fordelt på hhv. stilling og organisation.
-
-**Figuren bygger på følgende measures og etiketter**:
-- Svar-pct. benytter measuret [Exit - Svarprocent].
-- Antal svar benytter measuret [Exit - AntalSvar].
-- Ambassadørvilje benytter measuret [Exit - Ambassadørvilje].
-
-**Følgende filtreringer er benyttet**:
-- Filtre på siden og default filtervalg:
-  - Ingen
-- Filtre på figuren:
-  - ```v_DimOrganisation[Center], v_DimOrganisation[Afdeling] og [Svar-pct.] == not blank```
-  - ```v_DimExitSurveyRespondent[Status] == Gennemført``` dvs. vi kategoriserer ikke delvist besvarede surveys som besvarede.
-  - ```v_DimTidDato'[12MdrIntervallerAfsluttede] == seneste 12 afsluttede mdr.```
-- Filtre i measures:
-  - [Exit - Svarprocent] og [Exit - AntalSvar] indeholder ingen yderligere filtreringer.
-  - [Exit - Ambassadørvilje] inkluderer kun gennemførte surveys hvor ```v_DimExitSurveyRespondent[Leverancedato]``` ligger indenfor følgende 12 måneders periode:
-     ```
-    VAR __StartPeriode = MIN ( v_DimTidDato[Dato] )
-    VAR __SlutPeriode = EDATE ( __StartPeriode , 12 ) - 1
-    ```
-
-**Andre bemærkninger**:
+# Anonymisering og indlæsning af data
 - Man skal være opmærksom på at nye besvarelser på exit-survey kun indlæses i kuben én gang om måneden. Dette er beskrevet i dokumentationen af de views som exit-undersøgelsen benytter.
+
+# Ambassadørfilter og ambassadørvilje
+Tanken bag ambassadørfilterer udspringer af Net Promoter Score, som er et mål for hvorvidt en ansat eller kunde er ambassadør for en virksomhed. Ved at filtrere på ambassadører/ikke ambassadører kan vi få et indblik i pull/push factors. God sammen med top 10 og wordcloud.
