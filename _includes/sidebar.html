@@ -71,12 +71,13 @@
         <li><a href="{{ '/internt_dokumentering' | relative_url }}">Dokumentering - Guide[§]</a></li>    
         <li><a href="{{ '/internt_versionsstyring' | relative_url }}">Versionsstyring - Guide</a></li>
         <li><a href="{{ '/internt_dashboard' | relative_url }}">Dashboard - Guide[§]</a></li>
-        <li><a href="{{ '/internt_kube' | relative_url }}">Kube - Guide[§]</a></li>
-        <li><a href="{{ '/internt_views' | relative_url }}">Views - Guide[§]</a></li>
-        <li><a href="{{ '/internt_tabellerOgDatabaser' | relative_url }}">Tabeller og databaser - Guide[§]</a></li>
-        <li><a href="{{ '/internt_postkassen' | relative_url }}">Postkassen - Guide[§]</a></li>
-        <li><a href="{{ '/internt_GitHub' | relative_url }}">GitHub - Guide[§]</a></li>
-        <li><a href="{{ '/internt_hjemmeside' | relative_url }}">Hjemmeside - Guide[§]</a></li>
+        <li><a href="{{ '/internt_kube' | relative_url }}">Kube - Guide</a></li>
+        <li><a href="{{ '/internt_views' | relative_url }}">Views - Guide</a></li>
+        <li><a href="{{ '/internt_tabellerOgDatabaser' | relative_url }}">Tabeller og databaser - Guide</a></li>
+        <li><a href="{{ '/internt_postkassen' | relative_url }}">Postkassen - Guide</a></li>
+        <li><a href="{{ '/internt_GitHub' | relative_url }}">GitHub - Guide</a></li>
+        <li><a href="{{ '/internt_hjemmeside' | relative_url }}">Hjemmeside - Guide</a></li>
+        <li><a href="{{ '/internt_leverancer' | relative_url }}">Faste leverancer</a></li>
         <li><a href="{{ '/internt_øvrige' | relative_url }}">Øvrige[†]</a></li>
 
     </ul>  
@@ -220,7 +221,10 @@ switch (window.location.pathname) {
  case "{{ '/internt_postkassen' | relative_url }}":
     side = "Postkassen - Guide";
     break; 
- case "{{ '/internt_øvrige' | relative_url }}":
+ case "{{ '/internt_leverancer' | relative_url }}":
+    side = "Faste leverancer";
+    break; 
+  case "{{ '/internt_øvrige' | relative_url }}":
     side = "Øvrige";
     break; 
   default:
