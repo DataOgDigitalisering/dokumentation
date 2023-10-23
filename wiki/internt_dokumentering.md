@@ -34,7 +34,7 @@ Alle **ændringer i CHRU_HRKube** i udvikling og produktion skal ske gennem GitH
 ## Wiki-siden
 Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøer og arbejdsgange. Alle ændringer i vores dashboards, kuber og datamodel kræver at man tjekker wiki-siden så den ikke bliver uddateret. Wiki-siden indeholder også beskrivelse af vores **arbejdsprocesser samt de værktøjer** som vi benytter. Dette gælder dels brug at GitHub, wiki-siden, dokumentering og versionsstyring, men også hvordan man udvikler og arbejder med dashboards, kuber, views og tabeller. Dette er med til at sikre vi har en konsistent måde at arbejde på i alt fra navngivning af kolonner til opsætning af bogmærker i Power BI. **Denne dokumentation skrives og opdateres løbende**.
 
-# Skabeloner til dokumentation - UNDER UDVIKLING
+# Skabeloner til dokumentation
 De følgende afsnit beskriver hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal dokumentere et tema.
 
 ## Dashboards - dokumentation
