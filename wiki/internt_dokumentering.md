@@ -46,7 +46,7 @@ Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i e
 - **Measurets navn**.
 - Returværdiens **datatype og formatering**.
 - Det **DAX-udtryk** som definerer measuret.
-- **Beskrivelse af measuret og dets returværdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "*description*" og afsluttets med et par **eksempler på measurets returværdier**: "[a, b, ...]". Beskrivelsen skal angive **hvad measuret beregner** og evt. hvilke **input-værdier** measuret skal bruge. Yderligere kan man beskrive **vigtige overvejelser, antagelser og definitioner** som man skal være opmærksom på, når man benytter measuret.
+- **Beskrivelse af measuret og dets returværdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "*description*" og afsluttes med et par **eksempler på measurets returværdier**: "[a, b, ...]". Beskrivelsen skal angive **hvad measuret beregner** og evt. hvilke **input-værdier** measuret skal bruge. Yderligere kan man beskrive **vigtige overvejelser, antagelser og definitioner** som man skal være opmærksom på, når man benytter measuret.
 
 ## Tabeller og kolonner - dokumentation
 Alle tabeller og kolonner er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
