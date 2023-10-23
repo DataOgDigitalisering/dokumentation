@@ -22,7 +22,7 @@ Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRku
 </center>
 
 # Measures
-Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Alle measures som ligger i CHRU_HRkuben kan ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
+Nedenfor er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Alle measures som ligger i CHRU_HRkuben kan også ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
 
 <b>Measures</b>
 <center>
