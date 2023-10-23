@@ -16,6 +16,7 @@ For at dokumentationen kan vedligeholdes og bruges i vores daglige arbejde, skal
 
 # Hvor, hvordan og hvornår dokumenterer vi?
 Alle ændringer som laves i vores dashboards, *CHRU_HRKube* og views, samt i de tabeller som kuben bygger på skal dokumenteres. Dette gælder både når man tilføjer nye temaer og når man ændrer på allerede eksisterende. Vi dokumenterer vores arbejde følgende steder:
+
 ## Power BI-filer
 Dashboards og de tilhørende infobokse skal **give et overblik** over hvad der vises på en given figur, samt hvilke measures den bygger på og hvilke filtre der er blevet brugt på figuren/siden. **Når man bygger dashboardet kommer alt dette naturligt med**.
 
@@ -43,19 +44,7 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 De følgende afsnit beskriver hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal dokumentere et tema.
 
 ## Dashboards - dokumentation
-Hver figur i dashboardet skal dokumenteres i hvert sit afsnit. Afsnittet skal indeholde følgende:
-- **Figurens navn**
-- En **kort beskrivelse** af hvad figuren viser - dette kan suppleres med den tekst som står i info-boksene i selve dashboardet.
-- En liste med alle de **measures, etiketter og farvekoder** som figuren benytter.
-- En liste med alle de **filtre** som slår igennem på figuren. Den skal inkludere:
-  - De default filtervalg som benyttes i slicerne i højre side af dashboardet.
-  - Filtreringer på siden.
-  - Filtreringer på figuren.
-  - Filtreringer i de measures som figuren benytter.
-- Evt. andre bemærkninger:
-  - Vigtige tanker og overvejelser vedr. opbygning af figuren og afgrænsninger i data.
-  - Eventuelle corner-cases man skal være opmærksom på.
-  - Andet.
+Hvert tema dokumenteres på sin egen side.D okumentationen skal indeholde nogle korte afsnit med en beskrivelse af **vigtige overvejelser og tanker** man har gjort sig da man lavede temaet. Fx hvis der er truffet nogle **principielle beslutninger om afgræsninger eller opgørelsesmetoder**. Dette sikrer vidensdeling men kræver ikke meget vedligeholdelse. Når vi opdaterer et dashboard, **gemmer vi også BI-filen på L-drevet**. På denne måde kan vi genskabe bogmærker/filer, hvis noget bliver overskrevet eller slettet.
 
 ## Measures - dokumentation
 Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
@@ -65,29 +54,12 @@ Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i e
 - Det **DAX-udtryk** som definerer measuret.
 - **Beskrivelse af measuret og dets returværdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "*description*" og afsluttets med et par **eksempler på measurets returværdier**: "[a, b, ...]". Beskrivelsen skal angive **hvad measuret beregner** og evt. hvilke **input-værdier** measuret skal bruge. Yderligere kan man beskrive **vigtige overvejelser, antagelser og definitioner** som man skal være opmærksom på, når man benytter measuret.
 
-Herudover kan **enkelte measures beskrives i deres eget afsnit**. Her kan man bygge afsnittet op på følgende måde:
-- Inputværdier/Filtreringer:
-  - Angiv de filtrer og værdier measuret skal bruge. F.eks. en dato, personalegruppe osv.
-- Returværdier:
-  - Angiv hvad measuret returnerer.
-- Uddybende bemærkninger:
-  - Vigtige informationer om measuret. Hvad er dets funktion, hvordan bruges det, vigtige tanker og overvejelser omkring opbygning og afgrænsninger i measuret.
-  - Eventuelle corner-cases.
-  - Oversigt over hvor measuret indgår og hvordan det relaterer sig til andre measures, hvis dette er relevant.
-
 ## Tabeller og kolonner - dokumentation
 Alle tabeller og kolonner er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
 - **Navn på tabellen**, hvornår den sidst er blevet **processeret** samt den **forespørgsler til SQL-serveren** som tabellen bygger på.
-- **Beskrivelse af tabellen**. Beskrivelsen skrives ind i Tabular Editor under feltet "description".
+- **Beskrivelse af tabellen**. Beskrivelsen skrives ind i Tabular Editor under feltet "description". Her kan man også skrive **hvornår og hvordan den opdateres** - skal den fx opdateres manuelt nogle gange (hvis der er nogle værdier som er hard-coded ind el.lign.).
 - **Navn på alle kolonner** samt deres **datatype** og hvilken **kolonne de evt. sorteres efter**.
-- **Beskrivelse af alle kolonner og deres værdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "description" og afsluttes med et par eksempler på kolonnens værdier: "[a, b, ...]".
+- **Beskrivelse af alle kolonner og deres værdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "description" og afsluttes med et par eksempler på kolonnens værdier: "[a, b, ...]". Yderligere kan man beskrive **vigtige overvejelser, antagelser og cornercases** som man skal være opmærksom på, når man benytter kolonnen.
 - Oversigt over **alle relationer** som tabellen indgår i.
 
-Herudover skal der for hver tabel være **et kort afsnit hvor tabellen er beskrevet i mere detalje**. Afsnittene indeholder følgende:
-- Navn på tabellen
-- Navn og link til de views som tabellen bygger på. Man skal linke til de views som ligger i denne mappe: [https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder)
-- Ekstra informationer om tabellen og kolonner
-  - vigtige tanker og overvejelser ved dannelsen af tabellen og kolonnerne.
-  - vigtige tanker og overvejelser ved afgrænsning af data.
-  - Hvornår og hvordan opdateres den - skal den opdateres manuelt nogle gange (fx hvis der er nogle værdier som er hard-coded ind el.lign.).
-  - Andet.
+
