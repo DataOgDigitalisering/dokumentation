@@ -38,7 +38,7 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 De følgende afsnit beskriver hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal dokumentere et tema.
 
 ## Dashboards - dokumentation
-Hvert tema dokumenteres på sin egen side.D okumentationen skal indeholde nogle korte afsnit med en beskrivelse af **vigtige overvejelser og tanker** man har gjort sig da man lavede temaet. Fx hvis der er truffet nogle **principielle beslutninger om afgræsninger eller opgørelsesmetoder**. Dette sikrer vidensdeling men kræver ikke meget vedligeholdelse. Når vi opdaterer et dashboard, **gemmer vi også BI-filen på L-drevet**. På denne måde kan vi genskabe bogmærker/filer, hvis noget bliver overskrevet eller slettet.
+Hvert tema dokumenteres på sin egen side. Dokumentationen skal indeholde nogle korte afsnit med en beskrivelse af **vigtige overvejelser og tanker** man har gjort sig da man lavede temaet. Fx hvis der er truffet nogle **principielle beslutninger om afgræsninger eller opgørelsesmetoder**. Dette sikrer vidensdeling men kræver ikke meget vedligeholdelse. Når man opdaterer et dashboard **gemmer man også BI-filen på L-drevet i mappen *Versionsstyring af dashboards***. På denne måde kan vi genskabe bogmærker/filer, hvis noget bliver overskrevet eller slettet.
 
 ## Measures - dokumentation
 Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
