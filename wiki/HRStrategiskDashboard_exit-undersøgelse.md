@@ -6,7 +6,7 @@ Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Exit-undersøgels
 - Den aggregerede data vises ikke ved grupperinger på mindre end 5. Dog vises svarprocent og antal besvarelser selvom man ser på mindre end 5 personer.
 
 # Opbygning af views
-- De to views [*v_DimExitSurveyRespondent*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_DimExitSurveyRespondent.sql) og [*v_FactExitSurvey*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql) som knytter sig til Exit-undersøgelsen indeholder en del tekst som er er hard-coded. Hvis spørgsmålenes ordlyd eller svarene ændres er det derfor vigtigt at opdatere de to views.
+- De to views [*v_DimExitSurveyRespondent*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_DimExitSurveyRespondent.sql) og [*v_FactExitSurvey*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql) som knytter sig til Exit-undersøgelsen indeholder en del tekst som er er hard-coded. Hvis spørgsmålenes ordlyd eller svarmulighederne ændres, er det derfor vigtigt at opdatere de to views.
 - Nogle personer har ved en fejl fået udsendt mere end ét survey på samme tjenestenummer. Disse ekstra surveys bliver filtreret fra i de to views.
 
 # Ambassadørfilter og ambassadørvilje
