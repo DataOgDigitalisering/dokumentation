@@ -23,6 +23,7 @@ Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRku
 
 # Measures
 Her er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Alle measures som ligger i CHRU_HRkuben kan ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
+
 <b>Measures</b>
 <center>
 <iframe width="100%" height="800" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Measures&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
