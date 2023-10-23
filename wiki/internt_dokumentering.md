@@ -38,7 +38,7 @@ Wiki-siden samler al vores dokumentation og giver et overblik over vores miljøe
 De følgende afsnit beskriver hvordan dokumentationen af dashboards, measures og tabeller i kuben er bygget op. Man kan tage udgangspunkt i disse når man skal dokumentere et tema.
 
 ## Dashboards - dokumentation
-Hvert tema dokumenteres på sin egen side. Dokumentationen skal indeholde nogle korte afsnit med en beskrivelse af **vigtige overvejelser og tanker** man har gjort sig da man lavede temaet. Fx hvis der er truffet nogle **principielle beslutninger om afgræsninger eller opgørelsesmetoder**. Dette sikrer vidensdeling men kræver ikke meget vedligeholdelse. Når man opdaterer et dashboard **gemmer man også BI-filen på L-drevet i mappen *Versionsstyring af dashboards***. På denne måde kan vi genskabe bogmærker/filer, hvis noget bliver overskrevet eller slettet.
+Hvert tema dokumenteres på sin egen side. Dokumentationen skal indeholde nogle korte afsnit med en beskrivelse af **vigtige overvejelser og tanker** man har gjort sig da man lavede temaet. Fx hvis der er truffet nogle **principielle beslutninger om afgræsninger eller opgørelsesmetoder**. Dette sikrer vidensdeling men kræver ikke meget vedligeholdelse. Når man opdaterer et dashboard **gemmer man også BI-filen på L-drevet i mappen *Versionsstyring af dashboards***. På denne måde kan vi genskabe bogmærker og filer, hvis noget bliver overskrevet eller slettet.
 
 ## Measures - dokumentation
 Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
@@ -51,9 +51,7 @@ Alle measures er beskrevet i kuben via. descriptions. Denne **metadata vises i e
 ## Tabeller og kolonner - dokumentation
 Alle tabeller og kolonner er beskrevet i kuben via. descriptions. Denne **metadata vises i et Excel-ark** for hvert tema og indeholder følgende oplysninger:
 - **Navn på tabellen**, hvornår den sidst er blevet **processeret** samt den **forespørgsler til SQL-serveren** som tabellen bygger på.
-- **Beskrivelse af tabellen**. Beskrivelsen skrives ind i Tabular Editor under feltet "description". Her kan man også skrive **hvornår og hvordan den opdateres** - skal den fx opdateres manuelt nogle gange (hvis der er nogle værdier som er hard-coded ind el.lign.).
+- **Beskrivelse af tabellen**. Beskrivelsen skrives ind i Tabular Editor under feltet "description". Her kan man også skrive **hvor ofte tabellen opdateres**, og om den fx skal opdateres manuelt nogle gange (hvis der er nogle værdier som er hard-coded ind el.lign.).
 - **Navn på alle kolonner** samt deres **datatype** og hvilken **kolonne de evt. sorteres efter**.
 - **Beskrivelse af alle kolonner og deres værdier**. Beskrivelsen skrives ind i Tabular Editor under feltet "description" og afsluttes med et par eksempler på kolonnens værdier: "[a, b, ...]". Yderligere kan man beskrive **vigtige overvejelser, antagelser og cornercases** som man skal være opmærksom på, når man benytter kolonnen.
 - Oversigt over **alle relationer** som tabellen indgår i.
-
-
