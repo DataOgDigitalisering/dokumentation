@@ -12,4 +12,4 @@ Vi udsender de ugentlige leverancer gennem regionens SAS-miljø. Dette gøres ve
 
 ## Om Regionens SAS-miljø
 Du kan læse mere om regionens SAS-platform på Koncerncentrenes intranetside:
-(https://intranet.regionh.dk/koncerncentre/it/it-systemer/liste-over-it-systemer/sas/Sider/om-sas-regionh.aspx)[https://intranet.regionh.dk/koncerncentre/it/it-systemer/liste-over-it-systemer/sas/Sider/om-sas-regionh.aspx]
+[https://intranet.regionh.dk/koncerncentre/it/it-systemer/liste-over-it-systemer/sas/Sider/om-sas-regionh.aspx](https://intranet.regionh.dk/koncerncentre/it/it-systemer/liste-over-it-systemer/sas/Sider/om-sas-regionh.aspx)
