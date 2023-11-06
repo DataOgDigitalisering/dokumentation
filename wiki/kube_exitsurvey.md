@@ -1,49 +1,30 @@
-# Exitsurvey
+# Introduktion til temaet
+ExitSurvey (også kaldet Exit-undersøgelse) er et tema i HR Strategisk Dashboard. Nedenstående beskriver de tabeller, kolonner og measures i CHRU_HRKube som knytter sig til temaet. Under siden [*Exit-undersøgelse - HR Strategisk Dashboard*](https://dataogdigitalisering.github.io/dokumentation/HRStrategiskDashboard_exit-unders%C3%B8gelse) kan du læse mere om temaet.
 
-Exit-undersøgelsesfanen i HR Strategisk Dashboard tager afsæt i Exitsurveyen, som automatisk udsendes til alle personer, der frivilligt fratræder. 
+# Tabeller og kolonner
+Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
 
-## Resume af tabeller
+<b>Tabeller</b>
+<center>
+<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Tabeller&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+</center>
+<br>
+ 
+<b>Kolonner</b>
+<center>
+<iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Kolonner&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+</center>
+<br>
 
-### v_DimExitSurveyRespondent
+<b>Relationer</b>
+<center>
+<iframe width="100%" height="150" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Relationer&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+</center>
 
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[v_DimExitSurveyRespondent] | [DM_FL_HR].[SD_EXITSURVEY_RESPONSES] |
+# Measures
+Nedenfor er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Alle measures som ligger i CHRU_HRkuben kan også ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
 
-
-
-### v_FactExitSurvey
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[v_FactExitSurvey] | [DM_FL_HR].[SD_EXITSURVEY_RESPONSES] [DM_FL_HR].[SD_EXITSURVEY_STRUCTURE] [DM_FL_HR].[SD_EXITSURVEY_LABELS] |
-
-
-
-### v_TallyAmbassadør
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[v_TallyAmbassadør] | - |
-v_TallyAmbassadør er en hjælpetabel, som benyttes til at danne et ambassadørfilter i HR Strategisk Dashboard, som kan trækkes ned over visningerne. Tabellen indeholder to kolonner: ID og Ambassadørtype. I tabellen svarer ambassadørtypen "Ikke ambassadør" til ID=0, mens ambassadørtypen "Ambassadør" svarer til ID=1. Den enkelte respondent får tilddelt et ambassadørFilter-ID (0 eller 1) i viewet v_FactExitSurvey. 
-
-
-
-### (v_DimOrgDrill)
-
-| **View** | **Baseret på** | 
-| - | - |
-| [chru_cube].[DimOrgDrill] | [chru_cube].[v_DimOrganisation] |
-
-
-
-## HR Strategisk dahboard
-Exit-undersøgelsen indgår som en selvstændig fane/side i HR Strategisk Dashboard.
-
-
-**Beregninger**
-
-
-Kommer snart og tester
-
-Tester lige lidt...
+<b>Measures</b>
+<center>
+<iframe width="100%" height="800" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={01de42f3-df69-45a9-ba70-a4e8ffee9f9a}&action=embedview&wdAllowInteractivity=False&Item=Exit_unders%C3%B8gelse_Measures&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+</center>
