@@ -30,13 +30,9 @@ Nedenfor kan du se en liste over de produkter som vi udbyder, samt hvilke dataki
 Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem der står for at dokumentere temaet og vedligeholde dokumentationen efterfølgende. Det angiver også hvilke tabeller og measures som hører under hvert tema.
 
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={fa0de3ba-f84a-4f8b-bbfd-18057acea0c4}&amp;action=embedview" width="476px" height="288px" frameborder="0">Dette er et integreret <a target="_blank" href="https://office.com">Microsoft Office</a>-dokument leveret af <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={fa0de3ba-f84a-4f8b-bbfd-18057acea0c4}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="1120" width="800" frameborder="0" seamless="yes"></iframe>
 </center>
 <br>
-
-<center>
-<iframe width="700" height="305" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={2d5b01d8-ffde-453f-b721-4821bc2dd62c}&action=embedview&wdAllowInteractivity=False&Item=Table1&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-</center>
 
 # Vores produkter
 
