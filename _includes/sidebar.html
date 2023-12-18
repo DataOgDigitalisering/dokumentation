@@ -18,8 +18,10 @@
         <li><a href="{{ '/kube_fastholdelse' | relative_url }}">Fastholdelse[*]</a></li>
         <li><a href="{{ '/kube_exit-undersøgelse' | relative_url }}">Exit-undersøgelse</a></li>        
         <li><a href="{{ '/kube_ferie' | relative_url }}">Ferie[†]</a></li>
-        <li><a href="{{ '/kube_løn' | relative_url }}">Løn[*]</a></li>
+        <li><a href="{{ '/kube_forbrug' | relative_url }}">Forbrug[*]</a></li>
         <li><a href="{{ '/kube_vagtplan' | relative_url }}">Vagtplan[*]</a></li>
+        <li><a href="{{ '/kube_arbejdstid' | relative_url }}">Arbejdstid[*]</a></li>
+        <li><a href="{{ '/kube_diverse' | relative_url }}">Diverse[*]</a></li>
         <li><a href="{{ '/kube_opdatering' | relative_url }}">Opdatering og validering[†]</a></li>
     </ul>
 </div>
@@ -152,11 +154,17 @@ switch (window.location.pathname) {
  case "{{ '/kube_ferie' | relative_url }}":
     side = "Ferie";
     break; 
- case "{{ '/kube_løn' | relative_url }}":
-    side = "Løn";
+ case "{{ '/kube_forbrug' | relative_url }}":
+    side = "Forbrug";
     break; 
  case "{{ '/kube_vagtplan' | relative_url }}":
     side = "Vagtplan";
+    break; 
+ case "{{ '/kube_arbejdstid' | relative_url }}":
+    side = "Arbejdstid";
+    break; 
+ case "{{ '/kube_diverse' | relative_url }}":
+    side = "Diverse";
     break; 
  case "{{ '/kube_opdatering' | relative_url }}":
     side = "Opdatering og validering";
