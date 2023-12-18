@@ -3,7 +3,9 @@
 <center><img src="Images/sideUdarbejdes.png" height="95%" width="95%" style="vertical-align:middle"/></center>
 
 ## Svarskalaer
+
 Overblik over de forskellige svarskaler vi benytter i forskellige spørgeskemaundersøgelser
+
 | Emne | kategori 5 | kategori 4 | kategori 3 | kategori 2 | kategori 1 |
 | -- | -- | -- | -- | -- | -- |
 | Standardskema for kursusevalueringer i CHRU | Meget enig | Enig | Hverken/eller | Uenig | Meget uenig |
