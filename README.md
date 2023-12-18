@@ -30,7 +30,7 @@ Nedenfor kan du se en liste over de produkter som vi udbyder, samt hvilke dataki
 Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem der står for at dokumentere temaet og vedligeholde dokumentationen efterfølgende. Det angiver også hvilke tabeller og measures som hører under hvert tema.
 
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={fa0de3ba-f84a-4f8b-bbfd-18057acea0c4}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="1120" width="800" frameborder="0" seamless="yes"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={fa0de3ba-f84a-4f8b-bbfd-18057acea0c4}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="700" width="800" frameborder="0" seamless="yes"></iframe>
 </center>
 <br>
 
