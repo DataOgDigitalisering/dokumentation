@@ -16,8 +16,7 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 
 På denne wiki-side finder du:
 - Dokumentation:
-  - Dokumentation af ***HR Strategisk Dashboard* og *Lederdashboard***, hvor alle figurer og filtreringer er dokumenteret og beskrevet.
-  - Dokumentation af ***CHRU_HRKube***, hvor kubens opbygning og measures er forklaret.
+  - Dokumentation af ***CHRU_HRKube***, hvor kubens opbygning, temaer og measures er forklaret.
   - Dokumentation af de **views og tabeller** som kuben bygger på.
 - Interne dokumenter:
   - Interne dokumenter som beskriver hvordan vi arbejder med **databaser, kuber og dashboards**.
