@@ -1,7 +1,7 @@
 # Personalesammensætning - HR Strategisk Dashboard
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Personalesammensætning" beskrevet.
 
-## Er i gang med at blive lavet...
+## Der arbejdes på dette afsnit
 TODO
 
 
