@@ -5,7 +5,7 @@ Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Personalesammens�
 
 
 # Tabeller og kolonner
-Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
+Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
 
 <b>Tabeller</b>
 <center>
@@ -19,7 +19,7 @@ Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRku
 </center>
 
 # Measures
-Nedenfor er de measures som knytter sig til temaet Exit-undersøgelse beskrevet. Alle measures som ligger i CHRU_HRkuben kan også ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
+Nedenfor er de measures som knytter sig til temaet beskrevet. Alle measures som ligger i CHRU_HRkuben kan også ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
 
 <b>Measures</b>
 <center>
