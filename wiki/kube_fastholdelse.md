@@ -3,6 +3,8 @@ Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Fastholdelse" bes
 
 ## Der arbejdes på dette afsnit
 TODO
+- ja
+- nej
 
 
 # Tabeller og kolonner
