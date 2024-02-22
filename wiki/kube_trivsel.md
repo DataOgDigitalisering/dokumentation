@@ -1,13 +1,17 @@
-# Der arbejdes på at få denne side klar!
-
-<center><img src="Images/sideUdarbejdes.png" height="95%" width="95%" style="vertical-align:middle"/></center>
-
-
 # Trivsel
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Trivsel" beskrevet.
 
-## Der arbejdes på dette afsnit
-TODO
+## Obligatoriske og valgfri målinger
+Trivselsdata opdateres i forbindelse med gennemførelsen af de årlige regionale trivselsmålinger, som gennemføres obligatorisk i 1. og 3. kvartal og valgfrit i 2. og 4. kvartal. HR Strategisk dashboard inkluderer udelukkende besvarelser på de tre fællesregionale spørgsmål, selvom der også stilles lokale spørgsmål i trivselsmålingerne.
+
+## SD og APOS
+I HR Strategisk Dashboard kan trivselsdata både vises ud fra SD- og APOS-hierarkierne. Til hvert spørgsmålsvar knyttes ogs ansættelsesID ud fra tjenestenummer og svardatoen for målingen, hvilket gør det muligt at opgøre besvarlserne ud fra SD-hierarkiet.
+
+## Forskelle mellem det man ser som bruger i Kursusportalen og i HR Strategisk Dashboard
+Aggregerings- og anonymiseringsprincipperne i HR Strategisk Dashboard er ikke identiske med principperne i Kursusportalen. Det medfører, at der i visse tilfælde – særligt på lavere enhedsniveauer – kan opstå en forskel i resultaterne i hhv. Kursusportalen og HR Strategisk Dashboard. 
+- Dashboardet vil altid inkludere alle medarbejdere i den viste enhed samt alle medarbejdere i eventuelle underliggende enheder. Hvis der er mindre end fem respondenter på det valgte niveau, vil resultatet dog være anonymiseret.
+- I Kursusportalen vil der derimod ske en anonymisering, som betyder at, hvis der er mindre end fem respondenter i en enhed, vil der ikke kunne dannes en rapport for enheden, og besvarelserne vil heller ikke være medtaget på overliggende niveau. Dette kan i praksis betyde, at der kan være besvarelser, der ikke indgår i det samlede resultat, hvilket også kan være problematisk, hvis de pågældendes besvarelser dermed ekskluderes.
+Der kan derfor opstå diskrepans i viste gennemsnit og antal mellem de to opgørelsesmetoder.
 
 
 # Tabeller og kolonner
