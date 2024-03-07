@@ -18,5 +18,5 @@ Du kan læse mere om regionens SAS-platform på Koncerncentrenes intranetside:
 ## Python leverancer
 Vi udsender ligeledes ugentlige leverancer gennem python. Dette gøres ved at køre et script inde på vores L-drev. Vi har følgende leverancer i python:
 <center>
-<iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/:x:/r/personal/casper_kian_bresdahl_ibsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc=%7BCF3BE1D8-92B6-4003-94FC-891E03DAD9AA%7D&file=PythonLeverancer%202.xlsx&action=default&mobileredirect=true&ct=1709799056867&wdOrigin=OFFICECOM-WEB.START.EDGEWORTH&cid=bf274330-3759-4655-ad28-1380192a7a9b&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=f95b9cf5-840d-4588-9c4b-1659741abc46"></iframe>
+<iframe width="402" height="346" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={0fb12110-94e1-4b1a-8488-dcf3b0dbe6dc}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
