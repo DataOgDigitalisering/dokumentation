@@ -55,7 +55,7 @@
         <li><a href="{{ '/internt_GitHub' | relative_url }}">GitHub - Guide</a></li>
         <li><a href="{{ '/internt_hjemmeside' | relative_url }}">Hjemmeside - Guide</a></li>
         <li><a href="{{ '/internt_fasteleverancer' | relative_url }}">Faste leverancer</a></li>
-
+        <li><a href="{{ '/internt_overblikDatabaser' | relative_url }}">Overblik over databaser</a></li>
     </ul>  
 </div>
 <button class="collapsible">Tidligere sider</button>
@@ -217,8 +217,11 @@ switch (window.location.pathname) {
  case "{{ '/internt_fasteleverancer' | relative_url }}":
     side = "Faste leverancer";
     break; 
-  case "{{ '/internt_øvrige' | relative_url }}":
+case "{{ '/internt_øvrige' | relative_url }}":
     side = "Øvrige";
+    break; 
+case "{{ '/internt_overblikDatabaser' | relative_url }}":
+    side = "Overblik over databaser";
     break; 
   default:
     side = "Side";
