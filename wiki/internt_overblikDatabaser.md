@@ -1,8 +1,8 @@
 # Overblik over views, tabeller og kuben
-Her er de scripts og metoder som vi benytter til at få overblik over tabeller, views og measures beskrevet. De bruges til at give et overblik over hvad der ligger i udvikling og produktion fx ifm. oprdyning.
+Her er de scripts og metoder som vi benytter til at få overblik over tabeller, views og measures beskrevet. De bruges til at give et overblik over hvad der ligger i udvikling og produktion fx ifm. oprydning.
 
 ## Overblik over kuben
-Dette program genererer en liste over alle de measures og kolonner som bliver benyttet på figurerne i et givent dashboard. Det viser også om measures bliver brugt i andre measures eller om kolonner fx. indgår i relationer eller RLS. Programmet ligger i følgende repository [pbixAnalyzer](https://github.com/DataOgDigitalisering/pbixAnalyzer).
+Vi har et program som genererer en liste over alle de measures og kolonner som bliver benyttet i et givent dashboard. Det viser også om et measure bliver brugt i andre measures, og om kolonner fx. indgår i relationer eller i RLS. Programmet ligger i følgende repository [pbixAnalyzer](https://github.com/DataOgDigitalisering/pbixAnalyzer).
 
 ## Overblik over views og tabeller
 Vi har flere scripts som kan benyttes til at give et overblik over de tabeller og views som ligger i udvikling og produktion.
