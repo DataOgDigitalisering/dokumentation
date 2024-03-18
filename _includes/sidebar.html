@@ -18,6 +18,7 @@
         <li><a href="{{ '/kube_sygefravær' | relative_url }}">Sygefravær[†]</a></li>
         <li><a href="{{ '/kube_trivsel' | relative_url }}">Trivsel[*]</a></li>
         <li><a href="{{ '/kube_vagtplan' | relative_url }}">Vagtplan[*]</a></li>
+        <li><a href="{{ '/kube_nytTema' | relative_url }}">Nyt Tema[*]</a></li>
     </ul>
 </div>
 <button class="collapsible">Views</button>
@@ -222,7 +223,10 @@ case "{{ '/internt_øvrige' | relative_url }}":
     break; 
 case "{{ '/internt_overblikDatabaser' | relative_url }}":
     side = "Overblik over databaser";
-    break; 
+    break;
+case "{{ '/kube_nytTema' | relative_url }}":
+    side = "Nyt Tema";
+    break;
   default:
     side = "Side";
 }
