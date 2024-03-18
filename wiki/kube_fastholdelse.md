@@ -3,7 +3,8 @@ Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Fastholdelse" bes
 
 ## Fanerne i fastholdelses-temaet
 Fastholdelsestemaet indeholder fanen ”Fastholdelse”, som bl.a. viser antallet af fratrådte og afgangsrater på tværs af organisations- og stillingshierarkier samt fastholdelseskurver. Temaet indeholder desuden fanen ”Mobilitet”, som viser intern medarbejdermobilitet på tværs af hospitaler og virksomheder i regionen.
-Definitioner og afgrænsninger
+
+## Definitioner og afgrænsninger
 -	Temaet ”Fastholdelse” skal bidrage til at give indsigt i organisationens evne til at fastholde medarbejdere over tid, og er derfor afgrænset til at omfatte ”ikke-forventelige” fratrædelser, dvs. fratrædelser som på den ene eller anden måde ikke kan siges at være planlagt som følge af fx uddannelsesforløb, pensionsfratrædelse m.m. Midlertidigt ansatte kan også siges at være forventelige fratrædelser, men disse kan ikke afgrænses i lønsystemet og er derfor inkluderet.
 -	Den primære indikator til at måle organisationens fastholdelsesevne er afgangsraten, som angiver, hvor stor en andel af de medarbejdere, som var ansat primo en 12 mdr. periode, der er fratrådt i slutningen af samme periode. Afgangsrate benævnes også undertiden personaleomsætning, men sidstnævnte opgøres ofte ved også at tage højde for andelen af tiltrædelser i perioden.
 -	Populationen er afgrænset til at omfatte fastansat personale, dvs. månedslønnede. Timelønnede og elever er ikke inkluderet som følge af deres løsere tilknytning til arbejdsstedet. Uddannelseslæger og pensionsfratrædelser er som udgangspunkt fravalgt, da disse personalegrupper er atypiske i forhold til øvrige fratrædelser, men kan dog tilvælges via filtre.
