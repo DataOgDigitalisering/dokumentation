@@ -8,4 +8,9 @@
   <li>Vagtskemaer</li>
   <li>Setup omkring faste leverancer</li>
   <li>Statsborgerskab ✓</li>
+  <li>Automatisering af brugeradministration</li>
+  <li>Nye Ledere</li>
+  <li>Cheflønsmonitorering</li>
+  <li>Fejl registrering af LED koderne i HR-service</li>
+  <li>Lederkode</li>
 </ul>
