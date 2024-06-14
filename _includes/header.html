@@ -14,7 +14,7 @@
         async function fetchProtectedContent(filePath) {
             const token = localStorage.getItem('authToken');
             if (!token) {
-                window.location.href = 'http://your-server.com/login';
+                window.location.href = 'http://10.157.136.215:8082/login';
                 return;
             }
 
