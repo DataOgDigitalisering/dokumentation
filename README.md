@@ -10,6 +10,8 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 </center>
 <br>
 
+<div id="protected-content"></div>div>
+
 
 
 # Introduktion til hjemmesiden
