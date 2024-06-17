@@ -39,28 +39,32 @@
             const octokit = new Octokit({
                 auth: token
             })
-            const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
-                owner: 'CasperBresdahlRegionH',
-                repo: 'Dokumentation_intern',
-                path: `blob/main/${filePath}`,
-                headers: {
-                    'X-GitHub-Api-Version': '2022-11-28'
-                }
-            })
+
+            try {
+                const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+                    owner: 'CasperBresdahlRegionH',
+                    repo: 'Dokumentation_intern',
+                    path: `blob/main/${filePath}`,
+                    headers: {
+                        'X-GitHub-Api-Version': '2022-11-28'
+                    }
+                })
+            } catch(e) {
+                console.log("404");
+                console.log(response);
+                document.getElementById('protected-content').innerText = 'You do not have access to this content.';
+            }
             //const response = await fetch(`https://api.github.com/repos/CasperBresdahlRegionH/Dokumentation_intern/contents/blob/main/${filePath}`, {
                // headers: {
                  //   'Authorization': `Bearer ${token}`
                 //}
             //});
-            console.log("Ocktokit call done");
+
+            // Response not 404
             console.log(response);
-            if (response.ok) {
-                const content = await response.json();
-                const fileContent = atob(content.content); // Decode base64 content
-                document.getElementById('protected-content').innerText = fileContent;
-            } else {
-                document.getElementById('protected-content').innerText = 'You do not have access to this content.';
-            }
+            const content = await response.json();
+            const fileContent = atob(content.content); // Decode base64 content
+            document.getElementById('protected-content').innerText = fileContent;
         }
 
         document.addEventListener('DOMContentLoaded', (event) => {
