@@ -40,32 +40,31 @@
                 auth: token
             })
 
-            try {
-                const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
-                    owner: 'CasperBresdahlRegionH',
-                    repo: 'Dokumentation_intern',
-                    path: `${filePath}`,
-                    headers: {
-                        'X-GitHub-Api-Version': '2022-11-28'
-                    }
-                })
-            } catch(e) {
-                console.log("404");
-                console.log(e);
-                document.getElementById('protected-content').innerText = 'You do not have access to this content.';
-                return;
-            }
+          
+            const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+                owner: 'CasperBresdahlRegionH',
+                repo: 'Dokumentation_intern',
+                path: `${filePath}`,
+                headers: {
+                    'X-GitHub-Api-Version': '2022-11-28'
+                }
+            })
+            
             //const response = await fetch(`https://api.github.com/repos/CasperBresdahlRegionH/Dokumentation_intern/contents/blob/main/${filePath}`, {
                // headers: {
                  //   'Authorization': `Bearer ${token}`
                 //}
             //});
 
-            // Response not 404
-            console.log(response);
-            const content = await response.json();
-            const fileContent = atob(content.content); // Decode base64 content
-            document.getElementById('protected-content').innerText = fileContent;
+            if (response.ok) {
+                console.log(response);
+                const content = await response.json();
+                const fileContent = atob(content.content); // Decode base64 content
+                document.getElementById('protected-content').innerText = fileContent;
+            } else {
+                console.log("404");
+                document.getElementById('protected-content').innerText = 'You do not have access to this content.';
+            }
         }
 
         document.addEventListener('DOMContentLoaded', (event) => {
