@@ -57,7 +57,8 @@
             //});
             console.log(response);
             if (response.status == 200) {
-                const content = await response.json();
+                const content = await response.data.content;
+                console.log(content);
                 const fileContent = atob(content.content); // Decode base64 content
                 document.getElementById('protected-content').innerText = fileContent;
             } else {
