@@ -28,6 +28,7 @@
         async function fetchProtectedContent(filePath) {
             const token = localStorage.getItem('authToken');
             console.log("Token Loaded");
+            console.log(token);
             if (!token) {
                 console.log("Token not found");
                 redirectToLogin()
