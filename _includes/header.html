@@ -31,7 +31,6 @@
             });
 
             if (response.ok) {
-                localStorage.setItem('authToken', accessToken);
                 const content = await response.json();
                 const fileContent = atob(content.content); // Decode base64 content
                 document.getElementById('protected-content').innerText = fileContent;
@@ -41,6 +40,10 @@
         }
 
         document.addEventListener('DOMContentLoaded', (event) => {
+            const token = getQueryParameter('token');
+            if (token) {
+                localStorage.setItem('authToken', accessToken);
+            }
             // Example usage: fetch a specific file's content
             const filePath = 'PythonLeverancer.xlsx'; // Update this path as needed
             fetchProtectedContent(filePath);
