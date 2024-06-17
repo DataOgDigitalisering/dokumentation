@@ -14,7 +14,7 @@
         function redirectToLogin() {
             const originalUrl = window.location.href;
             const encodedUrl = encodeURIComponent(originalUrl);
-            window.location.href = 'http://10.157.136.215:8082/login?redirect_uri=${encodedUrl}';
+            window.location.href = `http://10.157.136.215:8082/login?redirect_uri=${encodedUrl}`;
         }
     
         async function fetchProtectedContent(filePath) {
