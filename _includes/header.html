@@ -52,10 +52,10 @@
                  //   'Authorization': `Bearer ${token}`
                 //}
             //});
-
+            console.log("Ocktokit call done");
             console.log(octokit);
-            if (response.ok) {
-                const content = await response.json();
+            if (octokit.ok) {
+                const content = await octokit.json();
                 const fileContent = atob(content.content); // Decode base64 content
                 document.getElementById('protected-content').innerText = fileContent;
             } else {
