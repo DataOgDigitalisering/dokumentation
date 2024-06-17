@@ -55,8 +55,8 @@
                  //   'Authorization': `Bearer ${token}`
                 //}
             //});
-
-            if (response.ok) {
+            console.log(response)
+            if (response.Ok) {
                 console.log(response);
                 const content = await response.json();
                 const fileContent = atob(content.content); // Decode base64 content
