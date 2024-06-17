@@ -11,6 +11,11 @@
 </style>
 
 <script>
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
         function redirectToLogin() {
             const originalUrl = window.location.href;
             const encodedUrl = encodeURIComponent(originalUrl);
@@ -19,13 +24,13 @@
     
         async function fetchProtectedContent(filePath) {
             const token = localStorage.getItem('authToken');
-            console.log("Token Loaded");
+            Console.log("Token Loaded");
             if (!token) {
-                console.log("Token not found");
+                Console.log("Token not found");
                 redirectToLogin()
                 return;
             }
-            console.log("Token found");
+            Console.log("Token found");
             const response = await fetch(`https://api.github.com/repos/CasperBresdahlRegionH/Dokumentation_intern/contents/blob/main/${filePath}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -42,10 +47,10 @@
         }
 
         document.addEventListener('DOMContentLoaded', (event) => {
-            console.log("Page loaded");
+            Console.log("Page loaded");
             const token = getQueryParameter('token');
             if (token) {
-                console.log("Token Set");
+                Console.log("Token Set");
                 localStorage.setItem('authToken', accessToken);
             }
             // Example usage: fetch a specific file's content
