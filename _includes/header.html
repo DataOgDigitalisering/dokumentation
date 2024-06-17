@@ -39,7 +39,7 @@
             const octokit = new Octokit({
                 auth: token
             })
-            const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+            await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
                 owner: 'CasperBresdahlRegionH',
                 repo: 'Dokumentation_intern',
                 path: `blob/main/${filePath}`,
@@ -53,7 +53,7 @@
                 //}
             //});
 
-            console.log(response);
+            console.log(octokit);
             if (response.ok) {
                 const content = await response.json();
                 const fileContent = atob(content.content); // Decode base64 content
