@@ -31,6 +31,7 @@
             });
 
             if (response.ok) {
+                localStorage.setItem('authToken', accessToken);
                 const content = await response.json();
                 const fileContent = atob(content.content); // Decode base64 content
                 document.getElementById('protected-content').innerText = fileContent;
