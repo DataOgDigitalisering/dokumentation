@@ -11,6 +11,8 @@
 </style>
 
 <script>
+        import { Octokit } from "https://esm.sh/@octokit/core";
+    
         function getQueryParameter(name) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
@@ -31,11 +33,23 @@
                 return;
             }
             console.log("Token found");
-            const response = await fetch(`https://api.github.com/repos/CasperBresdahlRegionH/Dokumentation_intern/contents/blob/main/${filePath}`, {
+            
+            const octokit = new Octokit({
+                auth: token
+            })
+            const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+                owner: 'CasperBresdahlRegionH',
+                repo: 'Dokumentation_intern',
+                path: `blob/main/${filePath}`,
                 headers: {
-                    'Authorization': `Bearer ${token}`
+                    'X-GitHub-Api-Version': '2022-11-28'
                 }
-            });
+            })
+            //const response = await fetch(`https://api.github.com/repos/CasperBresdahlRegionH/Dokumentation_intern/contents/blob/main/${filePath}`, {
+               // headers: {
+                 //   'Authorization': `Bearer ${token}`
+                //}
+            //});
 
             console.log(response);
             if (response.ok) {
