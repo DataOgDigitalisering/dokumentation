@@ -63,7 +63,7 @@
             });
             console.log(response);
             if (response.status == 200) {
-                const content = await response.data.content;
+                const content = await response.json;
                 console.log(content);
                 const fileContent = atob(content); // Decode base64 content
                 document.getElementById('protected-content').innerText = fileContent;
