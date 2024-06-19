@@ -40,15 +40,19 @@
                 auth: token
             })
 
-          
-            const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
-                owner: 'CasperBresdahlRegionH',
-                repo: 'Dokumentation_intern',
-                path: `${filePath}`,
-                headers: {
-                    'X-GitHub-Api-Version': '2022-11-28'
-                }
-            })
+            let response;
+            try {
+                let response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+                    owner: 'CasperBresdahlRegionH',
+                    repo: 'Dokumentation_intern',
+                    path: `${filePath}`,
+                    headers: {
+                        'X-GitHub-Api-Version': '2022-11-28'
+                    }
+                })
+            } catch(e) {
+                let response = 403
+            }
             
             //const response = await fetch(`https://api.github.com/repos/CasperBresdahlRegionH/Dokumentation_intern/contents/blob/main/${filePath}`, {
                // headers: {
