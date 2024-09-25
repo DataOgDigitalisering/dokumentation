@@ -52,10 +52,10 @@ I Dashboardet er det muligt at skifte mellem tre beregningsmetoder. Skiftet mell
 # Ekspert Dashboard
 For mere information om ekspertdashboardet. Se [Github repository](https://github.com/DataOgDigitalisering/ekspertdashboard)
 
-Programmet fungere ved at resultatet af de fire queries personoversigt, tilloversigt, autorisationer og specialer eksportes til CSV filer. 
+Programmet fungere ved at resultatet af flere SQL queries eksportes til CSV filer. 
 Excelfilen ekspertdashboard anvendes som skabelon og er forbundet til de CSV filer. Programmet henter generere nye CSV og data i Excelfilen opdateres. <br><br>
-Derefter vedhæftes Excelfilen og Word Brugervejledningen i en mail, som sendes til de email adresser der findes i filen modtagere.txt <br><br>
-CSV, Word og Excelfilen findes i denne mappe 
+Derefter kopieres Excelfilen og placeres på en delt L-drevs placering <br><br>
+CSV, Excelfilen og en vejledning til brugerne findes i denne mappe 
 
 ``` bat
 L:\LovbeskyttetMapper\DataProjekterOgAdHoc\Projekt Løn\Løn Dashboard\Ekspert dashboard\til udsendelse
