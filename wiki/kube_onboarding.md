@@ -38,4 +38,4 @@ Nedenfor er de measures som knytter sig til temaet beskrevet. Alle measures som 
 
 
 # Test
-<iframe width="100%" height="400" frameborder="0" scrolling="no" src="C:\Users\SVOE0005\OneDrive - Region Hovedstaden\Data og Rapportering_Dokumentation\Testfil.docx"></iframe>
+<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/:w:/r/personal/sigurd_kristensen_voelund_regionh_dk/Documents/Data%20og%20Rapportering_Dokumentation/Testfil.docx?d=w316724a392a94be28b04336aafaf1e80&csf=1&web=1&e=idloaw"></iframe>
