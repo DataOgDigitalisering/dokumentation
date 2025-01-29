@@ -6,7 +6,7 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 
 <!-- PowerPoint: "Introduktion og onboarding til D&R"  -->
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={3f4e8ec2-63e5-4933-8b95-28f6f4caac35}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="587" height="800" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={3f4e8ec2-63e5-4933-8b95-28f6f4caac35}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="800" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 <br>
 
@@ -36,7 +36,7 @@ Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem d
 Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger på. Hvis man ændrer i nogle af vores miljøer, skal man være opmærksom på hvilke produkter det kan påvirke.
 
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={384b395b-9001-4165-8366-f157c975223b}&amp;action=embedview" width="800" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={384b395b-9001-4165-8366-f157c975223b}&amp;action=embedview" width="1000" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 <br>
 
@@ -60,7 +60,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Guide til bestilling af dataadgange</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="730" height="1000" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="730" height="600" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 </details>
 {::options parse_block_html="false" /}
