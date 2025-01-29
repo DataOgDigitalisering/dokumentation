@@ -1,14 +1,8 @@
-# Der arbejdes på at få denne side klar!
-
-<center><img src="Images/sideUdarbejdes.png" height="95%" width="95%" style="vertical-align:middle"/></center>
-
-
 # Ferie
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Ferie" beskrevet.
 
-## Der arbejdes på dette afsnit
-TODO
-
+## Overordnet
+Temaet ferie indgår i HR Lederdashboard, men ikke i HR Strategisk Dashboard.
 
 # Tabeller og kolonner
 Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
