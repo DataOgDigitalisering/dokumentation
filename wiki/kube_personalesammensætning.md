@@ -1,9 +1,14 @@
 # Personalesammensætning - HR Strategisk Dashboard
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Personalesammensætning" beskrevet.
 
-## Der arbejdes på dette afsnit
-TODO
+## Månedslønnede
+I udgangspunktet vises antallet af månedslønnede i HR Strategisk dashboard. Der kan dog vælges andre opgørelsesmetoder i filteret Ansættelsesform i HR Strategisk Dashboard.
 
+## Udvalgte fagstillingsgrupper
+Regionens fastholdelses- og Rekrutteringsudvalg har fokus på seks faggrupper: Bioanalytikere, Jordemødre, Lægepersonale, Radiografer, SOSU’er og Sygeplejer-personale. Derfor er figuren øverst til højre i Hr Startegisk Dashboard f.eks. låst til kun at vise disse grupper.
+
+## Standardscript
+Ønsker man at genskabe opgørelsen over antal månedslønnede findes der et SQL-script, hvor man kan se de normale afgrænsninger der foretages på L-drevet: L:\LovbeskyttetMapper\DataProjekterOgAdHoc\Data og rapportering postkasse\Standardscripts, tematiseret\Personale - antal og sammensætning
 
 # Tabeller og kolonner
 Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
