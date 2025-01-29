@@ -60,7 +60,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Guide til bestilling af dataadgange</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="730" height="600" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="730" height="500" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 </details>
 {::options parse_block_html="false" /}
@@ -90,7 +90,7 @@ Vi har her samlet nogle gode links og dokumenter, som beskriver hvordan man arbe
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Slides til SQL-kursus</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={e064786b-ec9d-4478-9696-198b15f134a8}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="1000" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={e064786b-ec9d-4478-9696-198b15f134a8}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="1200" height="700" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 </details>
 {::options parse_block_html="false" /}
