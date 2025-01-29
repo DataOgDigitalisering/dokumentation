@@ -6,7 +6,7 @@ Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk 
 
 <!-- PowerPoint: "Introduktion og onboarding til D&R"  -->
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={3f4e8ec2-63e5-4933-8b95-28f6f4caac35}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={3f4e8ec2-63e5-4933-8b95-28f6f4caac35}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="587" height="800" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 <br>
 
@@ -27,7 +27,7 @@ Nedenfor kan du se en liste over de produkter som vi udbyder, samt hvilke dataki
 Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem der står for at dokumentere temaet og vedligeholde dokumentationen efterfølgende. Det angiver også hvilke tabeller og measures som hører under hvert tema.
 
 <center>
-<iframe width="402" height="346" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={cc0acbe9-7029-4db0-8d40-b5ef133133fb}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<iframe width="800" height="587" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={cc0acbe9-7029-4db0-8d40-b5ef133133fb}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
 <br>
 
@@ -36,7 +36,7 @@ Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem d
 Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger på. Hvis man ændrer i nogle af vores miljøer, skal man være opmærksom på hvilke produkter det kan påvirke.
 
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={73422d8a-9d4c-4727-aa0e-5b24d601e81e}&amp;action=embedview" height="587" width="800" frameborder="0" seamless="yes"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={384b395b-9001-4165-8366-f157c975223b}&amp;action=embedview" width="800" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 <br>
 
@@ -60,7 +60,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Guide til bestilling af dataadgange</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={c652f92d-8025-4f11-9b4c-3e0f0e0dadba}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="730" width="1000" frameborder="0" seamless="yes"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="730" height="1000" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 </details>
 {::options parse_block_html="false" /}
@@ -90,7 +90,7 @@ Vi har her samlet nogle gode links og dokumenter, som beskriver hvordan man arbe
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Slides til SQL-kursus</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={ee7ec7a1-d13c-4855-a459-c1717f9aa646}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="587" width="1000" frameborder="0" seamless="yes"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={e064786b-ec9d-4478-9696-198b15f134a8}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="1000" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 </details>
 {::options parse_block_html="false" /}
