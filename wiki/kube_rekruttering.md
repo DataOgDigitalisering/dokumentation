@@ -1,14 +1,16 @@
-# Der arbejdes på at få denne side klar!
-
-<center><img src="Images/sideUdarbejdes.png" height="95%" width="95%" style="vertical-align:middle"/></center>
-
-
 # Rekruttering
-Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Rekruttering" beskrevet.
+Rekrutteringstemaet baserer sig på data fra HR Manager. Regionen har imidlertid fået et nyt rekrutteringssystem Talent Recruiter og der kommer derfor (fra oktober 2024) ikke længere nyt data i HR Manager. 
 
-## Der arbejdes på dette afsnit
-TODO
+Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Rekruttering" beskrevet med afsæt i de tabeller, der baserer sig på HR Manager.
 
+## Rekrutteringstemaet er ikke koblet til resten af CHRU_Kube
+Rekrutteringstemaet baserer sig på Region Hovedstadens rekrutteringssystem HR Manager. Eftersom det desværre ikke er muligt at koble oplysningerne for personer, der endnu ikke er ansat til et Tjnr, er det kun muligt at benytte de personoplysninger, som findes i Hr manager. I praksis betyder det følgende:
+1) I modsætning til de øvrige temaer i CHRU_Kube, er Rekrutteringstemaet ikke koblet til Lønsystemets Stillings- og Organisationshierarki. I stedet anvendes de oplysninger om Viksomhed, Fagstillingsgruppe og Stillingsgruppe, som findes i HR Manager.
+2) Åbner man HR strategisk Dashboard., vil man se, at filtrene under temaet "Rekruttering" er baseret på rekrutteringssystemets organisations- og stillings-hierarkier, som kan afvige fra de tilsvarende hierarkier i lønsystemet. DeDet er f.eks. ikke muligt at filtrere på et lavere niveau end virksomhedsniveau.
+3) Alle oplysninger slettes efter 6 mdr., eftersom vi ikke opbevarer oplysninger om personer, der endnu ikke er ansat (f.eks. ansøgere).
+
+## Median eller gennemsnit
+Som nøgletal anvendes ofte medianen af ansøgere pr. stillingsopslag i stedet for det gennemsnitlige antal ansøgere pr. stillingsopslag, eftersom gennemsnittet kan blive påvirket af, at der kommer unormalt mange ansøgere til enkelte stillingsopslag.
 
 # Tabeller og kolonner
 Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
