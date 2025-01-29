@@ -1,5 +1,8 @@
 # Trivsel
-Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Trivsel" beskrevet.
+Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Trivsel" beskrevet.'
+
+## Opdatering af Trivselsmålinger 2024/25
+Trivselsmålingerne har indtil 2024 indeholdt 3 faste spørgsmål. Dette ændres fra og med 2025, hvor de tre spørgsmål erstattes af 8 nye faste spørgsmål. 
 
 ## Obligatoriske og valgfri målinger
 Trivselsdata opdateres i forbindelse med gennemførelsen af de årlige regionale trivselsmålinger, som gennemføres obligatorisk i 1. og 3. kvartal og valgfrit i 2. og 4. kvartal. HR Strategisk dashboard inkluderer udelukkende besvarelser på de tre fællesregionale spørgsmål, selvom der også stilles lokale spørgsmål i trivselsmålingerne.
