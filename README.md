@@ -27,7 +27,7 @@ Nedenfor kan du se en liste over de produkter som vi udbyder, samt hvilke dataki
 Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem der står for at dokumentere temaet og vedligeholde dokumentationen efterfølgende. Det angiver også hvilke tabeller og measures som hører under hvert tema.
 
 <center>
-<iframe width="800" height="587" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={cc0acbe9-7029-4db0-8d40-b5ef133133fb}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<iframe width="1200" height="587" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={cc0acbe9-7029-4db0-8d40-b5ef133133fb}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
 <br>
 
@@ -36,7 +36,7 @@ Følgende dokument angiver hvem der er ansvarlige for hvilke temaer, dvs. hvem d
 Nedenstående tabel angiver hvilke datakilder og miljøer vores produkter bygger på. Hvis man ændrer i nogle af vores miljøer, skal man være opmærksom på hvilke produkter det kan påvirke.
 
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={384b395b-9001-4165-8366-f157c975223b}&amp;action=embedview" width="1000" height="587" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={384b395b-9001-4165-8366-f157c975223b}&amp;action=embedview" width="1000" height="500" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 <br>
 
@@ -60,7 +60,7 @@ Nedenstående dokument beskriver hvordan du søger om adgang til data. Det er se
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Guide til bestilling af dataadgange</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="730" height="500" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9e94c646-b5ab-466e-89e9-0af964b2d493}&amp;action=embedview&amp;wdEmbedCode=1&amp;wdPrint=1" width="1000" height="700" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
 </details>
 {::options parse_block_html="false" /}
