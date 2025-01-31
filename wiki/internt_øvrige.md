@@ -7,7 +7,7 @@ Denne side indeholder ekstra ting som der ikke var plads til andre steder. Noget
 {::options parse_block_html="true" /}
 <details><summary markdown="span">One pager — Design guidelines til rapporter i FLIS</summary>
 <center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={89bc13a3-2f00-4dec-a49c-49033d194d1a}&amp;action=embedview&amp;wdAr=1.7777777&showNavigation=FALSE&wdStart=18&wdEnd=21" width="1000" height="588" frameborder="0" seamless="TRUE" start="18" end="21"></iframe>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={c5fed6c6-8b5b-4dcd-9a50-de824a76d4dc}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="900" height="600" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>  
 <br>
 </details>
