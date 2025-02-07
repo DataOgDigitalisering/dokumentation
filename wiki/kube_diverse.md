@@ -1,10 +1,6 @@
 # Diverse
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Fastholdelse" beskrevet.
 
-## Der arbejdes på dette afsnit
-TODO
-
-
 # Tabeller og kolonner
 Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
 
