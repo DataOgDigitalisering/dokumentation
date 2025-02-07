@@ -1,14 +1,5 @@
-# Der arbejdes på at få denne side klar!
-
-<center><img src="Images/sideUdarbejdes.png" height="95%" width="95%" style="vertical-align:middle"/></center>
-
-
 # Forbrug
-Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Forbrug" beskrevet.
-
-## Der arbejdes på dette afsnit
-TODO
-
+Forbrugstabellerne indgår i løntemaet i HR Strategisk dashboard og i Ekspertdashboardet. Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Forbrug" beskrevet.
 
 # Tabeller og kolonner
 Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
@@ -27,8 +18,8 @@ Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger p
 # Measures
 Nedenfor er de measures som knytter sig til temaet beskrevet. Alle measures som ligger i CHRU_HRkuben kan også ses [*her*](https://github.com/DataOgDigitalisering/CHRU_HRKube/tree/produktion/tables/_Measures/measures).
 
-Flere measures er baseret på measuret *Løngennemsnit*. Løn gennemsnittet er gennemsnittet af alle de udbetalte lønningerne på hvert tjenestenummer. Der anvendes ikke gennemsnit af gennemsnit. <br>
-Skulle measuret skrives i SQL kan det gøres sådan her.
+Flere measures er baseret på measuret *Løngennemsnit*. Løngennemsnittet er gennemsnittet af alle de udbetalte lønninger på hvert tjenestenummer. Der anvendes ikke gennemsnit af gennemsnit. <br>
+Skulle measuret skrives i SQL kan det gøres sådan her:
 
 ``` sql
 SELECT AVG(LØN) FROM 
@@ -40,7 +31,7 @@ SELECT AVG(LØN) FROM
     ) as Månedslønninger
 ```
 
-I Dashboardet er det muligt at skifte mellem tre beregningsmetoder. Skiftet mellem beregningsmetoder er indlejret i de forskellige measures. 
+I Dashboardet er det muligt at skifte mellem tre beregningsmetoder. Skiftet mellem beregningsmetoder er indlejret i de forskellige measures. De tre beregningsmetoder er:
 1. Lønforbrug inkl. ferie (Her anvendes kolonnen **BELØB**)
 2. Lønbrug ekskl. ferie (Her anvendes kolonnen **BELØB**, men grundkategorien **Ferie/løn** er sorteret fra)
 3. Omregnet til fuldtid (Her anvendes kolonnen **BELØB_FULDTID**, men grundkategorierne **Ferie/løn** og **Særydelser** er sorteret fra. Beløbene omregnes ved at dividere Beløb kolonnen med medarbjederens beskæftigelsesdecimal)
@@ -49,13 +40,13 @@ I Dashboardet er det muligt at skifte mellem tre beregningsmetoder. Skiftet mell
 <iframe width="1200" height="500" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={8d5cf238-e8c7-40f1-bf4f-139fc065219d}&action=embedview&wdAllowInteractivity=False&Item=Forbrug_Measures&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
 
-# Ekspert Dashboard
-For mere information om ekspertdashboardet. Se [Github repository](https://github.com/DataOgDigitalisering/ekspertdashboard)
+# Ekspertdashboard
+For mere information om ekspertdashboardet, se [Github repository](https://github.com/DataOgDigitalisering/ekspertdashboard)
 
-Programmet fungere ved at resultatet af flere SQL queries eksportes til CSV filer. 
-Excelfilen ekspertdashboard anvendes som skabelon og er forbundet til de CSV filer. Programmet henter generere nye CSV og data i Excelfilen opdateres. <br><br>
+Programmet fungerer ved, at resultatet af flere SQL queries eksportes til CSV filer. 
+Excelfilen "Ekspertdashboard" anvendes som skabelon og er forbundet til disse CSV-filer. Programmet henter/genererer nye CSV og data i Excelfilen opdateres. <br><br>
 Derefter kopieres Excelfilen og placeres på en delt L-drevs placering <br><br>
-CSV, Excelfilen og en vejledning til brugerne findes i denne mappe 
+CSV-filerne, Excelfilen og en vejledning til brugerne findes i denne mappe:
 
 ``` bat
 L:\LovbeskyttetMapper\DataProjekterOgAdHoc\Projekt Løn\Løn Dashboard\Ekspert dashboard\til udsendelse
