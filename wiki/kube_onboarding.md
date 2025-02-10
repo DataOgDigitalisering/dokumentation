@@ -37,7 +37,3 @@ Nedenfor er de measures som knytter sig til temaet beskrevet. Alle measures som 
 <center>
 <iframe width="1200" height="600" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={8d5cf238-e8c7-40f1-bf4f-139fc065219d}&action=embedview&wdAllowInteractivity=False&Item=Onboarding_Measures&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 </center>
-
-
-# Test
-<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://regionh-my.sharepoint.com/:w:/r/personal/sigurd_kristensen_voelund_regionh_dk/Documents/Data%20og%20Rapportering_Dokumentation/Testfil.docx?d=w316724a392a94be28b04336aafaf1e80&csf=1&web=1&e=idloaw"></iframe>
