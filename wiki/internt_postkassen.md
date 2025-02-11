@@ -26,3 +26,13 @@ Dette dokument indeholder standardsvar som man kan tage udgangspunkt i når man 
 <center>
 <iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={3b3ddf06-17ad-4ac4-97a9-44474f67c4c6}&amp;action=embedview" width="1200" height="600" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 </center>
+
+# GDPR og arkivering
+Dette dokument indeholder nogle overvejelser omkring GDPR i Postkassen, som man kan ahve ibaghovedet, når man håndterer henvendelser i postkasserne.
+<!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
+<center>
+<iframe src="https://regionh-my.sharepoint.com/personal/tanja_olsen_la_cour_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={d18de60b-c1a4-4ba9-9110-e974f495039d}&amp;action=embedview" width="1200px" height="600px" frameborder="0">Dette er et integreret <a target="_blank" href="https://office.com">Microsoft Office</a> dokument, leveret af <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+</center>
+
+
+
