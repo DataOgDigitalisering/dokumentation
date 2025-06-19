@@ -113,9 +113,8 @@ Kursusaktiviteterne er hierarkisk opbygget i 4 niveauer:
 2. **Course (Kursus):** Et kursus består af et eller flere hold. Alle hold er forbundet til et kursus og kun et. Alle kurser skal have mindst et hold.
 3. **Class (Hold):** Et hold består af en eller flere perioder. Alle perioder er forbundet til et hold og kun et. Alle hold skal have mindst en periode.
 4. **Period (Periode)**
-<br>
-<br>
-![Illustration af datastruktur](/Images/Kursusportalen.svg)
+
+![Kursusportalen](https://github.com/user-attachments/assets/33b6d5ca-9ff7-4f64-a632-990de833e385)
 
 **De øvrige variable er bundet op på forskellige dele af det ovenfor beskrevne heiraki:**
 - Antal pladser bestemmes på kursusniveau og holdene på kurset arver det tal.
@@ -141,6 +140,9 @@ Spørgsmålene og de tilhørende svar kan inddeles i to kategorier: fritekst og 
 - 2 = Enten/eller. Brugeren kan vælge én option til spørgsmålet. Mappes til entitet 304 QuestionOption.
 - 3 = Både/og. Brugeren kan vælge flere optioner til samme spørgsmål. Mappes til entitet 304 QuestionOption
 
+### Udvalgte hold 
+Efter aftale med Ledelse og Organisation samt Kompetenceudvikling er der udvalgt en række hold som benytter det faste evalueringsskema *Evaluering CHRU*. Og en række hold som benytter nogle andre evalueringsskemaer hvor der er tilføjet yderligere spørgsål end dem der findes i *Evaluering CHRU*. Det er disse udvalgte hold der er hovedfokus i Dashboardet. Holdne der benytter et udvalgt skema findes i v_DimUdvalgteHold.
+
 ### Brugere
 Brugere i Kursusportalen oprettes på personniveau og ikke på ansættelsesniveau. 
 
@@ -152,12 +154,16 @@ Brugerne anonymiseres efter bestemte grænser:
 
 Tabellen 101 UserPOE, indeholder oplysninger om brugeren ansættelsesforhold, men da brugeren tilmeldes kurser på personniveau ikke ansættelses, kan ansættelsen ikke bestemmes for brugere, med flere samtidige ansættelser. Der er mulighed for at vælge ansættelse ved tilmeldning, men denne funktion anvendes sjældent. Ved anvendelse findes værdien i tabellen 207 Courseparticipant kolonne OrgunitID.
 
+
 ### Views
 I Data og Digitalisering har vi udarbejdet views ud fra de tabeller vi har modtaget fra ProOffice. Disse views anvendes i Power-BI. Lige nu er data fra Kursusportalen ikke forbundet til vores øvrige data. 
 
 Der er lavet følgende views: [link til repository](https://github.com/DataOgDigitalisering/Kursusportal-dashboard/tree/main/views)
-- dim_aktivitet. Dimensionstabel over kursusaktivitet
-- dim_evaluering. Dimensionstabel over evalueringsbesvarelser
-- dim_deltager. Dimensionstabel over deltagere
-- dim_underviser. Dimensionstabel over undervisere
-- fact_kursusdeltagelse. facttabel over kursusdeltagelse og evalueringsbesvarelser.
+- v_dim_aktivitet. Dimensionstabel over kursusaktivitet
+- v_dim_evaluering. Dimensionstabel over evalueringsbesvarelser
+- v_dim_deltager. Dimensionstabel over deltagere
+- v_dim_underviser. Dimensionstabel over undervisere
+- v_DimUdvalgteHold. Dimensionstabel over hold der bruger udvalgt evalueringsskema
+- v_DimStilling. Dimensionstabel over stillinger
+- v_DimAposHierarki. Dimensionstabel over organisatorisk hierarki
+- v_fact_kursusdeltagelse. facttabel over kursusdeltagelse og evalueringsbesvarelser
