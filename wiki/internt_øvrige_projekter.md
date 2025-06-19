@@ -166,3 +166,4 @@ Der er lavet følgende views: [link til repository](https://github.com/DataOgDig
 - v_DimStilling. Dimensionstabel over stillinger
 - v_DimAposHierarki. Dimensionstabel over organisatorisk hierarki
 - v_fact_kursusdeltagelse. facttabel over kursusdeltagelse og evalueringsbesvarelser
+<br>
