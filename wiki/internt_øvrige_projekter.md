@@ -13,6 +13,7 @@
 - [Fejl registrering af LED koderne i HR-service](#fejl-registrering-af-LED-koderne-i-HR-service)
 - [Lederkode](#lederkode)
 - [P sag dokument udtræk](#p-sag-dokument-udtræk)
+- [Kursusportalen](#kursusportalen)
 
 ## Puzzel
 ## Barselsberegner
@@ -95,3 +96,73 @@ LEFT JOIN [LON_HR].[SD].[SD_Person] person ON Person.CPR = dokumenter.CPR
 [^3]: DokumentSkabelon er en skabelon i tradiotionel forstand. Det er et dokument, som man kan få genereret. Der er en masse forudfyldt tekst og eksempelvis virksomhedsnavn og adresse bliver flettet ind. <br>DokumentType anvendes til at kategorisere et dokument, som ikke er genereret gennem Personale-web. Det kan eksempelvis være en medarbejder som har indsendt en straffeattest eller et bevis for et bestået kursus. 
 
 [^4]: Kolonnen har værdien "frigivet" eller "ej frigivet". I personale-web vises der en rød eller grøn markering, ud fra skabelonen. Det angiver om skabelonen kan anvendes. Kun synligt for medarbejdere med udvidet rettigheder. 
+
+## Kursusportalen
+
+Kursusportalen er regionens kursusadministrationssystem (LMS), Prooffice, Plan2Learn er leverandør  af systemet. Vi har i samarbejde med dem fået udviklet en datapakke, som skal anvendes i en Power-BI løsning, der skaber overblik over regionens kursusaktiviteter og evalueringsresultater fra kurserne.
+
+Kursusportal-projektet har eget Git-repository: [Link til repository](https://github.com/DataOgDigitalisering/Kursusportal-dashboard)
+
+[Dokumentation lavet af Prooffice findes i Github](https://github.com/DataOgDigitalisering/Kursusportal-dashboard/blob/main/Dokumentation_Datapakke_Kursusportalen.pdf)
+
+### Datastruktur
+
+Kursusaktiviteterne er hierarkisk opbygget i 4 niveauer:
+1. **Education (Uddannelse):** En uddannelse består af et eller flere kurser. Ikke alle kurser tilhører en uddannelse. Et kursus kan være del af mere end en uddannelse. Uddannelser anvendes kun i begrænset omfang.
+2. **Course (Kursus):** Et kursus består af et eller flere hold. Alle hold er forbundet til et kursus og kun et. Alle kurser skal have mindst et hold.
+3. **Class (Hold):** Et hold består af en eller flere perioder. Alle perioder er forbundet til et hold og kun et. Alle hold skal have mindst en periode.
+4. **Period (Periode)**
+
+![Kursusportalen](https://github.com/user-attachments/assets/33b6d5ca-9ff7-4f64-a632-990de833e385)
+
+**De øvrige variable er bundet op på forskellige dele af det ovenfor beskrevne heiraki:**
+- Antal pladser bestemmes på kursusniveau og holdene på kurset arver det tal.
+- Holdstatus bestemmes på holdniveau. Da et kursus kan have flere hold, kan et kursus indeholde hold med alle typer af holdstatus (gennemført, aflyst osv.)
+- Deltagerens status bestemmes på holdniveau (gennemført, på venteliste, tilmeldt)
+- Deltagerens [evalueringsbesvarelse](#evalueringer)  er knyttet til en periode, da evalueringsskemaer tildeles perioder og et hold kan have flere perioder og der kan være forskellige eller det samme evalueringsskema på flere perioder under holdet. Derfor kan en deltager have svaret på mere end en evaluering i forbindelse med holdet. 
+- Undervisere tildeles perioder. En periode kan godt have flere undervisere. En periode kan også have ingen underviser. Undervisere findes i tabellen 209 PeriodInstructor, ikke tabel 210 UserRole.
+- [Evalueringsskemaer](#evalueringer) tildeles perioder og fordi et hold består af en eller flere perioder, så kan forskellige skemaer, være anvendt på det samme hold. Eksempelvis evaluering dag 1, dag 2 og afsluttende evaluering. 
+
+### Evalueringer
+Evalueringerne har deres eget entitetark i den samlede dokumentation. 
+
+Et evalueringsskema ejes af et domæne. Skemaerne knyttes til kurser på periodeniveau. Derfor kan der være flere evalueringer på samme hold. Et kursus kan have flere hold og et hold kan have flere perioder.
+
+En unik skemabesvarelse kan identificeres ud fra kombinationen af UserID, ClassID og SchemeID. Se tabel 307 ResultUser. Selve svarene på skemaet findes ud fra ResultID. Dette medfører desværre, at hvis samme skema er anvendt på flere perioder under samme hold, så kan vi ikke bestemme hvilken periode, besvarelsen vedrører. 
+
+Spørgsmålene og de tilhørende svar kan inddeles i to kategorier: fritekst og skalaspørgsmål. Det bestemmes ud fra questionType på tilhørende questionID, hvilken type spørgsmål det er.  
+- Tabellen 305 QuestionComment indeholder alle fritekstbesvarelserne. 
+- Tabellen 304 QuestionOption indeholder svarmuligheder på skala-spørgsmålene. Den joines med tabel 306 QuestionAnswer, for at finde den/de muligheder, som brugeren har valgt.
+
+**QuestionType**
+- 1 = Kommentar. Brugeren angiver et fritekst et kommentar til spørgsmålet. Mappes til entitet 305 QuestionComment.
+- 2 = Enten/eller. Brugeren kan vælge én option til spørgsmålet. Mappes til entitet 304 QuestionOption.
+- 3 = Både/og. Brugeren kan vælge flere optioner til samme spørgsmål. Mappes til entitet 304 QuestionOption
+
+### Udvalgte hold 
+Efter aftale med Ledelse og Organisation samt Kompetenceudvikling er der udvalgt en række hold som benytter det faste evalueringsskema *Evaluering CHRU*. Og en række hold som benytter nogle andre evalueringsskemaer hvor der er tilføjet yderligere spørgsål end dem der findes i *Evaluering CHRU*. Det er disse udvalgte hold der er hovedfokus i Dashboardet. Holdne der benytter et udvalgt skema findes i v_DimUdvalgteHold.
+
+### Brugere
+Brugere i Kursusportalen oprettes på personniveau og ikke på ansættelsesniveau. 
+
+Brugerne anonymiseres efter bestemte grænser:
+- Inaktive interne brugere anonymiseres efter 1826 dage.
+- Inaktive eksterne brugere anonymiseres efter 365 dage.
+- Aktive eksterne brugere anonymiseres efter 365 dage uden aktivitet. 
+- Profilløse brugerprofiler anonymiseres efter 365 dage.
+
+Tabellen 101 UserPOE, indeholder oplysninger om brugeren ansættelsesforhold, men da brugeren tilmeldes kurser på personniveau ikke ansættelses, kan ansættelsen ikke bestemmes for brugere, med flere samtidige ansættelser. Der er mulighed for at vælge ansættelse ved tilmeldning, men denne funktion anvendes sjældent. Ved anvendelse findes værdien i tabellen 207 Courseparticipant kolonne OrgunitID.
+
+
+### Views
+I Data og Digitalisering har vi udarbejdet views ud fra de tabeller vi har modtaget fra ProOffice. Disse views anvendes i Power-BI. Lige nu er data fra Kursusportalen ikke forbundet til vores øvrige data. 
+
+Der er lavet følgende views: [link til repository](https://github.com/DataOgDigitalisering/Kursusportal-dashboard/tree/main/views)
+- v_dim_aktivitet. Dimensionstabel over kursusaktivitet
+- v_dim_evaluering. Dimensionstabel over evalueringsbesvarelser
+- v_dim_deltager. Dimensionstabel over deltagere
+- v_dim_underviser. Dimensionstabel over undervisere
+- v_DimUdvalgteHold. Dimensionstabel over hold der bruger udvalgt evalueringsskema
+- v_DimStilling. Dimensionstabel over stillinger
+- v_DimAposHierarki. Dimensionstabel over organisatorisk hierarki
+- v_fact_kursusdeltagelse. facttabel over kursusdeltagelse og evalueringsbesvarelser
