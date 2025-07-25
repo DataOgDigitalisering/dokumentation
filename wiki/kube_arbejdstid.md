@@ -2,9 +2,7 @@
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Arbejdstid" beskrevet.
 
 ## Ændring i normtid over seneste afsluttede 12 mdr
-- Antallet af personer der går hhv. op eller ned i normtid beregnes i DAX gennem 3 measures: [AntalOpITidSidste12Mdr], [AntalNedITidSidste12Mdr] og [AntalSammeTidSidste12Mdr].
-- Beregningen baseres på de medarbejdere, som var ansat i både starten og slutningen af seneste afsluttede 12 mdr., mens medarbejdere, som er fratrådt eller tiltrådt i perioden ikke medtælles.
-- Slutdatoen for perioden er sat til 'v_DimTidDato'[Filterdatoer] = "Sidste dag i sidste måned".
+Antallet af personer der går hhv. op eller ned i normtid beregnes i DAX gennem 3 measures: [AntalOpITidSidste12Mdr], [AntalNedITidSidste12Mdr] og [AntalSammeTidSidste12Mdr]. Beregningen baseres på de medarbejdere, som var ansat i både starten og slutningen af seneste afsluttede 12 mdr., mens medarbejdere, som er fratrådt eller tiltrådt i perioden ikke medtælles. Slutdatoen for perioden er sat til 'v_DimTidDato'[Filterdatoer] = "Sidste dag i sidste måned".
 
 ## 6 udvalgte faggrupper i fokus
 I figuren "Udvikling i gennemsnitlig ugentlig normtid for udvalgte fagstillingsgrupper" er der lagt et filter på fagstillingsgrupper ind i PowerBI-filen, så der kun vises 6 faggrupper (Bioanalytikere, Jordemødre, Lægepersonale, Radiografer, SOSU’er og Sygeplejer-personale). De seks faggrupper er udvalgt, fordi der er et politisk fokus på netop disse faggrupper, bl.a. i regionens Fastholdelses- og rekrutteringsudvalg. De 6 faggrupper går også igen andre steder i dashboardet.
