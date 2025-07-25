@@ -8,10 +8,10 @@ Ansættelseslængden er beregnet som forskellen mellem tiltrædelsen i den påg�
 ## Fagligt grundlag i Onboarding-undersøgelsen
 Rapportens faglige grundlag tager afsæt i Regionens Onboardingundersøgelse, som blev udarbejdet af virksomheden Leapeo i 2021. Onboarding-undersøgelsens 6 temaer stammer fra Christian Harpelunds onboardingteori. 
 ## Målingsår
-Onboarding-undersøgelsen udsendes én gang årligt i SurveyXact, sædvanligvis i oktober måned. Målingsåret, der fremgår som filter i HR Strategisk Dashboard er defineret ud fra det år, hvor spørgeskemaet blev udsendt.
+Onboarding-undersøgelsen udsendes én gang årligt i SurveyXact, sædvanligvis i oktober måned. Målingsåret, der fremgår som filter i HR Strategisk Dashboard, er defineret ud fra det år, hvor spørgeskemaet blev udsendt.
 
 # Tabeller og kolonner
-Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
+Nedenfor beskrives tabeller, kolonner og relationer. Alle views, som CHRU_HRkuben bygger på, kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
 
 <b>Tabeller</b>
 <center>
