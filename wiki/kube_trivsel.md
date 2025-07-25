@@ -2,10 +2,10 @@
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Trivsel" beskrevet.'
 
 ## Opdatering af Trivselsmålinger 2024/25
-Trivselsmålingerne har indtil 2024 indeholdt 3 faste spørgsmål. Dette ændres fra og med 2025, hvor de tre spørgsmål erstattes af 8 nye faste spørgsmål. 
+Trivselsmålingerne har indtil 2024 indeholdt 3 faste spørgsmål. Dette er ændret fra og med 2025, hvor de tre spørgsmål er erstattet af 8 nye faste spørgsmål. Ønsker man at tilgå Trivselsfanen med tidligere års målinger kan man gøre det gennem Trivsel-arkivet 2018-2024.
 
 ## Obligatoriske og valgfri målinger
-Trivselsdata opdateres i forbindelse med gennemførelsen af de årlige regionale trivselsmålinger, som gennemføres obligatorisk i 1. og 3. kvartal og valgfrit i 2. og 4. kvartal. HR Strategisk dashboard inkluderer udelukkende besvarelser på de tre fællesregionale spørgsmål, selvom der også stilles lokale spørgsmål i trivselsmålingerne.
+Trivselsdata opdateres i forbindelse med gennemførelsen af de årlige regionale trivselsmålinger, som gennemføres obligatorisk i 1. og 3. kvartal og valgfrit i 2. og 4. kvartal. HR Strategisk dashboard inkluderer udelukkende besvarelser på de 8 fællesregionale spørgsmål, selvom der også kan stilles lokale spørgsmål i trivselsmålingerne.
 
 ## SD og APOS
 I HR Strategisk Dashboard kan trivselsdata både vises ud fra SD- og APOS-hierarkierne. Til hvert spørgsmålsvar knyttes ogs ansættelsesID ud fra tjenestenummer og svardatoen for målingen, hvilket gør det muligt at opgøre besvarlserne ud fra SD-hierarkiet.
