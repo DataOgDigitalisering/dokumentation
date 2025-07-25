@@ -2,16 +2,18 @@
 Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Exit-undersøgelse" beskrevet.
 
 ## Anonymisering og indlæsning af data
-- Man skal være opmærksom på at nye besvarelser på exit-survey kun indlæses i kuben én gang om måneden. Dette er beskrevet mere i de views som exit-undersøgelsen benytter. Denne beslutning blev truffet for sikre en højere grad af anonymisering.
+- Man skal være opmærksom på at nye besvarelser på Exit-survey kun indlæses i kuben én gang om måneden. Dette er beskrevet mere i de views som Exit-undersøgelsen benytter. Denne beslutning blev truffet for sikre en højere grad af anonymisering.
 - Den aggregerede data vises ikke ved grupperinger på mindre end 5. Dog vises svarprocent og antal besvarelser selvom man ser på mindre end 5 personer.
 
 ## Opbygning af views
 - De to views [*v_DimExitSurveyRespondent*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_DimExitSurveyRespondent.sql) og [*v_FactExitSurvey*](https://github.com/DataOgDigitalisering/versionsstyringViews/blob/Produktion/viewFolder/v_FactExitSurvey.sql) som knytter sig til Exit-undersøgelsen indeholder en del tekst som er er hard-coded. Hvis spørgsmålenes ordlyd eller svarmulighederne ændres, er det derfor vigtigt at opdatere de to views.
-- Nogle personer har ved en fejl fået udsendt mere end ét survey på samme tjenestenummer. Disse ekstra surveys bliver filtreret fra i de to views.
+
+## Fejl i data
+- Nogle personer får ved en fejl udsendt mere end ét survey på samme tjenestenummer. Disse ekstra surveys bliver filtreret fra i de to views.
+- I en periode på ca. 40 dage i efteråret 2024 modtog fratrådte medarbejdere ikke surveys, da der var en fejl i Rambølls system, som blokerede for udsendelsen af surveys til oprettede respondenter gennem brugen af en API. De fejloprettede respondenter frasorteres i views (gennem en wehere clause i DimExitSurveyRespondent digitald != 3) og er efterfølgende oprettet på ny og har fået tilsendt et survey.
 
 ## Ambassadørfilter og ambassadørvilje
-Tanken bag ambassadørfilteret udspringer af Net Promoter Score, som er et mål for hvorvidt en ansat eller kunde er ambassadør for en virksomhed. Ved at filtrere på ambassadører/ikke ambassadører kan vi få et indblik i pull/push factors.
-
+I udarbejdelsen af dashboardet er det i fællesskab med Lededelse og Organisation besluttet, at definere en ambassadør som en tidligere medarbejder, der svarer, at de i høj grad eller i meget høj grad vil anbefale regionen som arbejdsplads til en ven eller kollega. Tanken bag ambassadørfilteret udspringer af Net Promoter Score, som er et mål for hvorvidt en ansat eller kunde er ambassadør for en virksomhed. Ved at filtrere på ambassadører/ikke ambassadører kan vi få et indblik i pull/push factors.
 
 # Tabeller og kolonner
 Nedenfor er tabeller, kolonner og relationer beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
