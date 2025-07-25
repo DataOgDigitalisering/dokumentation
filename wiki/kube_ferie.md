@@ -1,8 +1,8 @@
-# Ferie
-Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Ferie" beskrevet.
+# Ferieafholdelse
+Temaet ferieafholdelse indgår kun i HR Lederdashboard, men ikke i HR Strategisk Dashboard. Nedenfor er vigtige tanker og overvejelser vedrørende temaet "Ferieafholdelse" beskrevet.
 
-## Overordnet
-Temaet ferie indgår i HR Lederdashboard, men ikke i HR Strategisk Dashboard.
+## Eksport af tabel
+Tabellen "Feriestatus (timer) ordinær ferie (afvikles inden...)" indeholder en mulighed for at eksportere data til csv eller Excel. 
 
 # Tabeller og kolonner
 Nedenfor er tabeller og kolonner beskrevet. Alle views som CHRU_HRkuben bygger på kan ses [*her*](https://github.com/DataOgDigitalisering/versionsstyringViews/tree/Produktion/viewFolder).
