@@ -1,0 +1,1 @@
+Disse billeder bruges til UgeStatusPBI filen for dem der ikke har et profil billed på GitHub
