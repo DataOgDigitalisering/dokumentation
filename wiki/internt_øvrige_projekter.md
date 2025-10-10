@@ -98,7 +98,7 @@ Der er lavet følgende views: [link til repository](https://github.com/DataOgDig
 - v_DimAposHierarki. Dimensionstabel over organisatorisk hierarki
 - v_fact_kursusdeltagelse. facttabel over kursusdeltagelse og evalueringsbesvarelser
 
-Derufover ligger der på P02 '[KP_Cube].[v_InvalidCourses]' som indeholder de kurser der har flere end én administartor eller bruger mere end ét evalueringsskema. Og som følge heraf ikke fremgår i dashboardet.
+Derudover ligger der på P02 '[KP_Cube].[v_InvalidCourses]' som indeholder de kurser der har flere end én administrator eller bruger mere end ét evalueringsskema. Og som følge heraf ikke fremgår i dashboardet.
 ## P sag dokument udtræk
 Til udtræk af dokumeter på P sagen, anvendes to tabeller fra P01.
 Data leveres en gang månedligt d. 10 i måneden. 
